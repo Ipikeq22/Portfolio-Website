@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gary — 聯絡我</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Gary's Portfolio</a></div>
+    <div class="nav-controls">
+      <button class="contact-btn"><a href="contact_me.html">聯絡我</a></button>
+      
+      <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
+    <button id="closeMenu" class="close-btn" aria-label="關閉選單">×</button>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="introduction.html">個人簡介</a></li>
+      <li><a href="graphic_design_page.html">平面設計</a></li>
+      <li><a href="front_end_project.html">前端設計</a></li>
+      <li><a href="teach_project.html">教學設計</a></li>
+      <li><a href="business_design.html">商品設計</a></li>
+      <li><a href="graduated_project.html">畢業專題 Tasksnap</a></li>
+      <li><a href="contact_me.html">聯絡我</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content intro-page">
+    <h1>聯絡我</h1>
+    
+    <div class="contact-buttons">
+      <a href="https://forms.gle/tkGJ68J3q8kkuAmw7" class="contact-btn-item">
+        <img src="profile.png" alt="Email" class="contact-icon">
+        <span>案件洽詢</span>
+      </a>
+      <a href="https://forms.gle/WrY3DRVnNFoVSUTG9" class="contact-btn-item">
+        <img src="teamwork.png" alt="Phone" class="contact-icon">
+        <span>合作邀約</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Gary's Portfolio<br>Phone: 0978-605-386<br>Email: yaogary@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gary's Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Gary's Portfolio</div>
+    <div class="nav-controls">
+      <a href="contact_me.html" class="contact-btn">聯絡我</a>
+      <!-- 漢堡按鈕改為 button，加入 aria 屬性供輔助工具使用 -->
+      <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 手機選單：設計為全螢幕覆蓋 panel，並可用鍵盤關閉 -->
+  <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
+    <button id="closeMenu" class="close-btn" aria-label="關閉選單">×</button>
+    <ul>
+      <li><a href="introduction.html">個人簡介</a></li>
+      <li><a href="graphic_design_page.html">平面設計</a></li>
+      <li><a href="front_end_project.html">前端設計</a></li>
+      <li><a href="teach_project.html">教學設計</a></li>
+      <li><a href="business_design.html">商品設計</a></li>
+      <li><a href="graduated_project.html">畢業專題 Tasksnap</a></li>
+      <li><a href="contact_me.html">聯絡我</a></li>
+
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <img src="wallhaven-x8d5v3_1920x1080.png" alt="Profile" class="avatar" />
+    <h1>Hello, I am Gary</h1>
+    <p>一位快爆肝的跨領域設計師😂</p>
+    
+
+    <div class="button-group">
+      <a href="graphic_design_page.html" class="portfolio-btn">
+        <img src="https://cdn-icons-png.flaticon.com/128/3940/3940059.png" alt="平面設計" class="btn-icon">
+        <span>平面設計</span>
+      </a>
+      <a href="front_end_project.html" class="portfolio-btn">
+        <img src="https://cdn-icons-png.flaticon.com/128/2721/2721291.png" alt="前端設計" class="btn-icon">
+        <span>前端設計</span>
+      </a>
+      <a href="teach_project.html" class="portfolio-btn">
+        <img src="https://cdn-icons-png.flaticon.com/128/3352/3352891.png" alt="教學作品" class="btn-icon">
+        <span>教學設計</span>
+      </a>
+      <a href="business_design.html" class="portfolio-btn">
+        <img src="https://cdn-icons-png.flaticon.com/128/3081/3081648.png" alt="商品設計" class="btn-icon">
+        <span>商品設計</span>
+      </a>
+      <a href="graduated_project.html" class="portfolio-btn">
+        <img src="logo.png" alt="畢業專題" class="btn-icon">
+        <span>畢業專題</span>
+      </a>
+      <a href="mp4_edit.html" class="portfolio-btn">
+        <img src="https://cdn-icons-png.flaticon.com/128/1179/1179069.png" alt="影音剪輯" class="btn-icon">
+        <span>影音剪輯</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Gary's Portfolio<br>Phone: 0978605386<br>Email: yaogary123@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

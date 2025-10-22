@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gary — 商品設計</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Gary's Portfolio</a></div>
+        <div class="nav-controls">
+            <button class="contact-btn"><a href="contact_me.html">聯絡我</a></button>
+            
+            <!-- 漢堡按鈕改為 button，加入 aria 屬性供輔助工具使用 -->
+            <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 手機選單：設計為全螢幕覆蓋 panel，並可用鍵盤關閉 -->
+    <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
+        <button id="closeMenu" class="close-btn" aria-label="關閉選單">×</button>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="introduction.html">個人簡介</a></li>
+            <li><a href="graphic_design_page.html">平面設計</a></li>
+            <li><a href="front_end_project.html">前端設計</a></li>
+            <li><a href="teach_project.html">教學設計</a></li>
+            <li><a href="business_design.html">商品設計</a></li>
+            <li><a href="graduated_project.html">畢業專題 Tasksnap</a></li>
+            <li><a href="contact_me.html">聯絡我</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content intro-page">
+        <h1>商品設計作品</h1>
+        <div class="project-container">
+            <!-- 專案展示區域 -->
+            <section class="project-showcase">
+                <div class="project-image">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1.png?updatedAt=1761150787081" alt="教學預覽圖">
+                </div>
+                <div class="project-info">
+                    <h2>創意創新通識課期末作業</h2>
+                    <h4>大二下</h4>
+                    <p>這個作品是大二時通識課的期末作業，作業目標是要設計出一項產品並製作它的創業計畫簡報，這個作業從商品設計到簡報製作幾乎都是我一手包辦<br>我用Sketchup 建出了產品的模型，用Ai生城市工具的輔助去寫出這個產品的企劃案</p>
+                    <div class="project-buttons">
+                        <button class="btn-green">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4946/4946342.png" alt="PDF圖示" class="btn-icon">
+                            <a href="">企劃案簡報</a>
+                        </button>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>    
+
+        <div class="project-container">
+            <!-- 專案展示區域 -->
+            <section class="project-showcase">
+                <div class="project-image">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/output.png?updatedAt=1761150785974" alt="教學預覽圖">
+                </div>
+                <div class="project-info">
+                    <h2>遊戲專案:Protect farm 農場保衛戰</h2>
+                    <h4>高二下</h4>
+                    <p>高中的時候和線上網友們組成團隊一起開發的網頁遊戲，主題是關於農場裡的蔬菜反抗要侵害他們的種族的塔防遊戲，我在這項專案裡面主要負責的工作是,<mark>美術</mark>和<mark>企劃</mark>，而最後因為某些因素，團隊解散，算是未完成的半成品</p>
+                    <div class="project-buttons">
+                        <button class="btn-primary" onclick="showGameObjects()">
+                            <img src="https://cdn-icons-png.flaticon.com/128/705/705890.png" alt="PDF圖示" class="btn-icon">
+                            <span>查看遊戲物件</span>
+                        </button>
+                        <button class="btn-orange">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1179/1179069.png" alt="PDF圖示" class="btn-icon">
+                            <a href="https://drive.google.com/file/d/1JECwIV359l6upthWDl6BpAseB41wW44s/view?usp=drive_link">觀看遊戲遊玩影片</a>
+                        </button>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>    
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Gary's Portfolio<br>Phone: 0978605386<br>Email: yaogary123@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

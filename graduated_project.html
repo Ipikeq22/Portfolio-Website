@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gary — 畢業專題 Tasksnap</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Gary's Portfolio</a></div>
+        <div class="nav-controls">
+            <button class="contact-btn"><a href="contact_me.html">聯絡我</a></button>
+            
+            <!-- 漢堡按鈕改為 button，加入 aria 屬性供輔助工具使用 -->
+            <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 手機選單：設計為全螢幕覆蓋 panel，並可用鍵盤關閉 -->
+    <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
+        <button id="closeMenu" class="close-btn" aria-label="關閉選單">×</button>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="introduction.html">個人簡介</a></li>
+            <li><a href="graphic_design_page.html">平面設計</a></li>
+            <li><a href="front_end_project.html">前端設計</a></li>
+            <li><a href="teach_project.html">教學設計</a></li>
+            <li><a href="business_design.html">商品設計</a></li>
+            <li><a href="graduated_project.html">畢業專題 Tasksnap</a></li>
+            <li><a href="contact_me.html">聯絡我</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content tasksnap-page">
+        <div class="tasksnap-container">
+            <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/logo.png?updatedAt=1761150785122" alt="專題logo">
+            <h1>Tasksnap</h1>
+            
+            <!-- 專題研發成果 -->
+            <section class="project-results">
+                
+                <h2>專題介紹</h2>
+                <p>《Tasksnap》專題自大二的暑假開始構想實做到大四上完成，致力於打造專屬學生的接案與任務平台。作品包含以 Figma 製作的 App UI 原型、以 Streamlit 建構的官方網站，以及 HTML 製作的互動小遊戲《Sweet Cookie Bite》。從設計思考到品牌體驗，展現團隊在介面設計、系統開發與互動創意上的完整實踐與整合成果</p>
+                <h2>專題研發的3個成果：</h2>
+                <div class="results-gallery">
+                    <div class="result-item">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E7%B8%AE%20(1).png?updatedAt=1761150786048" alt="成果1">
+                        <h3>Figma Ui Prototype 開發</h3>
+                        <button class="result-btn btn-video"><a href="https://drive.google.com/file/d/1B9IShxlCQCeUGShMe72wVjTysug6uK8k/view?usp=sharing">觀看操作影片</a></button>
+                    </div>
+                    <div class="result-item">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E7%B8%AE%20(2).png?updatedAt=1761150786077" alt="成果2">
+                        <h3>Python Streamlit 官方網站</h3>
+                        <button class="result-btn btn-website"><a href="https://tasksnap-ytmctx95gflwfq9pxzje2z.streamlit.app/">查看網站</a></button>
+                    </div>
+                    <div class="result-item">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E7%B8%AE%20(3).png?updatedAt=1761150790303" alt="成果3">
+                        <h3>HTML 互動小遊戲</h3>
+                        <button class="result-btn btn-game"><a href="https://ipikeq22.github.io/tasksnap_Sweet_Cookie_Bite_Game/">查看網站</a></button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 個人開發占比 -->
+            <section class="development-ratio">
+                <h2>個人在專題中開發占比多少（數據圓圈）：</h2>
+                <div class="ratio-container">
+                    <div class="ratio-item">
+                        <div class="circle-chart" data-percent="80">
+                            <div class="circle-progress"></div>
+                            <div class="circle-text">80%</div>
+                        </div>
+                        <h4>FIGMA UI Prototype</h4>
+                        <p>我 80% 其餘組員 20%</p>
+                    </div>
+                    <div class="ratio-item">
+                        <div class="circle-chart" data-percent="100">
+                            <div class="circle-progress"></div>
+                            <div class="circle-text">100%</div>
+                        </div>
+                        <h4>官方網站和互動小遊戲</h4>
+                        <p>我 100%</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 專題介紹選項卡 -->
+            <section class="project-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="showTab('motivation')">Figma Ui Prototype 開發</button>
+                    <button class="tab-btn" onclick="showTab('development')">Python Streamlit 官方網站</button>
+                    <button class="tab-btn" onclick="showTab('features')">HTML 互動小遊戲</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="motivation" class="tab-panel active">
+                        <div class="panel-layout">
+                            <div class="panel-text">
+                                <h3>開發動機</h3>
+                                <p>
+                                  觀察到學生族群在接案與任務協作平台上常面臨操作複雜、流程不清與權益保障不足的問題，
+                                  因此希望打造一款以學生為核心、操作直覺且安全的任務媒合平台。
+                                </p>
+                            
+                                <h3>如何開發</h3>
+                                <p>
+                                  使用 Figma 製作互動式 UI 原型，從流程設計、版面配置到元件互動皆模擬真實 App 體驗，
+                                  並透過團隊協作完成首頁、接案區、聊天室等主要頁面。
+                                </p>
+                            
+                                <h3>功能特色</h3>
+                                <ul>
+                                  <li>首頁、動態牆、接案區、聊天室四大主頁面</li>
+                                  <li>清晰的接案流程導向：接案 → 回覆 → 完成 → 回饋</li>
+                                  <li>真實身分驗證與法律條款確認保障用戶</li>
+                                  <li>深藍主色調營造科技與信任感</li>
+                                  <li>支援好友互動與小遊戲模組</li>
+                                </ul>
+                            </div>
+                            <div class="panel-image">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E7%B8%AE%20(1).png?updatedAt=1761150786048" alt="開發動機">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="development" class="tab-panel">
+                        <div class="panel-layout">
+                            <div class="panel-text">
+                               <h3>開發動機</h3>
+                                    <p>
+                                      為了展示 Tasksnap 品牌形象與專案理念，設計一個整合資訊、互動與行銷的官方入口網站，
+                                      讓外界能快速了解平台特色與開發團隊。
+                                    </p>
+                                
+                                    <h3>如何開發</h3>
+                                    <p>
+                                      使用 Python 的 Streamlit 框架開發，以簡潔快速的方式建立網站雛形，
+                                      結合互動元件、回饋表單與即時公告功能，作為原型展示平台。
+                                    </p>
+                                
+                                    <h3>功能特色</h3>
+                                    <ul>
+                                      <li>首頁呈現專案理念與行銷標語</li>
+                                      <li>包含功能介紹、團隊介紹、人才招募、贊助我們等頁面</li>
+                                      <li>設有意見回饋表單，蒐集使用者體驗</li>
+                                      <li>最新消息與更新公告即時呈現</li>
+                                      <li>網站風格延續 App 主題色，維持品牌一致性</li>
+                                    </ul>   
+                            </div>
+                            <div class="panel-image">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E7%B8%AE%20(2).png?updatedAt=1761150786077" alt="如何開發">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="features" class="tab-panel">
+                        <div class="panel-layout">
+                            <div class="panel-text">
+                                <h3>開發動機</h3>
+                                 <p>
+                                   希望在展場與平台上增加互動趣味性，透過小遊戲傳遞「努力、幸運、微笑」的品牌精神，
+                                   讓玩家在輕鬆氛圍中體驗 Tasksnap 的理念。
+                                 </p>
+                             
+                                 <h3>如何開發</h3>
+                                 <p>
+                                   以 HTML、CSS、JavaScript 製作簡易互動遊戲，結合動畫、音效與隨機機制，
+                                   玩家點擊餅乾即可獲得幸運祝福或任務提示。
+                                 </p>
+                             
+                                 <h3>功能特色</h3>
+                                 <ul>
+                                   <li>點擊幸運餅乾觸發隨機結果</li>
+                                   <li>支援桌機與手機雙平台遊玩</li>
+                                   <li>搭配音效與動畫增加沉浸感</li>
+                                   <li>結合品牌主題色與世界觀設計</li>
+                                   <li>展場互動：掃描 QR Code 即可遊玩並打卡分享</li>
+                                 </ul>
+                                
+                            </div>
+                            <div class="panel-image">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E7%B8%AE%20(3).png?updatedAt=1761150790303" alt="功能特色">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Gary's Portfolio<br>Phone: 0978605386<br>Email: yaogary123@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

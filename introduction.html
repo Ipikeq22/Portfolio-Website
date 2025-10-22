@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gary — 自我介紹</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Gary's Portfolio</a></div>
+        <div class="nav-controls">
+            <button class="contact-btn"><a href="contact_me.html">聯絡我</a></button>
+            
+            <!-- 漢堡按鈕改為 button，加入 aria 屬性供輔助工具使用 -->
+            <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 手機選單：設計為全螢幕覆蓋 panel，並可用鍵盤關閉 -->
+    <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
+        <button id="closeMenu" class="close-btn" aria-label="關閉選單">×</button>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="introduction.html">個人簡介</a></li>
+            <li><a href="graphic_design_page.html">平面設計</a></li>
+            <li><a href="front_end_project.html">前端設計</a></li>
+            <li><a href="teach_project.html">教學設計</a></li>
+            <li><a href="business_design.html">商品設計</a></li>
+            <li><a href="graduated_project.html">畢業專題 Tasksnap</a></li>
+            <li><a href="contact_me.html">聯絡我</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content intro-page">
+        <div class="profile-header">
+            <img src="wallhaven-x8d5v3_1920x1080.png" alt="Gary" class="avatar" />
+            <h1>Gary</h1>
+        </div>
+
+        <div class="intro-layout">
+            <!-- 左側：專長與擅長軟體區塊 -->
+            <div class="skills-container">
+                <div class="skills-section">
+                    <h2 class="skills-title">專長領域</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3>平面 / 數位設計</h3>
+                        </div>
+                        <div class="skill-card">
+                            <h3>UI / UX 設計</h3>
+                        </div>
+                        <div class="skill-card">
+                            <h3>影音剪輯</h3>
+                        </div>
+                        <div class="skill-card">
+                            <h3>產品開發設計</h3>
+                        </div>
+                        <div class="skill-card">
+                            <h3>3D建模渲染<br><span class="sub-text">(列印略懂)</span></h3>
+                        </div>
+                        <div class="skill-card">
+                            <h3>數位行銷</h3>
+                        </div>
+                        <div class="skill-card">
+                            <h3>電腦繪圖設計教學</h3>
+                        </div>
+                        <div class="skill-card">
+                            <h3>遊戲開發<br><span class="sub-text">(企劃 / 美術)</span></h3>
+                        </div>
+                        <div class="skill-card">
+                            <h3>數位前端開發</h3>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Vibe Coding</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h2 class="skills-title">擅長軟體</h2>
+                    <div class="software-list">
+                        <div class="software-item">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968520.png" alt="Photoshop" class="software-icon-img">
+                            Adobe Photoshop
+                        </div>
+                        <div class="software-item">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968472.png" alt="Illustrator" class="software-icon-img">
+                            Adobe Illustrator
+                        </div>
+                        <div class="software-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/zh/7/75/%E5%A8%81%E5%8A%9B%E5%B0%8E%E6%BC%9418%E9%9B%BB%E8%85%A6%E7%89%88%E5%9C%96%E7%A4%BA.png" alt="PowerDirector" class="software-icon-img">
+                            PowerDirector
+                        </div>
+                        <div class="software-item">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" alt="Python" class="software-icon-img">
+                            Python
+                        </div>
+                        <div class="software-item">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5044/5044729.png" alt="Web" class="software-icon-img">
+                            Web語言 (HTML + CSS + JavaScript)
+                        </div>
+                        <div class="software-item">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968705.png" alt="Figma" class="software-icon-img">
+                            Figma
+                        </div>
+                        <div class="software-item">
+                            <img src="https://cdn-icons-png.flaticon.com/128/888/888867.png" alt="Office" class="software-icon-img">
+                            Office 軟體
+                        </div>
+                        <div class="software-item">
+                            <img src="data:image/png;base64,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" alt="SketchUp" class="software-icon-img">
+                            SketchUp
+                        </div>
+                        <div class="software-item">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAAC+vr56enqGhobHx8e4uLj6+vrT09O1tbXExMSenp59fX3a2trv7+9OTk5ycnLn5+c2NjaoqKjg4OBeXl5UVFTMzMwVFRUxMTEsLCxERERsbGxjY2OMjIzy8vJBQUE6OjodHR2ampqjo6OSkpIMDAwYGBgmJiZQUFC/gjg8AAAFQ0lEQVR4nO2da1viMBCFLRdbbipQqSxyEUXd//8HFxBYoGmb084klee8X0uTOaQkk5lpuLsjhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQupO1Nn0m4r0N53Yo7zuPHDCvG1hTJSI6xu7kbdnXWR+Mgo60gL7DgVuaeXZEi62n7gXFvjXrcAgeMw0Zdncf0BY4ZdrgZkS9+Mnr9DRFHPJxmDI8v+PRVRh7ENgEAxThjTOrooqfPWjcHVlxv30/KqkwqUfgUFwsfg31pcXJRV2/Oi7+CU2ptcXJRW2fKjbcZpOh+v0RUmFztfCEwd9T6Zrkgpd6/pPuO09fjZfuw2FD3fDzHn8RhTmrFO3oTAPKqRCKvQPFZZW+DWOkrYaSWS9j1Ecw2Z63yZGJ+Vg+1AYBO+CjZ+T5aC5VxgE41Cw/QMxstF+7Ep2bezCFEWpQjwB9I2Ew8EZ3fQExzFGYl2PDbmOf8jq6UWqp3AD6NOYBbI7m4r8GnqIvoXCDJC74n9XTR+cIrxWKM3i+Z2uKz2r74g+lfHbUdTx30HZlhsvgL5nLX02fulzqbRm296B2U6gpb9GC2wMmEdoq40ZoG+uqc92bzGBjOj+AfSpjt8OW0P6S9sWHxAH5lN8gU9hb0zLajLIi6ClGWvLu8N2wJuHotaGSL587ULf9js3RtWzyH9WsyO8Jtzo2xFDWe5edkOQA9N3pm9HgqxdWd895IA+FT7v0kDzu6naBSrImSuGSrKJkDU6+Li8uebjd6SNmBmcrWP3yH0jL+N3IIQetckh2JAgEaapTVWbKh+IxtnWXR0gD7dY3KASnU/A5Gdo/EQjaFVQqlOsxfgdgFwvS1reJlAzS2GNdk67Wx4E62xa1hsvt4RCGus4fkeSx+r63uQrtkUZINt1AzPtCIUAUYVxlE6xaAHl/X7Z+B0pVaCplWhVogFtH4Pg86PGE6iZIRKhDwLvOwgU+xqKI7M6eaHFQNG4I6uaOjJpQihCcU7L54tq1mApzmtea7ahSFN+/I5oFiAJUFnfjiffKrKBUpx5uIveQ9yDa3wuOZkAX2AhcAtqNo5iz+c5H8X9ugJLkdkzg4sBdIibgNGrCAoIz2oQMB0iNXY/G9zkDb7FHzHigL6dHroBotHrOEILfK/0nU1PrhyWd7re4GJ3t3y4clCNnXHih7JWrpOkIWLdV+bCNkayVn2X49j+BizL2xDVr1hoT7ICrCoqMYAq8j/Fj/cwA5hk8+vBCpCcuHLW1rxa/nJqVxhlackICLoMoJ2JuptjZcUf0BO5PiIhF22X3MKEVYmvORkBGleqEeTC7suWwHSRcVwpjmNR3xWmdCijM1Fzc/L7rZZBwl4IaipFyfP6rP561xJyeHVc8hx9Iu1j46jhkmf2JdZDCB1EJZ9ZNfdj68DYAb1gKe7mmPqYi2eNIkijrEuebl9ne4oVPEguj9dtT9W2pgMgU673Lreuj2ifLFBT+L1ZtBRZLGwDHTwXgwqp0D9U+DsU5hWy3IbCcJDtkt+GwoccV05SoYdDhA/st9eRWaOkwpIVwNV5ORgQm07flFRYqXCtCpOTCYbUl6TCrnttP5znLFIJVtGTkn2o23G5C71KlIsq9PSYvl7bcTGOogo9HQZtCFSeRTpkz2SHQppSGOvAB6fEnPC5+h7OLM86Lu0YlZP+bwSRUlmEnGBzNNdQ6PrY8vxoYVdDoVpBooniI6968v9RsqPj4l8gvpp2tmuFNMO43VCkPfh1b0MRQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIISf+AfdJVzoLomCqAAAAAElFTkSuQmCC" alt="剪映" class="software-icon-img">
+                            剪映
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右側：內容區塊 -->
+            <div class="content-sections">
+            <section class="intro">
+                <h2>自我介紹</h2>
+                <div class="section-content">
+                    <p>
+                        我是 Gary，一位跨領域設計師，我高中就讀的是廣告設計科，大學就讀的是資訊管理系，我會在這個作品集裡講述我從高中到現在的作品，參與過的專案以及工作經驗
+
+
+
+                    </p>
+                    
+                </div>
+            </section>
+
+            <section class="education">
+                <h2>學歷</h2>
+                <div class="section-content">
+                    <div class="item">
+                        <h3>國立北斗高級家事商業職業學校</h3>
+                        <p class="detail">廣告設計科 </p>
+                    </div>
+                    <div class="item">
+                        <h3>元培醫事科技大學</h3>
+                        <p class="detail">資訊管理系</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="work">
+                <h2>工作經驗</h2>
+                <div class="section-content">
+                    <div class="item">
+                        <h3>營隊講師 / 兼職行政美編</h3>
+                        <p class="company">核果資訊學苑 - 新竹校</p>
+                        <p class="detail">兼職行政美編 : 負責官方FB，Line圖文行銷的設計，並接待來電或現場的客人<br>
+                        營隊講師 : 自行研發教案和設計教具並提案
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h3>兼職美編</h3>
+                        <p class="company">李奇英文 - 新竹分校(原:華興補習班)</p>
+                        <p class="detail">傳統印刷媒體的A4招生DM設計</p>
+                    </div>
+                    <div class="item">
+                        <h3>3D列印社 - 社團老師</h3>
+                        <p class="company">私立義民高級中學</p>
+                        <p class="detail">自行設計教案，並於每學期固定社課時間教書</p>
+                    </div>
+                    <div class="item">
+                        <h3>自由接案</h3>
+                        <p class="company"> 個人</p>
+                        <p class="detail">提供設計諮詢、個人案件(專長領域所寫的內容)、教學或專案式合作。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>聯絡方式</h2>
+                <div class="section-content">
+                    <div class="contact-info">
+                        <span class="contact-item">📞 0978-605-386</span>
+                        <span class="contact-item">✉️ yaogary123@gmail.com</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Gary's Portfolio<br>Phone: 0978605386<br>Email: yaogary123@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

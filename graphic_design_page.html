@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- 宣告為 HTML5 文件 -->
+<html lang="zh-Hant">
+<!-- 網頁主語言設定為繁體中文 -->
+<head>
+    <!-- head 區塊：包含網頁的元資訊和引用的檔案 -->
+    <meta charset="UTF-8">
+    <!-- 設定字元編碼為 UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 設定視口，讓網頁在不同裝置上正常顯示 -->
+    <title>Gary — 平面設計</title>
+    <!-- 網頁標題 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 連結外部 CSS 樣式表 -->
+</head>
+<body>
+    <!-- body 區塊：包含網頁所有可見內容 -->
+
+    <!-- 頁首區塊 -->
+    <header class="header">
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Gary's Portfolio</a></div>
+        <!-- Logo 區塊，點擊後連結到首頁 -->
+        <div class="nav-controls">
+            <!-- 導覽控制按鈕 -->
+            <button class="contact-btn"><a href="contact_me.html">聯絡我</a></button>
+            
+            <!-- 語言切換按鈕 -->
+            <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單">
+                <!-- 漢堡選單按鈕，用於行動裝置 -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 行動裝置選單 -->
+    <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
+        <button id="closeMenu" class="close-btn" aria-label="關閉選單">×</button>
+        <!-- 關閉選單按鈕 -->
+        <ul>
+            <!-- 選單列表 -->
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="introduction.html">個人簡介</a></li>
+            <li><a href="graphic_design_page.html">平面設計</a></li>
+            <li><a href="front_end_project.html">前端設計</a></li>
+            <li><a href="teach_project.html">教學設計</a></li>
+            <li><a href="business_design.html">商品設計</a></li>
+            <li><a href="graduated_project.html">畢業專題 Tasksnap</a></li>
+            <li><a href="contact_me.html">聯絡我</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要內容區塊 -->
+    <main class="main-content intro-page">
+        <h1>平面設計作品</h1>
+        <!-- 頁面主標題 -->
+        <h3 class="section-title">單位 : 核果資訊學苑 - 新竹校</h3>
+        <!-- 作品集分類標題 -->
+        
+        <!-- 作品集畫廊 -->
+        <div class="portfolio-gallery">
+            <!-- 單一作品項目 -->
+            <div class="portfolio-item">
+                <p class="portfolio-desc">核果資訊學苑 - 2025暑期夏令營招生dm設計</p>
+                <div class="portfolio-images">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-1.png?updatedAt=1761143939442" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-2.png?updatedAt=1761143916029" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-3.png?updatedAt=1761143923430" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-4.png?updatedAt=1761143884922" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-5.png?updatedAt=1761143924403" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-6.png?updatedAt=1761143915821" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-7.png?updatedAt=1761143935256" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-8.png?updatedAt=1761143886177" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-9.png?updatedAt=1761143896502" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-7.png?updatedAt=1761143935256" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-8.png?updatedAt=1761143886177" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-9.png?updatedAt=1761143896502" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1-11.png?updatedAt=1761143934216" alt="2025暑期夏令營招生dm設計" class="portfolio-img" onclick="openModal(this.src)">
+                </div>
+                <p class="portfolio-detail">透過鮮豔的色彩搭配和活潑的版面設計，吸引家長和學生的注意力，有效傳達夏令營的豐富內容和學習樂趣。</p>
+            </div>
+            
+            <!-- 下一個作品項目 -->
+            <div class="portfolio-item">
+                <p class="portfolio-desc">核果資訊學苑 -秋季班免費體驗課招生圖文設計</p>
+                <div class="portfolio-images">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/2-1%20(1).png?updatedAt=1761143895520" alt="2025秋季班免費體驗課招生圖文設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/2-1%20(2).png?updatedAt=1761143876185" alt="2025秋季班免費體驗課招生圖文設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/2-1%20(3).png?updatedAt=1761143940637" alt="2025秋季班免費體驗課招生圖文設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/2-1%20(2).png?updatedAt=1761143876185" alt="2025秋季班免費體驗課招生圖文設計" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/2-1%20(5).png?updatedAt=1761143926703" alt="2025秋季班免費體驗課招生圖文設計" class="portfolio-img" onclick="openModal(this.src)">
+                </div>
+                <p class="portfolio-detail">以溫暖的秋季色調為主軸，搭配清晰的課程資訊排版，讓家長能快速了解免費體驗課的內容和報名方式。</p>
+            </div>
+            
+            <!-- 下一個作品項目 -->
+            <div class="portfolio-item">
+                <p class="portfolio-desc">核果資訊學苑 -2025十月連假招生慶祝圖文</p>
+                <div class="portfolio-images">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/Instagram%20post%20-%201.png?updatedAt=1761143985963" alt="2025十月連假招生慶祝圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/Instagram%20post%20-%202.png?updatedAt=1761143980303" alt="2025十月連假招生慶祝圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/Instagram%20post%20-%203.png?updatedAt=1761143992956" alt="2025十月連假招生慶祝圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/Instagram%20post%20-%204.png?updatedAt=1761143940847" alt="2025十月連假招生慶祝圖文" class="portfolio-img" onclick="openModal(this.src)">
+                </div>
+                <p class="portfolio-detail">配合十月連假的節慶氛圍，運用慶祝元素和優惠訊息，創造吸引人的社群媒體宣傳內容。</p>
+            </div>
+            <div class="portfolio-item">
+                <p class="portfolio-desc">核果資訊學苑 -2026寒令營招生圖文</p>
+                <div class="portfolio-images">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/3-1%20(21).png?updatedAt=1761143932110" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/3-1%20(22).png?updatedAt=1761143877846" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/3-1%20(23).png?updatedAt=1761143886727" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/3-1%20(24).png?updatedAt=1761143848662" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/3-1%20(25).png?updatedAt=1761143882781" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/3-1%20(26).png?updatedAt=1761143877032" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/3-1%20(27).png?updatedAt=1761143902973" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/3-1%20(28).png?updatedAt=1761143824247" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/3-1%20(29).png?updatedAt=1761143889783" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/3-1%20(30).png?updatedAt=1761143835734" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
+                </div>
+                <p class="portfolio-detail">寒假開設的營隊，營隊內容和課表分開，上傳到FB或官方Line推廣招生</p>
+            </div>
+            <h3 class="section-title">單位: 李奇英文-新竹分校</h3>
+            <!-- 作品集分類標題 -->
+            
+            <!-- 下一個作品項目 -->
+            <div class="portfolio-item">
+                <p class="portfolio-desc">招生DM設計</p>
+                <div class="portfolio-images">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/4-1%20(1).png?updatedAt=1761143883085" alt="招生DM" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/4-1%20(2).png?updatedAt=1761143873007" alt="招生DM" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/4-1%20(3).png?updatedAt=1761143936113" alt="招生DM" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/4-1%20(4).png?updatedAt=1761143942489png" alt="招生DM" class="portfolio-img" onclick="openModal(this.src)">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/4-1%20(5).png?updatedAt=1761143936802" alt="招生DM" class="portfolio-img" onclick="openModal(this.src)">
+                    
+                </div>
+            </div>
+            
+            <h3 class="section-title">高中作品</h3>
+            
+            <div class="highschool-portfolio">
+                <div class="highschool-item">
+                    <div class="image-container">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/7-1%20(1).jpg?updatedAt=1761143937330" alt="高中作品" class="highschool-img" onclick="openModal(this.src)">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/7-1%20(1).png?updatedAt=1761143954516" alt="高中作品" class="highschool-img" onclick="openModal(this.src)">
+                    </div>
+                    <h4 class="work-title">歷史課課堂作業海報設計-無核家園</h4>
+                    <p class="work-description">高中時期為學校課堂作業設計的宣傳海報，運用鮮明的色彩和活潑的版面設計吸引學生目光。</p>
+                </div>
+                <div class="highschool-item">
+                    <div class="image-container">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/7-1%20(5).png?updatedAt=1761143833715" alt="高中作品" class="highschool-img" onclick="openModal(this.src)">
+                    </div>
+                    <h4 class="work-title">歐嘉烘焙坊2020中秋DM設計</h4>
+                    <p class="work-description">讓客戶了解月餅的售價和優惠組合，以及訂購資訊</p>
+                </div>
+                
+                <div class="highschool-item">
+                    <div class="image-container">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/7-1%20(6).png?updatedAt=1761143816631" alt="高中作品" class="highschool-img" onclick="openModal(this.src)">
+                    </div>
+                    <h4 class="work-title">丹雲早午餐 logo設計</h4>
+                    <p class="work-description">這個logo展現了傳統中國書法風格，並且在<br>店名的左邊加上紅色印泥樣式的蓋章已加強中式風格，而環繞的八條線則是代表著中式傳統喜餅，象徵著進來店裡吃飯的客人可以開心的享受美食和得到滿足</p>
+                </div>
+                <div class="highschool-item">
+                    <div class="image-container">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/7-1%20(7).png?updatedAt=1761143951518" alt="高中作品" class="highschool-img" onclick="openModal(this.src)">
+                    </div>
+                    <h4 class="work-title">印刷課課堂作業<br>自訂主題圖文編排</h4>
+                    <p class="work-description">這張海報的主題，我選用的是我喜歡的[花生漫畫]，背景使用花生漫畫早期的水墨黑白漫畫，降低他的透明度以凸顯泡泡裡的每個漫畫中要角色</p>
+                </div>
+                <div class="highschool-item">
+                    <div class="image-container">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/7-1%20(9).png?updatedAt=1761143956846" alt="高中作品" class="highschool-img" onclick="openModal(this.src)">
+                    </div>
+                    <h4 class="work-title">印刷課課堂作業<br>介紹超現實主義</h4>
+                    <p class="work-description">這張海報我運用了Ps的後製修圖技術去襯托出超現實主義的感覺，在文字和元件的編排上則是使用以拉去做排版</p>
+                </div>
+                
+            </div>
+            
+            <h3 class="section-title">大學接案作品</h3>
+            <div class="highschool-portfolio">
+                <div class="highschool-item">
+                    <div class="image-container">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/9%20(1).png?updatedAt=1761143822374" alt="高中作品" class="highschool-img" onclick="openModal(this.src)">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/9%20(2).png?updatedAt=1761143821056" alt="高中作品" class="highschool-img" onclick="openModal(this.src)">
+                    </div>
+                    <h4 class="work-title">歐嘉烘焙坊2023菜單設計</h4>
+                    <p class="work-description">這張菜單的介紹了店裡有哪些美食可以購買並選擇擇自己喜歡的口味
+                                            </p>
+            </div>
+        </div>
+        
+        <!-- 圖片燈箱/彈出視窗 -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <!-- 點擊背景會觸發 closeModal 函式來關閉視窗 -->
+            <span class="close">&times;</span>
+            <!-- 關閉按鈕 -->
+            <img class="modal-content" id="modalImg">
+            <!-- 放大顯示的圖片內容 -->
+        </div>
+    </main>
+
+    <!-- 頁尾區塊 -->
+    <footer class="footer">
+        <p>© 2025 Gary's Portfolio<br>Phone: 0978605386<br>Email: yaogary123@gmail.com</p>
+        <!-- 版權宣告 -->
+    </footer>
+    
+    <!-- 連結外部 JavaScript 檔案 -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gary — 教學設計作品</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Gary's Portfolio</a></div>
+        <div class="nav-controls">
+            <button class="contact-btn"><a href="contact_me.html">聯絡我</a></button>
+            
+            <!-- 漢堡按鈕改為 button，加入 aria 屬性供輔助工具使用 -->
+            <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 手機選單：設計為全螢幕覆蓋 panel，並可用鍵盤關閉 -->
+    <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
+        <button id="closeMenu" class="close-btn" aria-label="關閉選單">×</button>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="introduction.html">個人簡介</a></li>
+            <li><a href="graphic_design_page.html">平面設計</a></li>
+            <li><a href="front_end_project.html">前端設計</a></li>
+            <li><a href="teach_project.html">教學設計</a></li>
+            <li><a href="business_design.html">商品設計</a></li>
+            <li><a href="graduated_project.html">畢業專題 Tasksnap</a></li>
+            <li><a href="contact_me.html">聯絡我</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content intro-page">
+        <h1>教學設計作品</h1>
+        <div class="project-container">
+            <!-- 專案展示區域 -->
+            <section class="project-showcase">
+                <div class="project-image">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E7%B8%AE%E5%9C%96.png?updatedAt=1761150792130" alt="教學預覽圖">
+                </div>
+                <div class="project-info">
+                    <h2>Stun 史丹創藝工坊：從素描到3D的創意之旅</h2>
+                    <h4>大三升大四暑假</h4>
+                    <p>在大三這一年，我開始嘗試一些有挑戰性的工作，於是我來到核果資訊學苑應徵暑假營隊講師的工作，教材和講義都是我自己從頭到尾獨立設計，連續5天的教學，讓我得到非常多寶貴的經驗</p>
+                    <div class="project-buttons">
+                        <button class="btn-green">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4726/4726010.png" alt="PDF圖示" class="btn-icon">
+                            <a href="https://drive.google.com/file/d/1hNu1KbNzeMP65OZ646N9eVfT5gQB4rsu/view">教學實體講義<br>(pdf)</a>
+                        </button>
+                        <button class="btn-orange" onclick="showCourseContent()">
+                            <img src="https://cdn-icons-png.flaticon.com/128/13562/13562994.png" alt="課程圖示" class="btn-icon">
+                            <span>課程內容</span>
+                        </button>
+                        <button class="btn-purple">
+                            <img src="https://cdn-icons-png.flaticon.com/128/10531/10531423.png" alt="簡報圖示" class="btn-icon">
+                            <a href="https://docs.google.com/presentation/d/1vyLxfSjxy1xr-bC7o7Qqya4KCg60D8Hl51fRu1grwYc/edit">體驗課簡報<br>(免費試聽)</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>    
+            
+            <!--
+             <section class="project-showcase">
+                <div class="project-image">
+                    <img src="教學設計圖/縮圖2.png" alt="教學預覽圖">
+                </div>
+                <div class="project-info">
+                    <h2>Minecraft：創客設計大挑戰</h2>
+                    <p>尚未推出</p>
+                    <div class="project-buttons">
+                        <button class="btn-primary">
+                            <img src="https://cdn-icons-png.flaticon.com/128/6009/6009660.png" alt="icon圖示" class="btn-icon">
+                            <a href="">尚未推出/無更新v.v</a>
+                        
+                    </div>
+                </div>
+            </section>
+            -->
+
+        
+        
+        <!-- 高中社團區域 -->
+        <section class="club-section">
+            <h2>義民高中社團: 3D列印社</h2>
+            <h4>大二下~大三上</h4>
+            <p class="club-intro">在大二下的時候，學長來問我說有沒有興趣去竹北教高中生Sketchup，因為上一位擔任的學姊不繼續教了，當時我聽到的當下滿猶豫的，因為我從來沒當過老師，也怕自己對這套軟體不夠熟悉，但是機會來了我想把握住，於是我抱著挑戰看看和緊張的心情去教書，謝謝學長當時的介紹，讓我有機會擔任老師的角色並重新拾起我高職學的圖學技能</p>
+            
+            <div class="club-gallery">
+                <div class="club-item">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E7%B8%AE3%20(2).png?updatedAt=1761150784584" alt="大二下社團" class="club-img" onclick="openModal(this.src)">
+                    <h4>大二下</h4>
+                    <button class="club-btn"><a href="https://docs.google.com/presentation/d/1pVyFcte3nQzKCDKDXPkf6O8Mm8OUeEdaqLLXokv-ksU/edit">上課簡報</a></button>
+                </div>
+                
+                <div class="club-item">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E7%B8%AE3%20(3).png?updatedAt=1761150785234" alt="大三上社團" class="club-img" onclick="openModal(this.src)">
+                    <h4>大三上</h4>
+                    <button class="club-btn"><a href="https://docs.google.com/presentation/d/1YmorbgnCE8NP568FtPDDr9RsMHF23wa5GDoP2T64GYQ/edit">上課簡報</a></button>
+                </div>
+                
+                <div class="club-item">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E7%B8%AE3%20(1).png?updatedAt=1761150787522" alt="大三下社團" class="club-img" onclick="openModal(this.src)">
+                    <h4>大三下</h4>
+                    <button class="club-btn"><a href="https://docs.google.com/presentation/d/1gnDleqTxX8wgY-hg6bUTa6wOtz-KhIhxBiFRVk6GCCY/edit?slide=id.g32a8902e12d_0_2774#slide=id.g32a8902e12d_0_2774">上課簡報</a></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Gary's Portfolio<br>Phone: 0978605386<br>Email: yaogary123@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
