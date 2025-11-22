@@ -85,6 +85,32 @@
                 </div>
             </section>
         </div>    
+        <div class="project-container">
+            <!-- 專案展示區域 -->
+            <section class="project-showcase">
+                <div class="project-image">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/mc%E5%B0%81%E9%9D%A2%E5%9C%96.jpg?updatedAt=1763804126879" alt="Minecraft遊戲預覽圖">
+                </div>
+                <div class="project-info">
+                    <h2>第六屆台灣科學節 - 核果資訊學苑攤位<br>現場Minecraft體驗遊戲設計</h2>
+                    <h4>大四上</h4>
+                    <p>本遊戲由核果老闆邀請我設計，融合 Minecraft 遊戲元素與科學探索精神，
+                        打造「紫水晶冒險之路」現場闖關體驗。玩家將在操控鍵盤和滑鼠中通過岩漿跑酷、
+                        怪物走廊、水池等任務，並於最後啟動機關獲得紫水晶獎勵。
+                        以遊戲化方式讓孩子在玩樂之中培養觀察力、邏輯判斷與反應能力。</p>
+                    <div class="project-buttons">
+                        <button class="btn-green" onclick="showGameIntro()">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4854/4854246.png" alt="遊戲介紹圖示" class="btn-icon">
+                            <span>遊戲介紹</span>
+                        </button>
+                        <a href="https://drive.google.com/file/d/10A8kqoyqAKWG3_4bKTK9vF28mas-EklE/view?usp=sharing" class="btn-green">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2780/2780137.png" alt="影片圖示" class="btn-icon">
+                            <span>遊戲影片</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>    
 
     </main>
 
@@ -92,6 +118,63 @@
         <p>© 2025 Gary's Portfolio<br>Email: yaogary123@gmail.com</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        function showGameIntro() {
+            Swal.fire({
+                title: 'Minecraft 紫水晶冒險之路',
+                html: `
+                    <div style="text-align: center; max-height: 500px; overflow-y: auto; padding: 0 20px;">
+                        <div style="margin-bottom: 25px;">
+                            <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 18px;">🎮 遊戲介紹</h3>
+                            <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/12.jpg" alt="遊戲介紹" style="width: 100%; max-width: 450px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        </div>
+                        
+                        <div style="margin-bottom: 25px;">
+                            <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 18px;">🗺️ 關卡截圖</h3>
+                            
+                            <h4 style="color: #34495e; margin: 15px 0 10px; font-size: 16px;">遊戲地圖整體</h4>
+                            <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-11-22%20184417.png" alt="遊戲地圖整體" style="width: 100%; max-width: 400px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                            
+                            <h4 style="color: #34495e; margin: 15px 0 10px; font-size: 16px;">第一關：冒險者小屋</h4>
+                            <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-11-22%20184607.png" alt="第一關" style="width: 100%; max-width: 400px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                            
+                            <h4 style="color: #34495e; margin: 15px 0 10px; font-size: 16px;">第二關：岩漿跑酷</h4>
+                            <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-11-22%20184635.png" alt="第二關" style="width: 100%; max-width: 400px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                            
+                            <h4 style="color: #34495e; margin: 15px 0 10px; font-size: 16px;">第三關：怪物屋</h4>
+                            <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-11-22%20184709.png" alt="第三關" style="width: 100%; max-width: 400px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                            
+                            <h4 style="color: #34495e; margin: 15px 0 10px; font-size: 16px;">第四關：怪物水池</h4>
+                            <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-11-22%20184745.png" alt="第四關" style="width: 100%; max-width: 400px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                            
+                            <h4 style="color: #34495e; margin: 15px 0 10px; font-size: 16px;">終點：水晶獎勵</h4>
+                            <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-11-22%20184808.png" alt="第五關" style="width: 100%; max-width: 400px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 18px;">📸 現場體驗照片</h3>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; max-width: 500px; margin: 0 auto;">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/bc4.png?updatedAt=1763807488507" alt="現場體驗照片1" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/bc6.png?updatedAt=1763807488454" alt="現場體驗照片2" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/bc3.png?updatedAt=1763807488208" alt="現場體驗照片3" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/bg1.png?updatedAt=1763807488255" alt="現場體驗照片4" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/bc8.png?updatedAt=1763807488189" alt="現場體驗照片5" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/bc7.png?updatedAt=1763807488269" alt="現場體驗照片6" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/bc5.png?updatedAt=1763807488355" alt="現場體驗照片7" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            </div>
+                        </div>
+                    </div>
+                `,
+                width: '700px',
+                confirmButtonText: '關閉',
+                confirmButtonColor: '#28a745',
+                buttonsStyling: false,
+                customClass: {
+                    confirmButton: 'btn-green'
+                }
+            });
+        }
+    </script>
     
 </body>
 </html>
