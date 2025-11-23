@@ -1695,38 +1695,45 @@ body {
     text-align: center;
   }
 }
-/* 統一按鈕基本樣式 */
+/* 統一按鈕基本樣式（統一 button 與 a 外觀） */
+/* 基底：所有主題按鈕共享的排版與尺寸 */
 .btn-primary, .btn-secondary, .btn-green, .btn-orange, .btn-purple {
-  padding: 15px 25px;
-  border: none;
-  border-radius: 12px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  font-size: 0.95rem;
+  padding: 15px 24px;
+  border: none;
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-}
-
-.btn-primary, .btn-secondary, .btn-green, .btn-orange, .btn-purple {
-  min-width: 140px;
+  min-width: 160px;
   text-align: center;
+  line-height: 1.2;
 }
 
-/* 按鈕光澤效果 */
+/* 錨點元素的預設樣式歸一化 */
+a.btn-primary, a.btn-secondary, a.btn-green, a.btn-orange, a.btn-purple {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.btn-primary:hover, a.btn-secondary:hover, a.btn-green:hover, a.btn-orange:hover, a.btn-purple:hover {
+  text-decoration: none;
+}
+
+/* 光澤掃過效果 */
 .btn-primary::before, .btn-secondary::before, .btn-green::before, .btn-orange::before, .btn-purple::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
+  inset: 0 100% 0 -100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   transition: left 0.5s;
 }
@@ -1735,88 +1742,124 @@ body {
   left: 100%;
 }
 
-/* 各種按鈕顏色 */
-.btn-primary {
-  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
-  color: #ffffff;
-}
+/* 主題色（僅負責顏色，不覆蓋排版） */
+.btn-primary { background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%); color: #ffffff; }
+.btn-secondary { background: linear-gradient(135deg, #6c757d 0%, #495057 100%); color: #ffffff; }
+.btn-green { background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: #ffffff; }
+.btn-orange { background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%); color: #ffffff; }
+.btn-purple { background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%); color: #ffffff; }
 
-.btn-secondary {
-  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
-  color: #ffffff;
-}
+/* Hover 效果（陰影��微位移一致） */
+.btn-primary:hover { background: linear-gradient(135deg, #357abd 0%, #2c5aa0 100%); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(74, 144, 226, 0.4); }
+.btn-secondary:hover { background: linear-gradient(135deg, #495057 0%, #343a40 100%); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(108, 117, 125, 0.4); }
+.btn-green:hover { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(39, 174, 96, 0.4); }
+.btn-orange:hover { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(243, 156, 18, 0.4); }
+.btn-purple:hover { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(155, 89, 182, 0.4); }
 
-.btn-green {
-  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
-  color: #ffffff;
-}
-
-.btn-orange {
-  background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
-  color: #ffffff;
-}
-
-.btn-purple {
-  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
-  color: #ffffff;
-}
-
-/* Hover 效果 */
-.btn-primary:hover {
-  background: linear-gradient(135deg, #357abd 0%, #2c5aa0 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(74, 144, 226, 0.4);
-}
-
-.btn-secondary:hover {
-  background: linear-gradient(135deg, #495057 0%, #343a40 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(108, 117, 125, 0.4);
-}
-
-.btn-green:hover {
-  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(39, 174, 96, 0.4);
-}
-
-.btn-orange:hover {
-  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(243, 156, 18, 0.4);
-}
-
-.btn-purple:hover {
-  background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(155, 89, 182, 0.4);
-}
-
-/* 按鈕內容樣式 */
+/* 內部內容統一尺寸 */
 .btn-icon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
   display: block;
   margin: 0 auto;
 }
 
-.btn-primary a, .btn-secondary a, .btn-green a, .btn-orange a, .btn-purple a, .btn-orange span {
-  color: #ffffff !important;
-  text-decoration: none;
-  font-weight: 600;
+.btn-primary span, .btn-secondary span, .btn-green span, .btn-orange span, .btn-purple span {
+  color: #ffffff;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.3;
+  font-weight: 700;
 }
 
-.btn-primary span, .btn-secondary span, .btn-green span, .btn-orange span, .btn-purple span {
-  color: #ffffff !important;
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.3;
-  font-weight: 600;
+/* 統一專案卡片中按鈕高度，避免字數差異造成大小不一 */
+.project-buttons .btn-primary,
+.project-buttons .btn-secondary,
+.project-buttons .btn-green,
+.project-buttons .btn-orange,
+.project-buttons .btn-purple {
+  height: 140px; /* 固定高度，完全對齊 a 與 button */
+  width: 220px; /* 桌面端給定一致寬度 */
+  padding: 16px 24px; /* 統一內距以垂直置中 */
+  box-sizing: border-box;
+  margin: 0;
+}
+/* 強制 button 與 a 同高（提高特異性與覆蓋力道） */
+.project-buttons button.btn-primary,
+.project-buttons button.btn-secondary,
+.project-buttons button.btn-green,
+.project-buttons button.btn-orange,
+.project-buttons button.btn-purple {
+  height: 140px !important; /* 與 a 完全一致 */
+  width: 220px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* 解除首頁 .main-content button 覆蓋，強制專案按鈕套用主題樣式 */
+.project-buttons button.btn-primary,
+.project-buttons button.btn-secondary,
+.project-buttons button.btn-green,
+.project-buttons button.btn-orange,
+.project-buttons button.btn-purple {
+  /* 強制使用與 a 相同的排版 */
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  /* 清除首頁按鈕樣式影響 */
+  border: none;
+  border-radius: 12px;
+  padding: 16px 24px;
+}
+
+/* 專案區塊中按鈕主題色（比 .main-content button 更高特異性） */
+.project-buttons button.btn-primary { background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%); color: #ffffff; }
+.project-buttons button.btn-secondary { background: linear-gradient(135deg, #6c757d 0%, #495057 100%); color: #ffffff; }
+.project-buttons button.btn-green { background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: #ffffff; }
+.project-buttons button.btn-orange { background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%); color: #ffffff; }
+.project-buttons button.btn-purple { background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%); color: #ffffff; }
+
+/* 單行顯示文字，避免按鈕高度差異（過長以省略號處理） */
+.project-buttons .btn-primary span,
+.project-buttons .btn-secondary span,
+.project-buttons .btn-green span,
+.project-buttons .btn-orange span,
+.project-buttons .btn-purple span {
+  display: block;
+  width: 100%;
+  white-space: normal;     /* 允許換行（中文更友善） */
+  overflow: visible;       /* 不裁切文字，避免誤判為消失 */
+  text-overflow: clip;     /* 取消省略號，完整顯示可見區域 */
+  word-break: break-word;  /* 長字或無空白時也可斷行 */
+}
+
+@media (max-width: 768px) {
+  .project-buttons .btn-primary,
+  .project-buttons .btn-secondary,
+  .project-buttons .btn-green,
+  .project-buttons .btn-orange,
+  .project-buttons .btn-purple {
+    height: 96px; /* 行動端固定高度 */
+    width: 100%; /* 佔滿容器寬度，提升可讀性 */
+    padding: 14px 20px;
+    box-sizing: border-box;
+  }
+  /* 行動端同步固定 button 尺寸 */
+  .project-buttons button.btn-primary,
+  .project-buttons button.btn-secondary,
+  .project-buttons button.btn-green,
+  .project-buttons button.btn-orange,
+  .project-buttons button.btn-purple {
+    height: 96px !important;
+    width: 100% !important;
+  }
 }
 
 /* 課程照片區域 */
@@ -2768,4 +2811,92 @@ button {
 .swal2-popup .swal2-confirm:hover {
   background: #218838 !important;
   transform: translateY(-2px) !important;
+}
+
+/*
+/* 學歷和工作經驗區塊優化 */
+.education .item, .work .item {
+  position: relative;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(255, 153, 0, 0.03) 100%);
+  border-radius: 15px;
+  border-left: 5px solid #ffd700;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.education .item:hover, .work .item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2);
+  border-left-color: #ff9900;
+}
+
+.education .item h3, .work .item h3 {
+  color: #ffd700;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.education .item h3::before {
+  content: '🎓';
+  font-size: 1.2rem;
+}
+
+.work .item h3::before {
+  content: '💼';
+  font-size: 1.2rem;
+}
+
+.work .item .company {
+  color: #ffed4e;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  padding: 5px 12px;
+  background: rgba(255, 237, 78, 0.1);
+  border-radius: 20px;
+  display: inline-block;
+  border: 1px solid rgba(255, 237, 78, 0.3);
+}
+
+.education .item .detail, .work .item .detail {
+  color: #e0e0e0;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* 時間軸效果 */
+.education .section-content, .work .section-content {
+  position: relative;
+  padding-left: 20px;
+}
+
+.education .section-content::before, .work .section-content::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #ffd700, #ff9900);
+  border-radius: 2px;
+}
+
+.education .item::before, .work .item::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 30px;
+  width: 12px;
+  height: 12px;
+  background: #ffd700;
+  border-radius: 50%;
+  border: 3px solid #2d2d2d;
+  box-shadow: 0 0 0 3px #ffd700;
 }
