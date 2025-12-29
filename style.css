@@ -702,6 +702,25 @@ body {
   font-weight: 600;
 }
 
+.item .date {
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+}
+
+.date-icon {
+  width: 16px;
+  height: 16px;
+}
+
 .company {
   color: #ffed4e;
   font-weight: 500;
@@ -709,7 +728,7 @@ body {
 }
 
 .detail {
-  color: #d0d0d0;
+  color: #ffffff;
   line-height: 1.6;
 }
 
@@ -1164,11 +1183,13 @@ body {
 
 .portfolio-img {
   width: 100%;
+  max-width: 500px; /* 新增最大寬度限制 */
   height: auto;
   border-radius: 10px;
   object-fit: cover;
   cursor: pointer;
   transition: transform 0.3s ease;
+  margin: 0 auto; /* 新增，使其在容器中水平置中 */
 }
 
 .portfolio-img:hover {
@@ -1269,7 +1290,10 @@ body {
 }
 
 .highschool-item {
+  background: rgba(255, 215, 0, 0.05);
+  border-radius: 15px;
   padding: 25px;
+  border: 1px solid rgba(255, 215, 0, 0.1);
   transition: all 0.3s ease;
   text-align: center;
   display: flex;
@@ -1286,16 +1310,16 @@ body {
 
 .highschool-item:hover {
   transform: translateY(-5px);
+  border-color: rgba(255, 215, 0, 0.3);
+  background: rgba(255, 215, 0, 0.08);
 }
 
 .highschool-img {
-  width: 100%;
   max-width: 200px;
   height: auto;
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  flex: 1;
 }
 
 .highschool-img:hover {
