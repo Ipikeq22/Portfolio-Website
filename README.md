@@ -1,2 +1,14 @@
 # Portfolio-Website
-原先只使用 Google 簡報 https://docs.google.com/presentation/d/1hjOeq9KkINbc9SPez6tHmKWECQ6yLek-wqoVFeL6f9g/edit 去介紹自己 後來覺得這樣很不直覺，雖然快速又方便 所以就自己寫一個網站了xd
+
+過去我僅用 Google 簡報（[連結](https://docs.google.com/presentation/d/1hjOeq9KkINbc9SPez6tHmKWECQ6yLek-wqoVFeL6f9g/edit)）來介紹自己，雖然簡單快速也很方便，但總覺得缺乏互動性與個人特色。因此我決定動手打造這個個人網站，讓大家可以更直觀、全面地認識我。
+
+## 關於本網站
+
+這個網站是我的個人作品集，主要用來呈現我的專業技能、經驗、作品與個人特色。希望能讓瀏覽者不只看到履歷上的文字，更能透過互動、設計與內容，深入了解我這個人。
+
+## 功能特色
+
+- **響應式設計**：無論電腦或手機都能流暢瀏覽。
+- **清楚的作品展示**：分類並詳列我的專案與相關作品。
+- **關於我**：更完整、生動地介紹自己的背景與理念。
+- **聯絡方式**：歡迎留言與我聯繫。
