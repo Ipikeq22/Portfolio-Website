@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gary — 商品設計</title>
     <link rel="stylesheet" href="style.css">
+    <!-- i18n 多語言排版修復 -->
+    <link rel="stylesheet" href="i18n-fix.css">
+    <script src="i18n.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
 </head>
 <body>
     <header class="header">
-        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Gary's Portfolio</a></div>
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;" data-i18n="header.title">Gary's Portfolio</a></div>
         <div class="nav-controls">
-            <a href="contact_me.html" class="contact-btn">聯絡我</a>
+            <!-- 語言切換下拉選單 -->
+            <div class="language-switcher">
+                <select id="languageSelector" class="lang-select" aria-label="選擇語言">
+                    <option value="zh" data-icon="https://cdn-icons-png.flaticon.com/128/16183/16183751.png">🇹🇼 中文</option>
+                    <option value="en" data-icon="https://cdn-icons-png.flaticon.com/128/4060/4060239.png">🇺🇸 English</option>
+                </select>
+            </div>
+            <a href="contact_me.html" class="contact-btn" data-i18n="header.contactBtn">聯絡我</a>
             
             <!-- 漢堡按鈕改為 button，加入 aria 屬性供輔助工具使用 -->
-            <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單">
+            <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單" data-i18n-attr="aria-label" data-i18n-key="header.menuLabel">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -25,21 +35,22 @@
 
     <!-- 手機選單：設計為全螢幕覆蓋 panel，並可用鍵盤關閉 -->
     <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
-        <button id="closeMenu" class="close-btn" aria-label="關閉選單">×</button>
+        <button id="closeMenu" class="close-btn" aria-label="關閉選單" data-i18n-attr="aria-label" data-i18n-key="header.closeLabel">×</button>
         <ul>
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="introduction.html">個人簡介</a></li>
-            <li><a href="graphic_design_page.html">平面設計</a></li>
-            <li><a href="front_end_project.html">前端設計</a></li>
-            <li><a href="teach_project.html">教學設計</a></li>
-            <li><a href="business_design.html">商品設計</a></li>
-            <li><a href="graduated_project.html">畢業專題 Tasksnap</a></li>
-            <li><a href="contact_me.html">聯絡我</a></li>
+            <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+            <li><a href="introduction.html" data-i18n="nav.intro">個人簡介</a></li>
+            <li><a href="graphic_design_page.html" data-i18n="nav.graphic">平面設計</a></li>
+            <li><a href="front_end_project.html" data-i18n="nav.frontend">前端設計</a></li>
+            <li><a href="teach_project.html" data-i18n="nav.teaching">教學設計</a></li>
+            <li><a href="business_design.html" data-i18n="nav.business">商品設計</a></li>
+            <li><a href="graduated_project.html" data-i18n="nav.graduation">畢業專題 Tasksnap</a></li>
+            <li><a href="mp4_edit.html" data-i18n="nav.videoEdit">影音剪輯</a></li>
+            <li><a href="contact_me.html" data-i18n="nav.contact">聯絡我</a></li>
         </ul>
     </nav>
 
     <main class="main-content intro-page">
-        <h1>商品設計作品</h1>
+        <h1 data-i18n="businessDesign.title">商品設計作品</h1>
         <div class="project-container">
             <!-- 專案展示區域 -->
             <section class="project-showcase">
@@ -47,13 +58,13 @@
                     <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1.png?updatedAt=1761150787081" alt="教學預覽圖">
                 </div>
                 <div class="project-info">
-                    <h2>創意創新通識課期末作業</h2>
-                    <h4>大二下</h4>
-                    <p>這個作品是大二時通識課的期末作業，作業目標是要設計出一項產品並製作它的創業計畫簡報，這個作業從商品設計到簡報製作幾乎都是我一手包辦<br>我用Sketchup 建出了產品的模型，用Ai生城市工具的輔助去寫出這個產品的企劃案</p>
+                    <h2 data-i18n="businessDesign.project1Title">創意創新通識課期末作業</h2>
+                    <h4 data-i18n="businessDesign.project1Time">大二下</h4>
+                    <p data-i18n="businessDesign.project1Desc">這個作品是大二時通識課的期末作業，作業目標是要設計出一項產品並製作它的創業計畫簡報，這個作業從商品設計到簡報製作幾乎都是我一手包辦<br>我用Sketchup 建出了產品的模型，用Ai生城市工具的輔助去寫出這個產品的企劃案</p>
                     <div class="project-buttons">
                         <a href="" class="btn-green">
                             <img src="https://cdn-icons-png.flaticon.com/128/4946/4946342.png" alt="PDF圖示" class="btn-icon">
-                            <span>企劃案簡報</span>
+                            <span data-i18n="businessDesign.proposalPpt">企劃案簡報</span>
                         </a>
                         
                     </div>
@@ -68,17 +79,17 @@
                     <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/output.png?updatedAt=1761150785974" alt="教學預覽圖">
                 </div>
                 <div class="project-info">
-                    <h2>遊戲專案:Protect farm 農場保衛戰</h2>
-                    <h4>高二下</h4>
-                    <p>高中的時候和線上網友們組成團隊一起開發的網頁遊戲，主題是關於農場裡的蔬菜反抗要侵害他們的種族的塔防遊戲，我在這項專案裡面主要負責的工作是,<mark>美術</mark>和<mark>企劃</mark>，而最後因為某些因素，團隊解散，算是未完成的半成品</p>
+                    <h2 data-i18n="businessDesign.project2Title">遊戲專案:Protect farm 農場保衛戰</h2>
+                    <h4 data-i18n="businessDesign.project2Time">高二下</h4>
+                    <p data-i18n="businessDesign.project2Desc">高中的時候和線上網友們組成團隊一起開發的網頁遊戲，主題是關於農場裡的蔬菜反抗要侵害他們的種族的塔防遊戲，我在這項專案裡面主要負責的工作是,<mark>美術</mark>和<mark>企劃</mark>，而最後因為某些因素，團隊解散，算是未完成的半成品</p>
                     <div class="project-buttons">
                         <button class="btn-primary" onclick="showGameObjects()">
                             <img src="https://cdn-icons-png.flaticon.com/128/705/705890.png" alt="PDF圖示" class="btn-icon">
-                            <span>查看遊戲物件</span>
+                            <span data-i18n="businessDesign.viewGameObjects">查看遊戲物件</span>
                         </button>
                         <a href="https://drive.google.com/file/d/1JECwIV359l6upthWDl6BpAseB41wW44s/view?usp=drive_link" class="btn-orange">
                             <img src="https://cdn-icons-png.flaticon.com/128/1179/1179069.png" alt="PDF圖示" class="btn-icon">
-                            <span>觀看遊戲遊玩影片</span>
+                            <span data-i18n="businessDesign.watchGameplay">觀看遊戲遊玩影片</span>
                         </a>
                         
                     </div>
@@ -92,20 +103,20 @@
                     <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/mc%E5%B0%81%E9%9D%A2%E5%9C%96.jpg?updatedAt=1763804126879" alt="Minecraft遊戲預覽圖">
                 </div>
                 <div class="project-info">
-                    <h2>第六屆台灣科學節 - 核果資訊學苑攤位<br>現場Minecraft體驗遊戲設計</h2>
-                    <h4>大四上</h4>
-                    <p>本遊戲由核果老闆邀請我設計，融合 Minecraft 遊戲元素與科學探索精神，
+                    <h2 data-i18n="businessDesign.project3Title">第六屆台灣科學節 - 核果資訊學苑攤位<br>現場Minecraft體驗遊戲設計</h2>
+                    <h4 data-i18n="businessDesign.project3Time">大四上</h4>
+                    <p data-i18n="businessDesign.project3Desc">本遊戲由核果老闆邀請我設計，融合 Minecraft 遊戲元素與科學探索精神，
                         打造「紫水晶冒險之路」現場闖關體驗。玩家將在操控鍵盤和滑鼠中通過岩漿跑酷、
                         怪物走廊、水池等任務，並於最後啟動機關獲得紫水晶獎勵。
                         以遊戲化方式讓孩子在玩樂之中培養觀察力、邏輯判斷與反應能力。</p>
                     <div class="project-buttons">
                         <button class="btn-green" onclick="showGameIntro()">
                             <img src="https://cdn-icons-png.flaticon.com/128/4854/4854246.png" alt="遊戲介紹圖示" class="btn-icon">
-                            <span>遊戲介紹</span>
+                            <span data-i18n="businessDesign.gameIntro">遊戲介紹</span>
                         </button>
                         <a href="https://drive.google.com/file/d/10A8kqoyqAKWG3_4bKTK9vF28mas-EklE/view?usp=sharing" class="btn-green">
                             <img src="https://cdn-icons-png.flaticon.com/128/2780/2780137.png" alt="影片圖示" class="btn-icon">
-                            <span>遊戲影片</span>
+                            <span data-i18n="businessDesign.gameVideo">遊戲影片</span>
                         </a>
                     </div>
                 </div>

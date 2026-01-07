@@ -5,14 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gary's Profile</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- i18n 多語言排版修復 -->
+  <link rel="stylesheet" href="i18n-fix.css" />
+  <script src="i18n.js"></script>
 </head>
 <body>
   <header class="header">
-    <div class="logo">Gary's Portfolio</div>
+    <div class="logo" data-i18n="header.title">Gary's Portfolio</div>
     <div class="nav-controls">
-      <a href="contact_me.html" class="contact-btn">聯絡我</a>
+      <!-- 語言切換下拉選單 -->
+      <div class="language-switcher">
+        <select id="languageSelector" class="lang-select" aria-label="選擇語言">
+          <option value="zh" data-icon="https://cdn-icons-png.flaticon.com/128/16183/16183751.png">🇹🇼 中文</option>
+          <option value="en" data-icon="https://cdn-icons-png.flaticon.com/128/4060/4060239.png">🇺🇸 English</option>
+        </select>
+      </div>
+      <a href="contact_me.html" class="contact-btn" data-i18n="header.contactBtn">聯絡我</a>
       <!-- 漢堡按鈕改為 button，加入 aria 屬性供輔助工具使用 -->
-      <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單">
+      <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單" data-i18n-attr="aria-label" data-i18n-key="header.menuLabel">
         <span></span>
         <span></span>
         <span></span>
@@ -22,49 +32,49 @@
 
   <!-- 手機選單：設計為全螢幕覆蓋 panel，並可用鍵盤關閉 -->
   <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
-    <button id="closeMenu" class="close-btn" aria-label="關閉選單">×</button>
+    <button id="closeMenu" class="close-btn" aria-label="關閉選單" data-i18n-attr="aria-label" data-i18n-key="header.closeLabel">×</button>
     <ul>
-      <li><a href="introduction.html">個人簡介</a></li>
-      <li><a href="graphic_design_page.html">平面設計</a></li>
-      <li><a href="front_end_project.html">前端設計</a></li>
-      <li><a href="teach_project.html">教學設計</a></li>
-      <li><a href="business_design.html">商品設計</a></li>
-      <li><a href="graduated_project.html">畢業專題 Tasksnap</a></li>
-      <li><a href="contact_me.html">聯絡我</a></li>
+      <li><a href="introduction.html" data-i18n="nav.intro">個人簡介</a></li>
+      <li><a href="graphic_design_page.html" data-i18n="nav.graphic">平面設計</a></li>
+      <li><a href="front_end_project.html" data-i18n="nav.frontend">前端設計</a></li>
+      <li><a href="teach_project.html" data-i18n="nav.teaching">教學設計</a></li>
+      <li><a href="business_design.html" data-i18n="nav.business">商品設計</a></li>
+      <li><a href="graduated_project.html" data-i18n="nav.graduation">畢業專題 Tasksnap</a></li>
+      <li><a href="contact_me.html" data-i18n="nav.contact">聯絡我</a></li>
 
     </ul>
   </nav>
 
   <main class="main-content">
     <img src="wallhaven-x8d5v3_1920x1080.png" alt="Profile" class="avatar" />
-    <h1>Hello, I am Gary</h1>
-    <p>一位快爆肝的跨領域設計師😂</p>
+    <h1 data-i18n="homepage.greeting">Hello, I am Gary</h1>
+    <p data-i18n="homepage.description">一位快爆肝的跨領域設計師😂</p>
     
 
     <div class="button-group">
       <a href="graphic_design_page.html" class="portfolio-btn">
         <img src="https://cdn-icons-png.flaticon.com/128/3940/3940059.png" alt="平面設計" class="btn-icon">
-        <span>平面設計</span>
+        <span data-i18n="homepage.graphicDesign">平面設計</span>
       </a>
       <a href="front_end_project.html" class="portfolio-btn">
         <img src="https://cdn-icons-png.flaticon.com/128/2721/2721291.png" alt="前端設計" class="btn-icon">
-        <span>前端設計</span>
+        <span data-i18n="homepage.frontendDesign">前端設計</span>
       </a>
       <a href="teach_project.html" class="portfolio-btn">
         <img src="https://cdn-icons-png.flaticon.com/128/3352/3352891.png" alt="教學作品" class="btn-icon">
-        <span>教學設計</span>
+        <span data-i18n="homepage.teachingDesign">教學設計</span>
       </a>
       <a href="business_design.html" class="portfolio-btn">
         <img src="https://cdn-icons-png.flaticon.com/128/3081/3081648.png" alt="商品設計" class="btn-icon">
-        <span>商品設計</span>
+        <span data-i18n="homepage.productDesign">商品設計</span>
       </a>
       <a href="graduated_project.html" class="portfolio-btn">
         <img src="logo.png" alt="畢業專題" class="btn-icon">
-        <span>畢業專題</span>
+        <span data-i18n="homepage.graduationProject">畢業專題</span>
       </a>
       <a href="mp4_edit.html" class="portfolio-btn">
         <img src="https://cdn-icons-png.flaticon.com/128/1179/1179069.png" alt="影音剪輯" class="btn-icon">
-        <span>影音剪輯</span>
+        <span data-i18n="homepage.videoEditing">影音剪輯</span>
       </a>
     </div>
   </main>

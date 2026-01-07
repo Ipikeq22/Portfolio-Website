@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gary — 前端設計</title>
     <link rel="stylesheet" href="style.css">
+    <!-- i18n 多語言排版修復 -->
+    <link rel="stylesheet" href="i18n-fix.css">
+    <script src="i18n.js"></script>
     
 </head>
 <body>
     <header class="header">
-        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Gary's Portfolio</a></div>
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;" data-i18n="header.title">Gary's Portfolio</a></div>
         <div class="nav-controls">
-            <a href="contact_me.html" class="contact-btn">聯絡我</a>
+            <!-- 語言切換下拉選單 -->
+            <div class="language-switcher">
+                <select id="languageSelector" class="lang-select" aria-label="選擇語言">
+                    <option value="zh" data-icon="https://cdn-icons-png.flaticon.com/128/16183/16183751.png">🇹🇼 中文</option>
+                    <option value="en" data-icon="https://cdn-icons-png.flaticon.com/128/4060/4060239.png">🇺🇸 English</option>
+                </select>
+            </div>
+            <a href="contact_me.html" class="contact-btn" data-i18n="header.contactBtn">聯絡我</a>
             
             <!-- 漢堡按鈕改為 button，加入 aria 屬性供輔助工具使用 -->
-            <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單">
+            <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單" data-i18n-attr="aria-label" data-i18n-key="header.menuLabel">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -24,21 +34,22 @@
 
     <!-- 手機選單：設計為全螢幕覆蓋 panel，並可用鍵盤關閉 -->
     <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
-        <button id="closeMenu" class="close-btn" aria-label="關閉選單">×</button>
+        <button id="closeMenu" class="close-btn" aria-label="關閉選單" data-i18n-attr="aria-label" data-i18n-key="header.closeLabel">×</button>
         <ul>
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="introduction.html">個人簡介</a></li>
-            <li><a href="graphic_design_page.html">平面設計</a></li>
-            <li><a href="front_end_project.html">前端設計</a></li>
-            <li><a href="teach_project.html">教學設計</a></li>
-            <li><a href="business_design.html">商品設計</a></li>
-            <li><a href="graduated_project.html">畢業專題 Tasksnap</a></li>
-            <li><a href="contact_me.html">聯絡我</a></li>
+            <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+            <li><a href="introduction.html" data-i18n="nav.intro">個人簡介</a></li>
+            <li><a href="graphic_design_page.html" data-i18n="nav.graphic">平面設計</a></li>
+            <li><a href="front_end_project.html" data-i18n="nav.frontend">前端設計</a></li>
+            <li><a href="teach_project.html" data-i18n="nav.teaching">教學設計</a></li>
+            <li><a href="business_design.html" data-i18n="nav.business">商品設計</a></li>
+            <li><a href="graduated_project.html" data-i18n="nav.graduation">畢業專題 Tasksnap</a></li>
+            <li><a href="mp4_edit.html" data-i18n="nav.videoEdit">影音剪輯</a></li>
+            <li><a href="contact_me.html" data-i18n="nav.contact">聯絡我</a></li>
         </ul>
     </nav>
 
     <main class="main-content intro-page">
-        <h1>前端設計作品</h1>
+        <h1 data-i18n="frontendDesign.title">前端設計作品</h1>
         
         <div class="project-container">
             <!-- 專案展示區域 -->
@@ -47,17 +58,17 @@
                     <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/p55.png?updatedAt=1761150746824" alt="P55U網站預覽圖">
                 </div>
                 <div class="project-info">
-                    <h2>Shuttle 輔信 P55U 購物頁面</h2>
-                    <h4>大三暑假</h4>
-                    <p class="project-subtitle">股票代號: 2405 | 前端設計練習專案</p>
+                    <h2 data-i18n="frontendDesign.projectTitle">Shuttle 輔信 P55U 購物頁面</h2>
+                    <h4 data-i18n="frontendDesign.projectTime">大三暑假</h4>
+                    <p class="project-subtitle" data-i18n="frontendDesign.projectSubtitle">股票代號: 2405 | 前端設計練習專案</p>
                     <div class="project-buttons">
                         <a href="https://ipikeq22.github.io/shuttle-P55U-/" class="btn-primary">
                             <img src="https://cdn-icons-png.flaticon.com/128/2721/2721725.png" alt="網站圖示" class="btn-icon">
-                            <span>查看網站</span>
+                            <span data-i18n="frontendDesign.viewWebsite">查看網站</span>
                         </a>
                         <a href="https://github.com/Ipikeq22/shuttle-P55U-" class="btn-secondary">
                             <img src="https://cdn-icons-png.flaticon.com/128/10817/10817310.png" alt="代碼圖示" class="btn-icon">
-                            <span>原始代碼</span>
+                            <span data-i18n="frontendDesign.sourceCode">原始代碼</span>
                         </a>
                     </div>
                 </div>
@@ -66,26 +77,26 @@
             <!-- 專案介紹區域 -->
             <section class="project-details">
                 <div class="intro-section">
-                    <h3>專案介紹</h3>
+                    <h3 data-i18n="frontendDesign.introTitle">專案介紹</h3>
                     <div class="intro-content">
-                        <p>本專案為 Shuttle 輔信公司 P55U 產品的購物頁面設計練習，專注於提供優質的使用者體驗和現代化的介面設計。</p>
+                        <p data-i18n="frontendDesign.introContent">本專案為 Shuttle 輔信公司 P55U 產品的購物頁面設計練習，專注於提供優質的使用者體驗和現代化的介面設計。</p>
                         <div class="project-highlights">
                             <div class="highlight-item">
-                                <h4>設計重點</h4>
+                                <h4 data-i18n="frontendDesign.designHighlights">設計重點</h4>
                                 <ul>
-                                    <li>響應式設計，支援多裝置瀏覽</li>
-                                    <li>直觀的購物流程設計</li>
-                                    <li>現代化的視覺風格</li>
-                                    <li>優化的使用者互動體驗</li>
+                                    <li data-i18n="frontendDesign.designPoint1">響應式設計，支援多裝置瀏覽</li>
+                                    <li data-i18n="frontendDesign.designPoint2">直觀的購物流程設計</li>
+                                    <li data-i18n="frontendDesign.designPoint3">現代化的視覺風格</li>
+                                    <li data-i18n="frontendDesign.designPoint4">優化的使用者互動體驗</li>
                                 </ul>
                             </div>
                             <div class="highlight-item">
-                                <h4>技術特色</h4>
+                                <h4 data-i18n="frontendDesign.techFeatures">技術特色</h4>
                                 <ul>
-                                    <li>HTML5 語意化標籤</li>
-                                    <li>CSS3 動畫效果</li>
-                                    <li>JavaScript 互動功能</li>
-                                    <li>跨瀏覽器相容性</li>
+                                    <li data-i18n="frontendDesign.techPoint1">HTML5 語意化標籤</li>
+                                    <li data-i18n="frontendDesign.techPoint2">CSS3 動畫效果</li>
+                                    <li data-i18n="frontendDesign.techPoint3">JavaScript 互動功能</li>
+                                    <li data-i18n="frontendDesign.techPoint4">跨瀏覽器相容性</li>
                                 </ul>
                             </div>
                         </div>
@@ -94,32 +105,32 @@
 
                 <!-- 開發架構圖 -->
                 <div class="architecture-section">
-                    <h3>開發架構圖</h3>
+                    <h3 data-i18n="frontendDesign.architectureTitle">開發架構圖</h3>
                     <div class="architecture-diagram">
                         <div class="arch-layer frontend">
-                            <div class="arch-box">前端介面層</div>
+                            <div class="arch-box" data-i18n="frontendDesign.frontendLayer">前端介面層</div>
                             <div class="arch-components">
-                                <div class="component">HTML5</div>
-                                <div class="component">CSS3</div>
-                                <div class="component">JavaScript</div>
+                                <div class="component" data-i18n="frontendDesign.html5">HTML5</div>
+                                <div class="component" data-i18n="frontendDesign.css3">CSS3</div>
+                                <div class="component" data-i18n="frontendDesign.javascript">JavaScript</div>
                             </div>
                         </div>
                         <div class="arch-arrow">↓</div>
                         <div class="arch-layer interaction">
-                            <div class="arch-box">互動邏輯層</div>
+                            <div class="arch-box" data-i18n="frontendDesign.interactionLayer">互動邏輯層</div>
                             <div class="arch-components">
-                                <div class="component">事件處理</div>
-                                <div class="component">表單驗證</div>
-                                <div class="component">動畫效果</div>
+                                <div class="component" data-i18n="frontendDesign.eventHandling">事件處理</div>
+                                <div class="component" data-i18n="frontendDesign.formValidation">表單驗證</div>
+                                <div class="component" data-i18n="frontendDesign.animation">動畫效果</div>
                             </div>
                         </div>
                         <div class="arch-arrow">↓</div>
                         <div class="arch-layer data">
-                            <div class="arch-box">資料處理層</div>
+                            <div class="arch-box" data-i18n="frontendDesign.dataLayer">資料處理層</div>
                             <div class="arch-components">
-                                <div class="component">購物車邏輯</div>
-                                <div class="component">商品資訊</div>
-                                <div class="component">使用者資料</div>
+                                <div class="component" data-i18n="frontendDesign.cartLogic">購物車邏輯</div>
+                                <div class="component" data-i18n="frontendDesign.productInfo">商品資訊</div>
+                                <div class="component" data-i18n="frontendDesign.userData">使用者資料</div>
                             </div>
                         </div>
                     </div>

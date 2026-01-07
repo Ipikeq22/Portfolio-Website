@@ -1,0 +1,187 @@
+/* =========================================
+   i18n 多語言排版修復 CSS
+   ========================================= */
+
+/* 全局文字換行設置 - 防止英文單詞溢出 */
+* {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  /* 強制在必要時斷開長單詞 */
+  word-break: break-word;
+}
+
+/* 所有容器添加溢出處理 */
+div, section, article, aside, main {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* 專案資訊區域 - 特別強化 */
+.project-info,
+.project-showcase,
+.project-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.project-info * {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  max-width: 100%;
+}
+
+/* 確保所有按鈕文字正確換行 */
+button,
+.btn,
+[class*="btn"],
+a.button {
+  word-break: break-word;
+  white-space: normal !important;
+  text-align: center;
+  hyphens: auto;
+}
+
+/* Tab 按鈕特別處理 */
+.tab-btn {
+  min-width: auto !important;
+  max-width: 100%;
+  padding: 10px 15px !important;
+  white-space: normal !important;
+  line-height: 1.4 !important;
+  height: auto !important;
+  min-height: 44px;
+}
+
+/* 專案標題和描述 - 強制換行 */
+h1, h2, h3, h4, h5, h6 {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto;
+  max-width: 100%;
+  /* 必要時可以在任意字符處斷行 */
+  overflow-wrap: anywhere;
+}
+
+/* 特別針對 h2 標題（專案標題最常溢出） */
+h2 {
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  line-height: 1.3 !important;
+  padding-right: 10px;
+}
+
+/* 段落文字 - 使用最強制的換行策略 */
+p {
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  hyphens: auto;
+  max-width: 100%;
+}
+
+/* 列表項目 */
+li {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* 專案按鈕 - 首頁的六個分類按鈕 */
+.portfolio-btn {
+  min-width: 140px;
+  max-width: 200px;
+  padding: 30px 20px !important;
+  white-space: normal !important;
+}
+
+.portfolio-btn span {
+  word-break: break-word;
+  line-height: 1.3 !important;
+  display: block;
+  width: 100%;
+}
+
+/* 專案資訊區域 */
+.project-info h2,
+.project-info h4,
+.project-info p {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* 結果項目 */
+.result-item h3,
+.result-item a {
+  word-break: break-word;
+  white-space: normal !important;
+  line-height: 1.3;
+}
+
+/* 比例區域 */
+.ratio-item h4,
+.ratio-item p {
+  word-break: break-word;
+  text-align: center;
+}
+
+/* 所有連結和按鈕的通用設置 */
+a[class*="btn"],
+button[class*="btn"],
+.btn-primary,
+.btn-secondary,
+.btn-green,
+.btn-orange,
+.btn-purple,
+.btn-video,
+.btn-website,
+.btn-game {
+  white-space: normal !important;
+  min-height: 44px;
+  padding: 10px 15px !important;
+  line-height: 1.3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* 確保 span 在按鈕內正確顯示 */
+a[class*="btn"] span,
+button[class*="btn"] span {
+  word-break: break-word;
+  white-space: normal;
+  line-height: 1.3;
+}
+
+/* 手機端響應式優化 */
+@media (max-width: 768px) {
+  .tab-btn {
+    font-size: 0.85rem !important;
+    padding: 8px 10px !important;
+    min-height: 38px;
+  }
+
+  .portfolio-btn {
+    min-width: auto;
+    max-width: 100%;
+    padding: 18px 12px !important;
+  }
+
+  .portfolio-btn span {
+    font-size: 0.85rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-btn {
+    font-size: 0.75rem !important;
+    padding: 6px 8px !important;
+    min-height: 34px;
+  }
+
+  a[class*="btn"],
+  button[class*="btn"] {
+    font-size: 0.8rem !important;
+    padding: 8px 10px !important;
+  }
+}

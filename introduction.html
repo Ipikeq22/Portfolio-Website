@@ -5,15 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gary — 自我介紹</title>
         <link rel="stylesheet" href="style.css">
+        <script src="i18n.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Gary's Portfolio</a></div>
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;" data-i18n="header.title">Gary's Portfolio</a></div>
         <div class="nav-controls">
-            <a href="contact_me.html" class="contact-btn">聯絡我</a>
-            
+            <!-- 語言切換下拉選單 -->
+            <div class="language-switcher">
+                <select id="languageSelector" class="lang-select" aria-label="選擇語言">
+                    <option value="zh" data-icon="https://cdn-icons-png.flaticon.com/128/16183/16183751.png">🇹🇼 中文</option>
+                    <option value="en" data-icon="https://cdn-icons-png.flaticon.com/128/4060/4060239.png">🇺🇸 English</option>
+                </select>
+            </div>
+            <a href="contact_me.html" class="contact-btn" data-i18n="header.contactBtn">聯絡我</a>
             <!-- 漢堡按鈕改為 button，加入 aria 屬性供輔助工具使用 -->
-            <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單">
+            <button id="hamburger" class="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="開啟選單" data-i18n-attr="aria-label" data-i18n-key="header.menuLabel">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -23,66 +30,67 @@
 
     <!-- 手機選單：設計為全螢幕覆蓋 panel，並可用鍵盤關閉 -->
     <nav class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
-        <button id="closeMenu" class="close-btn" aria-label="關閉選單">×</button>
+        <button id="closeMenu" class="close-btn" aria-label="關閉選單" data-i18n-attr="aria-label" data-i18n-key="header.closeLabel">×</button>
         <ul>
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="introduction.html">個人簡介</a></li>
-            <li><a href="graphic_design_page.html">平面設計</a></li>
-            <li><a href="front_end_project.html">前端設計</a></li>
-            <li><a href="teach_project.html">教學設計</a></li>
-            <li><a href="business_design.html">商品設計</a></li>
-            <li><a href="graduated_project.html">畢業專題 Tasksnap</a></li>
-            <li><a href="contact_me.html">聯絡我</a></li>
+            <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+            <li><a href="introduction.html" data-i18n="nav.intro">個人簡介</a></li>
+            <li><a href="graphic_design_page.html" data-i18n="nav.graphic">平面設計</a></li>
+            <li><a href="front_end_project.html" data-i18n="nav.frontend">前端設計</a></li>
+            <li><a href="teach_project.html" data-i18n="nav.teaching">教學設計</a></li>
+            <li><a href="business_design.html" data-i18n="nav.business">商品設計</a></li>
+            <li><a href="graduated_project.html" data-i18n="nav.graduation">畢業專題 Tasksnap</a></li>
+            <li><a href="mp4_edit.html" data-i18n="nav.videoEdit">影音剪輯</a></li>
+            <li><a href="contact_me.html" data-i18n="nav.contact">聯絡我</a></li>
         </ul>
     </nav>
 
     <main class="main-content intro-page">
         <div class="profile-header">
             <img src="wallhaven-x8d5v3_1920x1080.png" alt="Gary" class="avatar" />
-            <h1>Gary</h1>
+            <h1 data-i18n="introduction.title">Gary</h1>
         </div>
 
         <div class="intro-layout">
             <!-- 左側：專長與擅長軟體區塊 -->
             <div class="skills-container">
                 <div class="skills-section">
-                    <h2 class="skills-title">專長領域</h2>
+                    <h2 class="skills-title" data-i18n="introduction.skillsTitle">專長領域</h2>
                     <div class="skills-grid">
                         <div class="skill-card">
-                            <h3>平面 / 數位設計</h3>
+                            <h3 data-i18n="introduction.skills.graphic">平面 / 數位設計</h3>
                         </div>
                         <div class="skill-card">
-                            <h3>UI / UX 設計</h3>
+                            <h3 data-i18n="introduction.skills.uiux">UI / UX 設計</h3>
                         </div>
                         <div class="skill-card">
-                            <h3>影音剪輯</h3>
+                            <h3 data-i18n="introduction.skills.video">影音剪輯</h3>
                         </div>
                         <div class="skill-card">
-                            <h3>產品開發設計</h3>
+                            <h3 data-i18n="introduction.skills.product">產品開發設計</h3>
                         </div>
                         <div class="skill-card">
-                            <h3>3D建模渲染<br><span class="sub-text">(列印略懂)</span></h3>
+                            <h3><span data-i18n="introduction.skills.modeling">3D建模渲染</span><br><span class="sub-text" data-i18n="introduction.skills.modelingSub">(列印略懂)</span></h3>
                         </div>
                         <div class="skill-card">
-                            <h3>數位行銷</h3>
+                            <h3 data-i18n="introduction.skills.marketing">數位行銷</h3>
                         </div>
                         <div class="skill-card">
-                            <h3>電腦繪圖設計教學</h3>
+                            <h3 data-i18n="introduction.skills.teaching">電腦繪圖設計教學</h3>
                         </div>
                         <div class="skill-card">
-                            <h3>遊戲開發<br><span class="sub-text">(企劃 / 美術)</span></h3>
+                            <h3><span data-i18n="introduction.skills.game">遊戲開發</span><br><span class="sub-text" data-i18n="introduction.skills.gameSub">(企劃 / 美術)</span></h3>
                         </div>
                         <div class="skill-card">
-                            <h3>數位前端開發</h3>
+                            <h3 data-i18n="introduction.skills.frontend">數位前端開發</h3>
                         </div>
                         <div class="skill-card">
-                            <h3>Vibe Coding</h3>
+                            <h3 data-i18n="introduction.skills.vibeCoding">Vibe Coding</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="skills-section">
-                    <h2 class="skills-title">擅長軟體</h2>
+                    <h2 class="skills-title" data-i18n="introduction.softwareTitle">擅長軟體</h2>
                     <div class="software-list">
                         <div class="software-item">
                             <img src="https://cdn-icons-png.flaticon.com/128/5968/5968520.png" alt="Photoshop" class="software-icon-img">
@@ -127,9 +135,9 @@
             <!-- 右側：內容區塊 -->
             <div class="content-sections">
             <section class="intro">
-                <h2>自我介紹</h2>
+                <h2 data-i18n="introduction.introSection.title">自我介紹</h2>
                 <div class="section-content">
-                    <p>
+                    <p data-i18n="introduction.introSection.content">
                         我是 Gary，一位跨領域設計師，我高中就讀的是廣告設計科，大學就讀的是資訊管理系，我會在這個作品集裡講述我從高中到現在的作品，參與過的專案以及工作經驗
 
 
@@ -140,57 +148,57 @@
             </section>
 
             <section class="education">
-                <h2>學歷</h2>
+                <h2 data-i18n="introduction.educationSection.title">學歷</h2>
                 <div class="section-content">
                     <div class="item">
-                        <h3>國立北斗高級家事商業職業學校</h3>
-                        <p class="detail">廣告設計科 </p>
+                        <h3 data-i18n="introduction.educationSection.highSchool">國立北斗高級家事商業職業學校</h3>
+                        <p class="detail" data-i18n="introduction.educationSection.highSchoolDept">廣告設計科 </p>
                     </div>
                     <div class="item">
-                        <h3>元培醫事科技大學</h3>
-                        <p class="detail">資訊管理系</p>
+                        <h3 data-i18n="introduction.educationSection.university">元培醫事科技大學</h3>
+                        <p class="detail" data-i18n="introduction.educationSection.universityDept">資訊管理系</p>
                     </div>
                 </div>
             </section>
 
             <section class="work">
-                <h2>工作經驗</h2>
+                <h2 data-i18n="introduction.workSection.title">工作經驗</h2>
                 <div class="section-content">
                     <div class="item">
-                        <h3>營隊講師 / 兼職行政美編</h3>
-                        <p class="date"><img src="https://cdn.iconscout.com/icon/free/png-256/free-calendar-1781210-1517947.png" alt="時間" class="date-icon"> 大三上 ~ 現今</p><br>
-                        <p class="company">核果資訊學苑 - 新竹校</p>
-                        <p class="detail">兼職行政美編 : 負責官方FB，Line圖文行銷的設計，並接待來電或現場的客人<br>
+                        <h3 data-i18n="introduction.workSection.job1Title">營隊講師 / 兼職行政美編</h3>
+                        <p class="date"><img src="https://cdn.iconscout.com/icon/free/png-256/free-calendar-1781210-1517947.png" alt="時間" class="date-icon"> <span data-i18n="introduction.workSection.job1Time">大三上 ~ 現今</span></p><br>
+                        <p class="company" data-i18n="introduction.workSection.job1Company">核果資訊學苑 - 新竹校</p>
+                        <p class="detail" data-i18n="introduction.workSection.job1Detail">兼職行政美編 : 負責官方FB，Line圖文行銷的設計，並接待來電或現場的客人<br>
                         營隊講師 : 自行研發教案和設計教具並提案
                         </p>
                     </div>
                     <div class="item">
-                        <h3>兼職美編</h3>
-                        <p class="date"><img src="https://cdn.iconscout.com/icon/free/png-256/free-calendar-1781210-1517947.png" alt="時間" class="date-icon"> 大二下 ~ 現今</p><br>
-                        <p class="company">李奇英文 - 新竹分校(原:華興補習班)</p>
-                        <p class="detail">傳統印刷媒體的A4招生DM設計</p>
+                        <h3 data-i18n="introduction.workSection.job2Title">兼職美編</h3>
+                        <p class="date"><img src="https://cdn.iconscout.com/icon/free/png-256/free-calendar-1781210-1517947.png" alt="時間" class="date-icon"> <span data-i18n="introduction.workSection.job2Time">大二下 ~ 現今</span></p><br>
+                        <p class="company" data-i18n="introduction.workSection.job2Company">李奇英文 - 新竹分校(原:華興補習班)</p>
+                        <p class="detail" data-i18n="introduction.workSection.job2Detail">傳統印刷媒體的A4招生DM設計</p>
                     </div>
                     <div class="item">
-                        <h3>3D列印社 - 社團老師</h3>
-                        <p class="date"><img src="https://cdn.iconscout.com/icon/free/png-256/free-calendar-1781210-1517947.png" alt="時間" class="date-icon"> 大二下 ~ 大三下</p><br>
-                        <p class="company">私立義民高級中學</p>
-                        <p class="detail">自行設計教案，並於每學期固定社課時間教書</p>
+                        <h3 data-i18n="introduction.workSection.job3Title">3D列印社 - 社團老師</h3>
+                        <p class="date"><img src="https://cdn.iconscout.com/icon/free/png-256/free-calendar-1781210-1517947.png" alt="時間" class="date-icon"> <span data-i18n="introduction.workSection.job3Time">大二下 ~ 大三下</span></p><br>
+                        <p class="company" data-i18n="introduction.workSection.job3Company">私立義民高級中學</p>
+                        <p class="detail" data-i18n="introduction.workSection.job3Detail">自行設計教案，並於每學期固定社課時間教書</p>
                     </div>
                     <div class="item">
-                        <h3>自由接案</h3>
-                        <p class="date"><img src="https://cdn.iconscout.com/icon/free/png-256/free-calendar-1781210-1517947.png" alt="時間" class="date-icon"> 2021年 ~ 現今</p><br>
-                        <p class="company"> 個人</p>
-                        <p class="detail">提供設計諮詢、個人案件(專長領域所寫的內容)、教學或專案式合作。</p>
+                        <h3 data-i18n="introduction.workSection.job4Title">自由接案</h3>
+                        <p class="date"><img src="https://cdn.iconscout.com/icon/free/png-256/free-calendar-1781210-1517947.png" alt="時間" class="date-icon"> <span data-i18n="introduction.workSection.job4Time">2021年 ~ 現今</span></p><br>
+                        <p class="company" data-i18n="introduction.workSection.job4Company"> 個人</p>
+                        <p class="detail" data-i18n="introduction.workSection.job4Detail">提供設計諮詢、個人案件(專長領域所寫的內容)、教學或專案式合作。</p>
                     </div>
                 </div>
             </section>
 
             <section class="contact">
-                <h2>聯絡方式</h2>
+                <h2 data-i18n="introduction.contactSection.title">聯絡方式</h2>
                 <div class="section-content">
                     <div class="contact-info">
                         
-                        <span class="contact-item">✉️ ipike388@gmail.com</span>
+                        <span class="contact-item" data-i18n="introduction.contactSection.email">✉️ ipike388@gmail.com</span>
                     </div>
                 </div>
             </section>
