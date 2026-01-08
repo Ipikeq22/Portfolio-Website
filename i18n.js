@@ -321,7 +321,7 @@ const translations = {
     // Header Section
     header: {
       title: "Gary's Portfolio",
-      contactBtn: "Contact Me",
+      contactBtn: "Contact",
       menuLabel: "Open Menu",
       closeLabel: "Close Menu",
     },
