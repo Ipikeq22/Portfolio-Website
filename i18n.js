@@ -139,6 +139,10 @@ const translations = {
         desc: "寒假開設的營隊，營隊內容和課表分開，上傳到FB或官方Line推廣招生",
       },
       project6: {
+        title: "核果資訊學苑 -2026農曆過年祝賀圖文",
+        desc: "除了\"碼\"到\"程\"功 這樣的有趣諧音吉祥話，也公告了重要的公休日期",
+      },
+      project7: {
         title: "招生DM設計",
       },
       highSchool1: {
@@ -452,10 +456,14 @@ const translations = {
       },
       project5: {
         title:
-          "Nuts Institutemy - 2026 Winter Full-Day Course: Minecraft: Maker Design Challenge Enrollment Poster",
+          "Nuts Institute - 2026 Winter Full-Day Course: Minecraft: Maker Design Challenge Enrollment Poster",
         desc: "Winter holiday camp, with camp content and schedule separate, uploaded to FB or official LINE for enrollment promotion",
       },
       project6: {
+        title: "Nuts Institute - 2026 Lunar New Year Greeting Graphic",
+        desc: "Featuring a clever pun 'Code to Success' and announcing important holiday closure dates.",
+      },
+      project7: {
         title: "Richie English DM Design",
       },
       highSchool1: {
