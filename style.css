@@ -29,12 +29,7 @@ body {
   padding: 14px 24px;
   background: linear-gradient(90deg, #1a1a1a 0%, #2d2d2d 100%);
   color: #ffd700;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
-  z-index: 1000;
   min-height: 64px;
 }
 
@@ -458,7 +453,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 104px 20px 40px;
+  padding: 40px 20px 40px;
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
