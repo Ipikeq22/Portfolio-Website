@@ -148,6 +148,91 @@ function initCircleCharts() {
 
 // 頁面載入時初始化圓圈圖
 document.addEventListener('DOMContentLoaded', initCircleCharts);
+
+// SweetAlert Minecraft 課程內容顯示
+function showMinecraftCourseContent() {
+  // 從 i18n 系統獲取當前語言的翻譯
+  const t = translations[currentLang].teachingDesign.minecraftCourse;
+  
+  Swal.fire({
+    title: t.title,
+    html: `
+      <div style="text-align: left; max-height: 500px; overflow-y: auto;">
+        <h3 style="color: #2c3e50; margin-bottom: 15px;">${t.overview}</h3>
+        <p style="margin-bottom: 15px; color: #34495e; line-height: 1.6;">${t.overviewText}</p>
+        
+        <h3 style="color: #2c3e50; margin: 20px 0 15px 0;">${t.keyOutcomes}</h3>
+        <div style="background: #e8f5e9; padding: 15px; border-radius: 8px; border-left: 4px solid #4caf50; margin-bottom: 15px;">
+          <h4 style="color: #2e7d32; margin-bottom: 8px;">${t.gameDesign}</h4>
+          <p style="font-size: 14px; color: #34495e; margin: 0; line-height: 1.6;">${t.gameDesignText}</p>
+        </div>
+        
+        <h3 style="color: #2c3e50; margin: 20px 0 15px 0;">${t.innovation}</h3>
+        <p style="margin-bottom: 15px; color: #34495e; line-height: 1.6;">${t.innovationText}</p>
+        
+        <div style="background: #e3f2fd; padding: 15px; border-radius: 8px; border-left: 4px solid #2196f3; margin-bottom: 15px;">
+          <h4 style="color: #1565c0; margin-bottom: 8px;">${t.webSystem}</h4>
+          <p style="font-size: 14px; color: #34495e; line-height: 1.6; margin-bottom: 10px;">${t.webSystemText}</p>
+          <ul style="font-size: 14px; color: #34495e; line-height: 1.6; margin: 0; padding-left: 20px;">
+            <li><strong>${t.feature1.split('：')[0]}：</strong>${t.feature1.split('：')[1] || t.feature1.split(': ')[1]}</li>
+            <li><strong>${t.feature2.split('：')[0] || t.feature2.split(': ')[0]}：</strong>${t.feature2.split('：')[1] || t.feature2.split(': ')[1]}</li>
+            <li><strong>${t.feature3.split('：')[0] || t.feature3.split(': ')[0]}：</strong>${t.feature3.split('：')[1] || t.feature3.split(': ')[1]}</li>
+          </ul>
+        </div>
+        
+        <h3 style="color: #2c3e50; margin: 20px 0 15px 0;">${t.curriculum}</h3>
+        
+        <div style="margin-bottom: 15px;">
+          <h4 style="color: #f44336;">${t.day1}</h4>
+          <p style="color: #34495e; font-size: 14px; line-height: 1.6;">${t.day1Text}</p>
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+          <h4 style="color: #ff9800;">${t.day2}</h4>
+          <p style="color: #34495e; font-size: 14px; line-height: 1.6;">${t.day2Text}</p>
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+          <h4 style="color: #4caf50;">${t.day3}</h4>
+          <p style="color: #34495e; font-size: 14px; line-height: 1.6;">${t.day3Text}</p>
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+          <h4 style="color: #2196f3;">${t.day4}</h4>
+          <p style="color: #34495e; font-size: 14px; line-height: 1.6;">${t.day4Text}</p>
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+          <h4 style="color: #9c27b0;">${t.day5}</h4>
+          <p style="color: #34495e; font-size: 14px; line-height: 1.6;">${t.day5Text}</p>
+        </div>
+        
+        <h3 style="color: #2c3e50; margin: 20px 0 15px 0;">${t.photos}</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1.png" alt="Minecraft 課程照片 1" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/2.png" alt="Minecraft 課程照片 2" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/3.png" alt="Minecraft 課程照片 3" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/4.png" alt="Minecraft 課程照片 4" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/5.png" alt="Minecraft 課程照片 5" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/6.png" alt="Minecraft 課程照片 6" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/7.png" alt="Minecraft 課程照片 7" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/8.png" alt="Minecraft 課程照片 8" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/9.png" alt="Minecraft 課程照片 9" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/10.png" alt="Minecraft 課程照片 10" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/11.png" alt="Minecraft 課程照片 11" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/12.png" alt="Minecraft 課程照片 12" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        </div>
+      </div>
+    `,
+    width: '85%',
+    maxWidth: '900px',
+    showCloseButton: true,
+    showConfirmButton: false,
+    background: '#ffffff',
+    color: '#2c3e50'
+  });
+}
+
 // 顯示遊戲物件圖片
 function showGameObjects() {
   Swal.fire({

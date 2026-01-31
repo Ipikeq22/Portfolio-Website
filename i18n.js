@@ -140,7 +140,7 @@ const translations = {
       },
       project6: {
         title: "核果資訊學苑 -2026農曆過年祝賀圖文",
-        desc: "除了\"碼\"到\"程\"功 這樣的有趣諧音吉祥話，也公告了重要的公休日期",
+        desc: '除了"碼"到"程"功 這樣的有趣諧音吉祥話，也公告了重要的公休日期',
       },
       project7: {
         title: "招生DM設計",
@@ -220,13 +220,47 @@ const translations = {
       title: "教學設計作品",
       project1Title: "Stun 史丹創藝工坊：從素描到3D的創意之旅",
       project1Time: "大三升大四暑假",
-      project1Desc: "在大三這一年，我開始嘗試一些有挑戰性的工作，於是我來到核果資訊學苑應徵暑假營隊講師的工作，教材和講義都是我自己從頭到尾獨立設計，連續5天的教學，讓我得到非常多寶貴的經驗",
+      project1Desc:
+        "在大三這一年，我開始嘗試一些有挑戰性的工作，於是我來到核果資訊學苑應徵暑假營隊講師的工作，教材和講義都是我自己從頭到尾獨立設計，連續5天的教學，讓我得到非常多寶貴的經驗",
+      project2Title: "Minecraft：創客設計大挑戰",
+      project2Time: "大四寒假",
+      project2Desc: "設計、建模、Vibe Coding，打造獨一無二的麥塊世界！",
       handoutPdf: "教學實體講義(pdf)",
       courseContent: "課程內容",
       trialPresentation: "體驗課簡報(免費試聽)",
+      courseWebsite: "上課網站工具(PC端)",
+      // Minecraft 課程彈窗內容
+      minecraftCourse: {
+        title: "Minecraft 創客設計大挑戰：從美學概念到虛擬關卡實踐",
+        overview: "📖 背景概述 (Overview)",
+        overviewText: "本專案為針對國中小學生設計的五日全天營隊，旨在打破單純「玩遊戲」的框架，將 Minecraft 轉化為設計思考與程式邏輯的載體。課程內容橫跨藝術美學、建築結構、使用者介面設計（UI）與程式運算。",
+        keyOutcomes: "🎯 核心成果 (Key Outcomes)",
+        gameDesign: "Minecraft 遊戲關卡設計",
+        gameDesignText: "區別於一般的建築堆疊，本課程引導學生思考「遊戲性」與「動線規劃」。學生需應用所學的透視與結構知識，在 Minecraft 中從零打造具備挑戰性的互動關卡，並進行成果展示與試玩。",
+        innovation: "💡 技術與教學創新 (Technical & Pedagogical Innovation)",
+        innovationText: "為了提升教學品質並解決小學生在多種數位工具間切換的困難，我在課程前置作業中導入了 Web Development 技術：",
+        webSystem: "🌐 開發專屬教學輔助網站 (Web-based Support System)",
+        webSystemText: "我獨立架設了 Minecraft 課程資源站。這個網站成為了五天營隊的數位核心，具備以下功能：",
+        feature1: "資源整合中心：結構化整理每日課程所需的素材與軟體連結。",
+        feature2: "AI 輔助學習：內建經測試優化的 AI 提示詞（Prompt）庫，讓學生能直接複製使用，體驗生成式 AI 在設計流程中的應用。",
+        feature3: "工具導流：整合 SketchUp、Figma、Vibe Coding 等外部工具入口，實現無縫的教學體驗。",
+        curriculum: "📚 課程模組 (Curriculum Modules)",
+        day1: "📅 Day 1 - 結構與美學",
+        day1Text: "色彩學遊戲、SketchUp 3D 建模入門。",
+        day2: "📅 Day 2 - 藍圖與規劃",
+        day2Text: "Figma 格線系統教學、繪製三視圖藍圖。",
+        day3: "📅 Day 3 - 互動與邏輯",
+        day3Text: "伺服器架設、Python GUI 計分程式解析、釣魚積分賽。",
+        day4: "📅 Day 4 - 關卡開發實戰",
+        day4Text: "遊戲機制發想、草圖繪製、Minecraft 關卡建置與裝飾。",
+        day5: "📅 Day 5 - 成果與行銷",
+        day5Text: "影片剪輯（CapCut）、小組成果發表會。",
+        photos: "📷 上課照片:"
+      },
       clubTitle: "義民高中社團: 3D列印社",
       clubTime: "大二下~大三上",
-      clubDesc: "在大二下的時候，學長來問我說有沒有興趣去竹北教高中生Sketchup，因為上一位擔任的學姊不繼續教了，當時我聽到的當下滿猶豫的，因為我從來沒當過老師，也怕自己對這套軟體不夠熟悉，但是機會來了我想把握住，於是我抱著挑戰看看和緊張的心情去教書，謝謝學長當時的介紹，讓我有機會擔任老師的角色並重新拾起我高職學的圖學技能",
+      clubDesc:
+        "在大二下的時候，學長來問我說有沒有興趣去竹北教高中生Sketchup，因為上一位擔任的學姊不繼續教了，當時我聽到的當下滿猶豫的，因為我從來沒當過老師，也怕自己對這套軟體不夠熟悉，但是機會來了我想把握住，於是我抱著挑戰看看和緊張的心情去教書，謝謝學長當時的介紹，讓我有機會擔任老師的角色並重新拾起我高職學的圖學技能",
       sophomore2nd: "大二下",
       junior1st: "大三上",
       junior2nd: "大三下",
@@ -238,16 +272,20 @@ const translations = {
       title: "商品設計作品",
       project1Title: "創意創新通識課期末作業",
       project1Time: "大二下",
-      project1Desc: "這個作品是大二時通識課的期末作業，作業目標是要設計出一項產品並製作它的創業計畫簡報，這個作業從商品設計到簡報製作幾乎都是我一手包辦\n我用Sketchup 建出了產品的模型，用Ai生城市工具的輔助去寫出這個產品的企劃案",
+      project1Desc:
+        "這個作品是大二時通識課的期末作業，作業目標是要設計出一項產品並製作它的創業計畫簡報，這個作業從商品設計到簡報製作幾乎都是我一手包辦\n我用Sketchup 建出了產品的模型，用Ai生城市工具的輔助去寫出這個產品的企劃案",
       proposalPpt: "企劃案簡報",
       project2Title: "遊戲專案:Protect farm 農場保衛戰",
       project2Time: "高二下",
-      project2Desc: "高中的時候和線上網友們組成團隊一起開發的網頁遊戲，主題是關於農場裡的蔬菜反抗要侵害他們的種族的塔防遊戲，我在這項專案裡面主要負責的工作是,美術和企劃，而最後因為某些因素，團隊解散，算是未完成的半成品",
+      project2Desc:
+        "高中的時候和線上網友們組成團隊一起開發的網頁遊戲，主題是關於農場裡的蔬菜反抗要侵害他們的種族的塔防遊戲，我在這項專案裡面主要負責的工作是,美術和企劃，而最後因為某些因素，團隊解散，算是未完成的半成品",
       viewGameObjects: "查看遊戲物件",
       watchGameplay: "觀看遊戲遊玩影片",
-      project3Title: "第六屆台灣科學節 - 核果資訊學苑攤位\n現場Minecraft體驗遊戲設計",
+      project3Title:
+        "第六屆台灣科學節 - 核果資訊學苑攤位\n現場Minecraft體驗遊戲設計",
       project3Time: "大四上",
-      project3Desc: "本遊戲由核果老闆邀請我設計，融合 Minecraft 遊戲元素與科學探索精神，打造「紫水晶冒險之路」現場闖關體驗。玩家將在操控鍵盤和滑鼠中通過岩漿跑酷、怪物走廊、水池等任務，並於最後啟動機關獲得紫水晶獎勵。以遊戲化方式讓孩子在玩樂之中培養觀察力、邏輯判斷與反應能力。",
+      project3Desc:
+        "本遊戲由核果老闆邀請我設計，融合 Minecraft 遊戲元素與科學探索精神，打造「紫水晶冒險之路」現場闖關體驗。玩家將在操控鍵盤和滑鼠中通過岩漿跑酷、怪物走廊、水池等任務，並於最後啟動機關獲得紫水晶獎勵。以遊戲化方式讓孩子在玩樂之中培養觀察力、邏輯判斷與反應能力。",
       gameIntro: "遊戲介紹",
       gameVideo: "遊戲影片",
     },
@@ -256,7 +294,8 @@ const translations = {
     graduationProject: {
       title: "Tasksnap",
       introTitle: "專題介紹",
-      introDesc: "《Tasksnap》專題自大二的暑假開始構想實做到大四上完成，致力於打造專屬學生的接案與任務平台。作品包含以 Figma 製作的 App UI 原型、以 Streamlit 建構的官方網站，以及 HTML 製作的互動小遊戲《Sweet Cookie Bite》。從設計思考到品牌體驗，展現團隊在介面設計、系統開發與互動創意上的完整實踐與整合成果",
+      introDesc:
+        "《Tasksnap》專題自大二的暑假開始構想實做到大四上完成，致力於打造專屬學生的接案與任務平台。作品包含以 Figma 製作的 App UI 原型、以 Streamlit 建構的官方網站，以及 HTML 製作的互動小遊戲《Sweet Cookie Bite》。從設計思考到品牌體驗，展現團隊在介面設計、系統開發與互動創意上的完整實踐與整合成果",
       resultsTitle: "專題研發的3個成果：",
       result1Title: "Figma Ui Prototype 開發",
       result1Btn: "觀看操作影片",
@@ -275,22 +314,28 @@ const translations = {
       motivationTitle: "開發動機",
       howToDevelop: "如何開發",
       featuresTitle: "功能特色",
-      motivation1: "觀察到學生族群在接案與任務協作平台上常面臨操作複雜、流程不清與權益保障不足的問題，因此希望打造一款以學生為核心、操作直覺且安全的任務媒合平台。",
-      develop1: "使用 Figma 製作互動式 UI 原型，從流程設計、版面配置到元件互動皆模擬真實 App 體驗，並透過團隊協作完成首頁、接案區、聊天室等主要頁面。",
+      motivation1:
+        "觀察到學生族群在接案與任務協作平台上常面臨操作複雜、流程不清與權益保障不足的問題，因此希望打造一款以學生為核心、操作直覺且安全的任務媒合平台。",
+      develop1:
+        "使用 Figma 製作互動式 UI 原型，從流程設計、版面配置到元件互動皆模擬真實 App 體驗，並透過團隊協作完成首頁、接案區、聊天室等主要頁面。",
       feature1_1: "首頁、動態牆、接案區、聊天室四大主頁面",
       feature1_2: "清晰的接案流程導向：接案 → 回覆 → 完成 → 回饋",
       feature1_3: "真實身分驗證與法律條款確認保障用戶",
       feature1_4: "深藍主色調營造科技與信任感",
       feature1_5: "支援好友互動與小遊戲模組",
-      motivation2: "為了展示 Tasksnap 品牌形象與專案理念，設計一個整合資訊、互動與行銷的官方入口網站，讓外界能快速了解平台特色與開發團隊。",
-      develop2: "使用 Python 的 Streamlit 框架開發，以簡潔快速的方式建立網站雛形，結合互動元件、回饋表單與即時公告功能，作為原型展示平台。",
+      motivation2:
+        "為了展示 Tasksnap 品牌形象與專案理念，設計一個整合資訊、互動與行銷的官方入口網站，讓外界能快速了解平台特色與開發團隊。",
+      develop2:
+        "使用 Python 的 Streamlit 框架開發，以簡潔快速的方式建立網站雛形，結合互動元件、回饋表單與即時公告功能，作為原型展示平台。",
       feature2_1: "首頁呈現專案理念與行銷標語",
       feature2_2: "包含功能介紹、團隊介紹、人才招募、贊助我們等頁面",
       feature2_3: "設有意見回饋表單，蒐集使用者體驗",
       feature2_4: "最新消息與更新公告即時呈現",
       feature2_5: "網站風格延續 App 主題色，維持品牌一致性",
-      motivation3: "希望在展場與平台上增加互動趣味性，透過小遊戲傳遞「努力、幸運、微笑」的品牌精神，讓玩家在輕鬆氛圍中體驗 Tasksnap 的理念。",
-      develop3: "以 HTML、CSS、JavaScript 製作簡易互動遊戲，結合動畫、音效與隨機機制，玩家點擊餅乾即可獲得幸運祝福或任務提示。",
+      motivation3:
+        "希望在展場與平台上增加互動趣味性，透過小遊戲傳遞「努力、幸運、微笑」的品牌精神，讓玩家在輕鬆氛圍中體驗 Tasksnap 的理念。",
+      develop3:
+        "以 HTML、CSS、JavaScript 製作簡易互動遊戲，結合動畫、音效與隨機機制，玩家點擊餅乾即可獲得幸運祝福或任務提示。",
       feature3_1: "點擊幸運餅乾觸發隨機結果",
       feature3_2: "支援桌機與手機雙平台遊玩",
       feature3_3: "搭配音效與動畫增加沉浸感",
@@ -302,7 +347,8 @@ const translations = {
     videoEditing: {
       title: "影音剪輯作品",
       project1Title: "核果資訊學苑 - 2025全國科展花絮剪輯",
-      project1Desc: "這是我為核果資訊學苑製作的2025全國科展花絮影片。影片中包含了活動片段、透過精心的剪輯和音效設計，我希望能夠呈現出活動的熱情與活力，讓觀眾感受到科展的魅力。",
+      project1Desc:
+        "這是我為核果資訊學苑製作的2025全國科展花絮影片。影片中包含了活動片段、透過精心的剪輯和音效設計，我希望能夠呈現出活動的熱情與活力，讓觀眾感受到科展的魅力。",
       watchVideo: "觀看影片",
     },
 
@@ -407,8 +453,7 @@ const translations = {
           "Part-time Admin Designer: Responsible for official Facebook and LINE graphic marketing design, and reception of phone calls and walk-in customers\nCamp Instructor: Independently develop lesson plans and design teaching materials",
         job2Title: "Part-time Graphic Designer",
         job2Time: "Sophomore ~ Present",
-        job2Company:
-          "Richie English - Hsinchu Branch",
+        job2Company: "Richie English - Hsinchu Branch",
         job2Detail: "Traditional print media A4 enrollment DM design",
         job3Title: "3D Printing Club - Instructor",
         job3Time: "Sophomore ~ Junior Year",
@@ -435,8 +480,7 @@ const translations = {
       highSchoolWorks: "High School Works",
       collegeWorks: "College Freelance Works",
       project1: {
-        title:
-          "Nuts Institute - 2025 Summer Camp Enrollment DM Design",
+        title: "Nuts Institute - 2025 Summer Camp Enrollment DM Design",
         desc: "Through vibrant color combinations and lively layout design, it attracts the attention of parents and students, effectively conveying the rich content and learning fun of the summer camp.",
       },
       project2: {
@@ -450,8 +494,7 @@ const translations = {
         desc: "Coordinating with the festive atmosphere of the October holiday, using celebration elements and promotional messages to create attractive social media promotional content.",
       },
       project4: {
-        title:
-          "Nuts Institute - 2026 Winter Camp Enrollment Graphics",
+        title: "Nuts Institute - 2026 Winter Camp Enrollment Graphics",
         desc: "Winter holiday camp, with camp content and schedule separate, uploaded to FB or official LINE for enrollment promotion",
       },
       project5: {
@@ -539,15 +582,52 @@ const translations = {
     // Teaching Design Page
     teachingDesign: {
       title: "Teaching Design Works",
-      project1Title: "Stun Creative Workshop: A Creative Journey from Sketch to 3D",
+      project1Title:
+        "Stun Creative Workshop: A Creative Journey from Sketch to 3D",
       project1Time: "Junior to Senior Summer",
-      project1Desc: "In my junior year, I started trying some challenging jobs. I came to Nuts Institute to apply for a summer camp instructor position. The teaching materials and handouts were all independently designed by me from start to finish. Five consecutive days of teaching gave me a lot of valuable experience.",
+      project1Desc:
+        "In my junior year, I started trying some challenging jobs. I came to Nuts Institute to apply for a summer camp instructor position. The teaching materials and handouts were all independently designed by me from start to finish. Five consecutive days of teaching gave me a lot of valuable experience.",
+      project2Title: "Minecraft: Maker Design Challenge",
+      project2Time: "Senior Winter Break",
+      project2Desc:
+        "Design, Modeling, Vibe Coding - Create Your Unique Minecraft World!",
       handoutPdf: "Teaching Materials (PDF)",
       courseContent: "Course Content",
       trialPresentation: "Trial Class Presentation (Free Trial)",
+      courseWebsite: "Course Website Tools (PC)",
+      // Minecraft Course Modal Content
+      minecraftCourse: {
+        title: "Minecraft: Maker Design Challenge - From Aesthetic Concepts to Virtual Level Design",
+        overview: "📖 Overview",
+        overviewText: "This project is a five-day full-day camp designed for elementary and junior high school students, aiming to break the framework of simply 'playing games' and transform Minecraft into a carrier of design thinking and programming logic. The course content spans art aesthetics, architectural structure, user interface design (UI), and programming concepts.",
+        keyOutcomes: "🎯 Key Outcomes",
+        gameDesign: "Minecraft Game Level Design",
+        gameDesignText: "Unlike general building stacking, this course guides students to think about 'gameplay' and 'route planning.' Students need to apply the perspective and structural knowledge they have learned to build challenging interactive levels from scratch in Minecraft, and conduct result demonstrations and playtesting.",
+        innovation: "💡 Technical & Pedagogical Innovation",
+        innovationText: "To improve teaching quality and solve the difficulty of elementary school students switching between multiple digital tools, I introduced Web Development technology in course preparation:",
+        webSystem: "🌐 Web-based Support System",
+        webSystemText: "I independently set up a Minecraft course resource site. This website became the digital core of the five-day camp with the following functions:",
+        feature1: "Resource Integration Center: Structurally organize materials and software links required for daily courses.",
+        feature2: "AI-Assisted Learning: Built-in tested and optimized AI prompts library, allowing students to copy and use directly, experiencing the application of generative AI in the design process.",
+        feature3: "Tool Navigation: Integrate external tools such as SketchUp, Figma, Vibe Coding to achieve a seamless teaching experience.",
+        curriculum: "📚 Curriculum Modules",
+        day1: "📅 Day 1 - Structure & Aesthetics",
+        day1Text: "Color theory games, SketchUp 3D modeling basics.",
+        day2: "📅 Day 2 - Blueprint & Planning",
+        day2Text: "Figma grid system teaching, drawing three-view blueprints.",
+        day3: "📅 Day 3 - Interaction & Logic",
+        day3Text: "Server setup, Python GUI scoring program analysis, fishing score competition.",
+        day4: "📅 Day 4 - Level Development Practice",
+        day4Text: "Game mechanism ideation, sketch drawing, Minecraft level construction and decoration.",
+        day5: "📅 Day 5 - Results & Marketing",
+        day5Text: "Video editing (CapCut), group presentation.",
+        photos: "📷 Class Photos:"
+      },
+
       clubTitle: "Yimin High School Club: 3D Printing Club",
       clubTime: "Sophomore 2nd Semester ~ Junior 1st Semester",
-      clubDesc: "In my sophomore second semester, a senior asked me if I was interested in teaching SketchUp to high school students in Zhubei. The previous instructor had stopped teaching. I was hesitant because I had never been a teacher and was worried I wasn't familiar enough with the software. But I wanted to seize the opportunity, so I went to teach with a challenging and nervous mindset. Thanks to my senior for the introduction, which gave me the opportunity to play the role of a teacher and pick up the technical drawing skills I learned in vocational high school.",
+      clubDesc:
+        "In my sophomore second semester, a senior asked me if I was interested in teaching SketchUp to high school students in Zhubei. The previous instructor had stopped teaching. I was hesitant because I had never been a teacher and was worried I wasn't familiar enough with the software. But I wanted to seize the opportunity, so I went to teach with a challenging and nervous mindset. Thanks to my senior for the introduction, which gave me the opportunity to play the role of a teacher and pick up the technical drawing skills I learned in vocational high school.",
       sophomore2nd: "Sophomore 2nd Semester",
       junior1st: "Junior 1st Semester",
       junior2nd: "Junior 2nd Semester",
@@ -559,16 +639,20 @@ const translations = {
       title: "Product Design Works",
       project1Title: "Creative Innovation General Education Final Project",
       project1Time: "Sophomore 2nd Semester",
-      project1Desc: "This work is the final project for a general education course in my sophomore year. The goal was to design a product and create a business plan presentation. I handled almost everything from product design to presentation production.\nI used SketchUp to build the product model and used AI-generated writing tools to help write the product proposal.",
+      project1Desc:
+        "This work is the final project for a general education course in my sophomore year. The goal was to design a product and create a business plan presentation. I handled almost everything from product design to presentation production.\nI used SketchUp to build the product model and used AI-generated writing tools to help write the product proposal.",
       proposalPpt: "Business Proposal Presentation",
       project2Title: "Game Project: Protect Farm - Farm Defense Battle",
       project2Time: "Sophomore 2nd Semester (High School)",
-      project2Desc: "During high school, I formed a team with online friends to develop a web game. The theme is about vegetables in a farm rebelling against the race that wants to harm them - a tower defense game. My main responsibilities in this project were art and planning. Eventually, for various reasons, the team disbanded, and it became an unfinished semi-finished product.",
+      project2Desc:
+        "During high school, I formed a team with online friends to develop a web game. The theme is about vegetables in a farm rebelling against the race that wants to harm them - a tower defense game. My main responsibilities in this project were art and planning. Eventually, for various reasons, the team disbanded, and it became an unfinished semi-finished product.",
       viewGameObjects: "View Game Objects",
       watchGameplay: "Watch Gameplay Video",
-      project3Title: "6th Taiwan Science Festival - Nuts Institute Booth\nOnsite Minecraft Experience Game Design",
+      project3Title:
+        "6th Taiwan Science Festival - Nuts Institute Booth\nOnsite Minecraft Experience Game Design",
       project3Time: "Senior 1st Semester",
-      project3Desc: "This game was designed at the invitation of the Nuts Institute boss, integrating Minecraft game elements with the spirit of scientific exploration to create the 'Amethyst Adventure Path' on-site challenge experience. Players will navigate through lava parkour, monster corridors, water pools, and other tasks using keyboard and mouse controls, and finally activate mechanisms to obtain amethyst rewards. This gamified approach cultivates children's observation, logical judgment, and reaction abilities while playing.",
+      project3Desc:
+        "This game was designed at the invitation of the Nuts Institute boss, integrating Minecraft game elements with the spirit of scientific exploration to create the 'Amethyst Adventure Path' on-site challenge experience. Players will navigate through lava parkour, monster corridors, water pools, and other tasks using keyboard and mouse controls, and finally activate mechanisms to obtain amethyst rewards. This gamified approach cultivates children's observation, logical judgment, and reaction abilities while playing.",
       gameIntro: "Game Introduction",
       gameVideo: "Game Video",
     },
@@ -577,7 +661,8 @@ const translations = {
     graduationProject: {
       title: "Tasksnap",
       introTitle: "Project Introduction",
-      introDesc: "The 'Tasksnap' project started from the conception in the summer of sophomore year to completion in the first semester of senior year, dedicated to creating a task platform exclusively for students. The work includes an App UI prototype made with Figma, an official website built with Streamlit, and an interactive mini-game 'Sweet Cookie Bite' made with HTML. From design thinking to brand experience, it demonstrates the team's complete practice and integration in interface design, system development, and interactive creativity.",
+      introDesc:
+        "The 'Tasksnap' project started from the conception in the summer of sophomore year to completion in the first semester of senior year, dedicated to creating a task platform exclusively for students. The work includes an App UI prototype made with Figma, an official website built with Streamlit, and an interactive mini-game 'Sweet Cookie Bite' made with HTML. From design thinking to brand experience, it demonstrates the team's complete practice and integration in interface design, system development, and interactive creativity.",
       resultsTitle: "Three Development Outcomes:",
       result1Title: "Figma UI Prototype Development",
       result1Btn: "Watch Demo Video",
@@ -596,34 +681,45 @@ const translations = {
       motivationTitle: "Development Motivation",
       howToDevelop: "How to Develop",
       featuresTitle: "Features",
-      motivation1: "Observing that student groups often face complex operations, unclear processes, and insufficient rights protection on freelance and task collaboration platforms, we hope to create a student-centered, intuitive, and secure task matching platform.",
-      develop1: "Create interactive UI prototype using Figma, simulating real App experience from flow design, layout to component interaction, and collaboratively complete main pages including homepage, job zone, and chat room.",
+      motivation1:
+        "Observing that student groups often face complex operations, unclear processes, and insufficient rights protection on freelance and task collaboration platforms, we hope to create a student-centered, intuitive, and secure task matching platform.",
+      develop1:
+        "Create interactive UI prototype using Figma, simulating real App experience from flow design, layout to component interaction, and collaboratively complete main pages including homepage, job zone, and chat room.",
       feature1_1: "Four main pages: homepage, feed, job zone, and chat room",
       feature1_2: "Clear job process: Accept → Reply → Complete → Feedback",
-      feature1_3: "Real identity verification and legal terms confirmation to protect users",
+      feature1_3:
+        "Real identity verification and legal terms confirmation to protect users",
       feature1_4: "Deep blue theme creates a sense of technology and trust",
       feature1_5: "Support friend interaction and mini-game modules",
-      motivation2: "To showcase the Tasksnap brand image and project concept, design an official entry website that integrates information, interaction, and marketing, allowing the outside world to quickly understand platform features and development team.",
-      develop2: "Develop using Python's Streamlit framework, quickly build website prototype in a simple way, combine interactive components, feedback forms, and real-time announcement functions as a prototype display platform.",
+      motivation2:
+        "To showcase the Tasksnap brand image and project concept, design an official entry website that integrates information, interaction, and marketing, allowing the outside world to quickly understand platform features and development team.",
+      develop2:
+        "Develop using Python's Streamlit framework, quickly build website prototype in a simple way, combine interactive components, feedback forms, and real-time announcement functions as a prototype display platform.",
       feature2_1: "Homepage presents project concept and marketing slogans",
-      feature2_2: "Includes function introduction, team introduction, talent recruitment, sponsor us pages",
+      feature2_2:
+        "Includes function introduction, team introduction, talent recruitment, sponsor us pages",
       feature2_3: "Feedback form to collect user experience",
       feature2_4: "Latest news and update announcements displayed in real-time",
-      feature2_5: "Website style continues App theme colors, maintaining brand consistency",
-      motivation3: "Hope to add interactive fun at exhibitions and platforms, conveying 'effort, luck, smile' brand spirit through mini-games, allowing players to experience Tasksnap's concept in a relaxed atmosphere.",
-      develop3: "Create simple interactive game with HTML, CSS, JavaScript, combining animation, sound effects, and random mechanisms. Players click cookies to get lucky blessings or task tips.",
+      feature2_5:
+        "Website style continues App theme colors, maintaining brand consistency",
+      motivation3:
+        "Hope to add interactive fun at exhibitions and platforms, conveying 'effort, luck, smile' brand spirit through mini-games, allowing players to experience Tasksnap's concept in a relaxed atmosphere.",
+      develop3:
+        "Create simple interactive game with HTML, CSS, JavaScript, combining animation, sound effects, and random mechanisms. Players click cookies to get lucky blessings or task tips.",
       feature3_1: "Click lucky cookie to trigger random results",
       feature3_2: "Support both desktop and mobile platforms",
       feature3_3: "Sound effects and animations enhance immersion",
       feature3_4: "Combined with brand theme colors and worldview design",
-      feature3_5: "Exhibition interaction: Scan QR Code to play and check-in share",
+      feature3_5:
+        "Exhibition interaction: Scan QR Code to play and check-in share",
     },
 
     // Video Editing Page
     videoEditing: {
       title: "Video Editing Works",
       project1Title: "Nuts Institute - 2025 National Science Fair Highlights",
-      project1Desc: "This is a video I made for Nuts Institute documenting the 2025 National Science Fair. The video includes event clips. Through careful editing and sound design, I hope to present the enthusiasm and vitality of the event and let the audience feel the charm of the science fair.",
+      project1Desc:
+        "This is a video I made for Nuts Institute documenting the 2025 National Science Fair. The video includes event clips. Through careful editing and sound design, I hope to present the enthusiasm and vitality of the event and let the audience feel the charm of the science fair.",
       watchVideo: "Watch Video",
     },
 
@@ -698,8 +794,10 @@ function updatePageContent() {
   });
 
   // 處理只有 data-i18n-key 的元素（只更新屬性，不更新內容）
-  const attrOnlyElements = document.querySelectorAll("[data-i18n-key][data-i18n-attr]:not([data-i18n])");
-  
+  const attrOnlyElements = document.querySelectorAll(
+    "[data-i18n-key][data-i18n-attr]:not([data-i18n])",
+  );
+
   attrOnlyElements.forEach((element) => {
     const key = element.getAttribute("data-i18n-key");
     const attr = element.getAttribute("data-i18n-attr");
@@ -738,11 +836,11 @@ function getTranslation(key) {
  */
 function updateLanguageButtons() {
   // 更新下拉選單的選中狀態
-  const selector = document.getElementById('languageSelector');
+  const selector = document.getElementById("languageSelector");
   if (selector) {
     selector.value = currentLang;
   }
-  
+
   // 為了向後兼容，也更新按鈕狀態（如果存在）
   const buttons = document.querySelectorAll(".lang-flag");
   buttons.forEach((button) => {
@@ -765,9 +863,9 @@ function initLanguageSystem() {
   updateLanguageButtons();
 
   // 綁定下拉選單事件
-  const languageSelector = document.getElementById('languageSelector');
+  const languageSelector = document.getElementById("languageSelector");
   if (languageSelector) {
-    languageSelector.addEventListener('change', (e) => {
+    languageSelector.addEventListener("change", (e) => {
       switchLanguage(e.target.value);
     });
   }

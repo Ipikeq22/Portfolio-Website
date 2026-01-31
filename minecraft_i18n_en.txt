@@ -1,0 +1,30 @@
+// 在 i18n.js 英文 teachingDesign 區塊中的 courseWebsite 後面添加這些內容：
+
+      // Minecraft Course Modal Content
+      minecraftCourse: {
+        title: "Minecraft: Maker Design Challenge - From Aesthetic Concepts to Virtual Level Design",
+        overview: "📖 Overview",
+        overviewText: "This project is a five-day full-day camp designed for elementary and junior high school students, aiming to break the framework of simply 'playing games' and transform Minecraft into a carrier of design thinking and programming logic. The course content spans art aesthetics, architectural structure, user interface design (UI), and programming concepts.",
+        keyOutcomes: "🎯 Key Outcomes",
+        gameDesign: "Minecraft Game Level Design",
+        gameDesignText: "Unlike general building stacking, this course guides students to think about 'gameplay' and 'route planning.' Students need to apply the perspective and structural knowledge they have learned to build challenging interactive levels from scratch in Minecraft, and conduct result demonstrations and playtesting.",
+        innovation: "💡 Technical & Pedagogical Innovation",
+        innovationText: "To improve teaching quality and solve the difficulty of elementary school students switching between multiple digital tools, I introduced Web Development technology in course preparation:",
+        webSystem: "🌐 Web-based Support System",
+        webSystemText: "I independently set up a Minecraft course resource site. This website became the digital core of the five-day camp with the following functions:",
+        feature1: "Resource Integration Center: Structurally organize materials and software links required for daily courses.",
+        feature2: "AI-Assisted Learning: Built-in tested and optimized AI prompts library, allowing students to copy and use directly, experiencing the application of generative AI in the design process.",
+        feature3: "Tool Navigation: Integrate external tools such as SketchUp, Figma, Vibe Coding to achieve a seamless teaching experience.",
+        curriculum: "📚 Curriculum Modules",
+        day1: "📅 Day 1 - Structure & Aesthetics",
+        day1Text: "Color theory games, SketchUp 3D modeling basics.",
+        day2: "📅 Day 2 - Blueprint & Planning",
+        day2Text: "Figma grid system teaching, drawing three-view blueprints.",
+        day3: "📅 Day 3 - Interaction & Logic",
+        day3Text: "Server setup, Python GUI scoring program analysis, fishing score competition.",
+        day4: "📅 Day 4 - Level Development Practice",
+        day4Text: "Game mechanism ideation, sketch drawing, Minecraft level construction and decoration.",
+        day5: "📅 Day 5 - Results & Marketing",
+        day5Text: "Video editing (CapCut), group presentation.",
+        photos: "📷 Class Photos:"
+      },
