@@ -233,7 +233,7 @@ const translations = {
       minecraftCourse: {
         title: "Minecraft 創客設計大挑戰：從美學概念到虛擬關卡實踐",
         overview: "📖 背景概述 (Overview)",
-        overviewText: "本專案為針對國中小學生設計的五日全天營隊，旨在打破單純「玩遊戲」的框架，將 Minecraft 轉化為設計思考與程式邏輯的載體。課程內容橫跨藝術美學、建築結構、使用者介面設計（UI）與程式運算。",
+        overviewText: "本專案為針對國中小學生設計的五日全天營隊，旨在打破單純「玩遊戲」的框架，將 Minecraft 轉化為設計思考與程式邏輯的載體。課程內容橫跨藝術美學、建築結構、使用者體驗設計（UX）與程式運算。",
         keyOutcomes: "🎯 核心成果 (Key Outcomes)",
         gameDesign: "Minecraft 遊戲關卡設計",
         gameDesignText: "區別於一般的建築堆疊，本課程引導學生思考「遊戲性」與「動線規劃」。學生需應用所學的透視與結構知識，在 Minecraft 中從零打造具備挑戰性的互動關卡，並進行成果展示與試玩。",
@@ -250,7 +250,7 @@ const translations = {
         day2: "📅 Day 2 - 藍圖與規劃",
         day2Text: "Figma 格線系統教學、繪製三視圖藍圖。",
         day3: "📅 Day 3 - 互動與邏輯",
-        day3Text: "伺服器架設、Python GUI 計分程式解析、釣魚積分賽。",
+        day3Text: "伺服器獨家樂園遊玩、Python GUI 計分程式解析、釣魚積分賽。",
         day4: "📅 Day 4 - 關卡開發實戰",
         day4Text: "遊戲機制發想、草圖繪製、Minecraft 關卡建置與裝飾。",
         day5: "📅 Day 5 - 成果與行銷",
