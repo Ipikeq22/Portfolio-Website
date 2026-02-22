@@ -3499,34 +3499,518 @@ button {
 }
 
 /* 時間軸效果 */
-.education .section-content,
-.work .section-content {
-  position: relative;
-  padding-left: 20px;
+/* ========================================
+   前端設計作品頁面 UI 重新設計
+   卡片式佈局與玻璃擬態樣式
+   ======================================== */
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-.education .section-content::before,
-.work .section-content::before {
+/* 專案卡片容器: 玻璃擬態風格 */
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  padding: 60px;
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  transition:
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 35px 60px -15px rgba(0, 0, 0, 0.6),
+    0 0 30px rgba(255, 215, 0, 0.1);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* 裝飾背景球 */
+.project-card::before {
   content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 215, 0, 0.05) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* 專案展示區域 (縮圖與基礎資訊) */
+.project-showcase {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-image {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  background: #000;
+  line-height: 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-info {
+  text-align: left;
+}
+
+.project-info h2 {
+  font-size: 2.6rem;
+  color: #ffd700;
+  margin-bottom: 25px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.project-info h4 {
+  font-size: 1.3rem;
+  color: #ffed4e;
+  margin-bottom: 25px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.project-subtitle {
+  color: #e0e0e0;
+  font-size: 1.15rem;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+.pc-only-notice {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 165, 0, 0.1);
+  color: #ffa500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: 1px solid rgba(255, 165, 0, 0.3);
+  margin-bottom: 30px;
+  backdrop-filter: blur(5px);
+}
+
+.project-buttons {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ffd700 0%, #ffbb00 100%);
+  color: #1a1a1a;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.btn-primary:hover {
+  background: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.03);
+  color: #ffd700;
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 215, 0, 0.1);
+  border-color: #ffd700;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2);
+}
+
+/* 專案內容區域 */
+.project-details {
+  text-align: left;
+}
+
+.intro-section {
+  margin-bottom: 50px;
+}
+
+.project-details h3 {
+  font-size: 1.8rem;
+  color: #ffd700;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.project-details h3::after {
+  content: "";
+  height: 2px;
+  flex: 1;
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.3), transparent);
+}
+
+.project-details p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+/* 亮點清單 */
+.project-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 稍微降級 min-width 以利自適應 */
+  gap: 20px;
+}
+
+.highlight-item {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.highlight-item h4 {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.highlight-item ul {
+  list-style: none;
+}
+
+.highlight-item li {
+  color: #bbb;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  font-weight: 500;
+}
+
+.highlight-item li::before {
+  content: "•";
+  color: #ffd700;
   position: absolute;
   left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: linear-gradient(to bottom, #ffd700, #ff9900);
-  border-radius: 2px;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
-.education .item::before,
-.work .item::before {
-  content: "";
-  position: absolute;
-  left: -28px;
-  top: 30px;
-  width: 12px;
-  height: 12px;
+/* 課程架構表格 */
+.curriculum-table-wrapper {
+  overflow-x: auto;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.curriculum-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.curriculum-table th,
+.curriculum-table td {
+  padding: 18px 24px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.curriculum-table th {
+  background: rgba(255, 215, 0, 0.1);
+  color: #ffd700;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.curriculum-table tr:last-child td {
+  border-bottom: none;
+}
+
+.day-badge {
+  font-weight: 700;
+  color: #1a1a1a;
   background: #ffd700;
-  border-radius: 50%;
-  border: 3px solid #2d2d2d;
-  box-shadow: 0 0 0 3px #ffd700;
+  padding: 3px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  display: inline-block;
+  min-width: 60px;
+  text-align: center;
+}
+
+/* 精簡版開發架構圖 (.arch-flow) - 回歸垂直流向 */
+.arch-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  width: 100%;
+}
+
+.arch-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.arch-label {
+  background: rgba(255, 215, 0, 0.1);
+  color: #ffd700;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  border: 1.5px solid rgba(255, 215, 0, 0.4);
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.arch-tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.05);
+  color: #e0e0e0;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.arch-connector {
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(to bottom, #ffd700, transparent);
+  margin: 5px 0;
+}
+
+/* 響應式優化 - 修正手機端顯示問題 (深度強化版) */
+@media (max-width: 992px) {
+  .project-container {
+    gap: 40px;
+    margin: 20px auto;
+  }
+
+  .project-showcase {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .project-card {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content.intro-page {
+    padding: 20px 10px; /* 縮減主容器邊隙 */
+  }
+
+  .project-container {
+    padding: 0;
+    gap: 30px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-card {
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 100%;
+    border-left: none;
+    border-right: none; /* 在手機端移除側邊框，增加顯示空間 */
+  }
+
+  .project-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    word-break: break-word; /* 確保長單詞斷行 */
+  }
+
+  .project-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .project-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .pc-only-notice {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .project-details h3 {
+    font-size: 1.35rem; /* 稍微縮小字體 */
+    gap: 10px;
+    display: block; /* 在手機端改為區塊元素，防止 flex 擠壓 */
+    text-align: left;
+  }
+
+  .project-details h3::after {
+    display: none; /* 在手機端隱藏橫線，釋放空間 */
+  }
+
+  .project-highlights {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .highlight-item {
+    padding: 15px; /* 縮減內距以釋放空間 */
+  }
+
+  /* 表格溢出解決方案 */
+  .curriculum-table-wrapper {
+    margin: 0;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 12px;
+  }
+
+  .curriculum-table {
+    min-width: 450px; /* 回復合理的自適應寬度 */
+  }
+
+  .curriculum-table th,
+  .curriculum-table td {
+    padding: 12px 8px; /* 針對 768px 縮小內距 */
+  }
+
+  /* 架構流 RWD (回復垂直) */
+  .arch-flow {
+    padding: 20px 15px;
+  }
+
+  .arch-label {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content.intro-page {
+    padding: 15px 5px; /* 極小螢幕極限壓縮 */
+  }
+
+  .project-card {
+    padding: 20px 10px; /* 極大化內部空間 */
+    border-radius: 12px;
+  }
+
+  .project-info h2 {
+    font-size: 1.4rem; /* 標題略縮，防止壓迫 */
+    line-height: 1.25;
+  }
+
+  .curriculum-table th,
+  .curriculum-table td {
+    padding: 10px 6px; /* 針對 480px 極度縮減 */
+    font-size: 0.8rem;
+  }
+
+  .arch-flow {
+    padding: 15px 10px;
+  }
+
+  .arch-label {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .arch-tags {
+    gap: 6px;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+
+  .arch-connector {
+    height: 30px;
+    width: 2px; /* 回復垂直線 */
+    background: linear-gradient(to bottom, #ffd700, transparent);
+  }
 }

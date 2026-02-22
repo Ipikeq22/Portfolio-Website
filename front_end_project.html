@@ -52,90 +52,236 @@
         <h1 data-i18n="frontendDesign.title">前端設計作品</h1>
         
         <div class="project-container">
-            <!-- 專案展示區域 -->
-            <section class="project-showcase">
-                <div class="project-image">
-                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/p55.png?updatedAt=1761150746824" alt="P55U網站預覽圖">
-                </div>
-                <div class="project-info">
-                    <h2 data-i18n="frontendDesign.projectTitle">Shuttle 輔信 P55U 購物頁面</h2>
-                    <h4 data-i18n="frontendDesign.projectTime">大三暑假</h4>
-                    <p class="project-subtitle" data-i18n="frontendDesign.projectSubtitle">股票代號: 2405 | 前端設計練習專案</p>
-                    <div class="project-buttons">
-                        <a href="https://ipikeq22.github.io/shuttle-P55U-/" class="btn-primary">
-                            <img src="https://cdn-icons-png.flaticon.com/128/2721/2721725.png" alt="網站圖示" class="btn-icon">
-                            <span data-i18n="frontendDesign.viewWebsite">查看網站</span>
-                        </a>
-                        <a href="https://github.com/Ipikeq22/shuttle-P55U-" class="btn-secondary">
-                            <img src="https://cdn-icons-png.flaticon.com/128/10817/10817310.png" alt="代碼圖示" class="btn-icon">
-                            <span data-i18n="frontendDesign.sourceCode">原始代碼</span>
-                        </a>
+            <!-- ===== 專案 1: Shuttle 輔信 P55U ===== -->
+            <article class="project-card">
+                <section class="project-showcase">
+                    <div class="project-image">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/p55.png?updatedAt=1761150746824" alt="P55U網站預覽圖">
                     </div>
-                </div>
-            </section>
+                    <div class="project-info">
+                        <h2 data-i18n="frontendDesign.projectTitle">Shuttle 輔信 P55U 購物頁面</h2>
+                        <h4 data-i18n="frontendDesign.projectTime">大三暑假</h4>
+                        <p class="project-subtitle" data-i18n="frontendDesign.projectSubtitle">股票代號: 2405 | 前端設計練習專案</p>
+                        <div class="project-buttons">
+                            <a href="https://ipikeq22.github.io/shuttle-P55U-/" class="btn-primary">
+                                <img src="https://cdn-icons-png.flaticon.com/128/2721/2721725.png" alt="網站圖示" class="btn-icon">
+                                <span data-i18n="frontendDesign.viewWebsite">查看網站</span>
+                            </a>
+                            <a href="https://github.com/Ipikeq22/shuttle-P55U-" class="btn-secondary">
+                                <img src="https://cdn-icons-png.flaticon.com/128/10817/10817310.png" alt="代碼圖示" class="btn-icon">
+                                <span data-i18n="frontendDesign.sourceCode">原始代碼</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
 
-            <!-- 專案介紹區域 -->
-            <section class="project-details">
-                <div class="intro-section">
-                    <h3 data-i18n="frontendDesign.introTitle">專案介紹</h3>
-                    <div class="intro-content">
-                        <p data-i18n="frontendDesign.introContent">本專案為 Shuttle 輔信公司 P55U 產品的購物頁面設計練習，專注於提供優質的使用者體驗和現代化的介面設計。</p>
+                <section class="project-details">
+                    <div class="intro-section">
+                        <h3 data-i18n="frontendDesign.introTitle">專案介紹</h3>
+                        <div class="intro-content">
+                            <p data-i18n="frontendDesign.introContent">本專案為 Shuttle 輔信公司 P55U 產品的購物頁面設計練習，專注於提供優質的使用者體驗和現代化的介面設計。</p>
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <h4 data-i18n="frontendDesign.designHighlights">設計重點</h4>
+                                    <ul>
+                                        <li data-i18n="frontendDesign.designPoint1">響應式設計，支援多裝置瀏覽</li>
+                                        <li data-i18n="frontendDesign.designPoint2">直觀的購物流程設計</li>
+                                        <li data-i18n="frontendDesign.designPoint3">現代化的視覺風格</li>
+                                        <li data-i18n="frontendDesign.designPoint4">優化的使用者互動體驗</li>
+                                    </ul>
+                                </div>
+                                <div class="highlight-item">
+                                    <h4 data-i18n="frontendDesign.techFeatures">技術特色</h4>
+                                    <ul>
+                                        <li data-i18n="frontendDesign.techPoint1">HTML5 語意化標籤</li>
+                                        <li data-i18n="frontendDesign.techPoint2">CSS3 動畫效果</li>
+                                        <li data-i18n="frontendDesign.techPoint3">JavaScript 互動功能</li>
+                                        <li data-i18n="frontendDesign.techPoint4">跨瀏覽器相容性</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="architecture-section">
+                        <h3 data-i18n="frontendDesign.architectureTitle">開發架構圖</h3>
+                        <div class="architecture-diagram">
+                            <div class="arch-layer frontend">
+                                <div class="arch-box" data-i18n="frontendDesign.frontendLayer">前端介面層</div>
+                                <div class="arch-components">
+                                    <div class="component" data-i18n="frontendDesign.html5">HTML5</div>
+                                    <div class="component" data-i18n="frontendDesign.css3">CSS3</div>
+                                    <div class="component" data-i18n="frontendDesign.javascript">JavaScript</div>
+                                </div>
+                            </div>
+                            <div class="arch-arrow">↓</div>
+                            <div class="arch-layer interaction">
+                                <div class="arch-box" data-i18n="frontendDesign.interactionLayer">互動邏輯層</div>
+                                <div class="arch-components">
+                                    <div class="component" data-i18n="frontendDesign.eventHandling">事件處理</div>
+                                    <div class="component" data-i18n="frontendDesign.formValidation">表單驗證</div>
+                                    <div class="component" data-i18n="frontendDesign.animation">動畫效果</div>
+                                </div>
+                            </div>
+                            <div class="arch-arrow">↓</div>
+                            <div class="arch-layer data">
+                                <div class="arch-box" data-i18n="frontendDesign.dataLayer">資料處理層</div>
+                                <div class="arch-components">
+                                    <div class="component" data-i18n="frontendDesign.cartLogic">購物車邏輯</div>
+                                    <div class="component" data-i18n="frontendDesign.productInfo">商品資訊</div>
+                                    <div class="component" data-i18n="frontendDesign.userData">使用者資料</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- ===== 專案 2: Minecraft 營隊互動教學網站 ===== -->
+            <article class="project-card">
+                <section class="project-showcase">
+                    <div class="project-image">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202026-02-23%20014652.png" alt="Minecraft教學網站預覽圖">
+                    </div>
+                    <div class="project-info">
+                        <h2 data-i18n="mcSite.projectTitle">Minecraft 營隊互動教學網站</h2>
+                        <h4 data-i18n="mcSite.projectTime">大四寒假</h4>
+                        <p class="project-subtitle" data-i18n="mcSite.projectSubtitle">五日創客夏令營 | 面向 10–14 歲青少年</p>
+                        <div class="pc-only-notice" data-i18n="mcSite.pcOnly">⚠️ 僅支援 PC 端網頁使用</div>
+                        <div class="project-buttons">
+                            <a href="https://ipikeq22.github.io/minecraft_teach/" class="btn-primary">
+                                <img src="https://cdn-icons-png.flaticon.com/128/2721/2721725.png" alt="網站圖示" class="btn-icon">
+                                <span data-i18n="frontendDesign.viewWebsite">查看網站</span>
+                            </a>
+                            <a href="https://github.com/Ipikeq22/minecraft_teach" class="btn-secondary">
+                                <img src="https://cdn-icons-png.flaticon.com/128/10817/10817310.png" alt="代碼圖示" class="btn-icon">
+                                <span data-i18n="frontendDesign.sourceCode">原始代碼</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-details">
+                    <div class="intro-section">
+                        <h3 data-i18n="mcSite.introTitle">專案背景</h3>
+                        <div class="intro-content">
+                            <p data-i18n="mcSite.introContent">本專案為一套完整的五日 Minecraft 創客夏令營教學網站，面向 10–14 歲青少年。設計核心是以「遊戲化學習」取代傳統投影片教學，讓學生在互動操作中自然建立美學、邏輯、程式設計與企劃能力。</p>
+                        </div>
+                    </div>
+
+                    <div class="intro-section">
+                        <h3 data-i18n="mcSite.curriculumTitle">課程架構</h3>
+                        <p data-i18n="mcSite.curriculumDesc">網站以單頁應用（SPA）架構組織五個主題日：</p>
+                        <div class="curriculum-table-wrapper">
+                            <table class="curriculum-table">
+                                <thead>
+                                    <tr>
+                                        <th data-i18n="mcSite.tableDay">Day</th>
+                                        <th data-i18n="mcSite.tableTheme">主題</th>
+                                        <th data-i18n="mcSite.tableSkill">核心技能</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="day-badge day1">Day 1</td>
+                                        <td data-i18n="mcSite.day1Theme">基礎美學訓練</td>
+                                        <td data-i18n="mcSite.day1Skill">色彩理論、空間構成</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-badge day2">Day 2</td>
+                                        <td data-i18n="mcSite.day2Theme">三視圖建築師</td>
+                                        <td data-i18n="mcSite.day2Skill">工程製圖、空間想像</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-badge day3">Day 3</td>
+                                        <td data-i18n="mcSite.day3Theme">邏輯與程式設計</td>
+                                        <td data-i18n="mcSite.day3Skill">AI Prompt 工程、Python 基礎</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-badge day4">Day 4</td>
+                                        <td data-i18n="mcSite.day4Theme">互動小遊戲開發</td>
+                                        <td data-i18n="mcSite.day4Skill">Minecraft 指令、遊戲設計流程</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-badge day5">Day 5</td>
+                                        <td data-i18n="mcSite.day5Theme">剪輯與作品展示</td>
+                                        <td data-i18n="mcSite.day5Skill">影片剪輯、成果發表</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="intro-section">
+                        <h3 data-i18n="mcSite.techTitle">技術實作亮點</h3>
                         <div class="project-highlights">
                             <div class="highlight-item">
-                                <h4 data-i18n="frontendDesign.designHighlights">設計重點</h4>
+                                <h4>🎮 <span data-i18n="mcSite.tech1Title">6 個原創互動小遊戲</span></h4>
                                 <ul>
-                                    <li data-i18n="frontendDesign.designPoint1">響應式設計，支援多裝置瀏覽</li>
-                                    <li data-i18n="frontendDesign.designPoint2">直觀的購物流程設計</li>
-                                    <li data-i18n="frontendDesign.designPoint3">現代化的視覺風格</li>
-                                    <li data-i18n="frontendDesign.designPoint4">優化的使用者互動體驗</li>
+                                    <li data-i18n="mcSite.tech1p1">色塊辨識遊戲</li>
+                                    <li data-i18n="mcSite.tech1p2">幾何創作畫布</li>
+                                    <li data-i18n="mcSite.tech1p3">色彩打地鼠</li>
                                 </ul>
                             </div>
                             <div class="highlight-item">
-                                <h4 data-i18n="frontendDesign.techFeatures">技術特色</h4>
+                                <h4>🖼️ <span data-i18n="mcSite.tech2Title">三視圖繪圖工具</span></h4>
                                 <ul>
-                                    <li data-i18n="frontendDesign.techPoint1">HTML5 語意化標籤</li>
-                                    <li data-i18n="frontendDesign.techPoint2">CSS3 動畫效果</li>
-                                    <li data-i18n="frontendDesign.techPoint3">JavaScript 互動功能</li>
-                                    <li data-i18n="frontendDesign.techPoint4">跨瀏覽器相容性</li>
+                                    <li data-i18n="mcSite.tech2p1">Canvas API 三視圖</li>
+                                    <li data-i18n="mcSite.tech2p2">支援 JPG 匯出</li>
+                                </ul>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>🤖 <span data-i18n="mcSite.tech4Title">AI 提示詞教學</span></h4>
+                                <ul>
+                                    <li data-i18n="mcSite.tech4p1">一鍵複製實踐</li>
+                                    <li data-i18n="mcSite.tech4p2">引導 AI 完成任務</li>
+                                </ul>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>🎰 <span data-i18n="mcSite.tech6Title">隨機企劃拉霸機</span></h4>
+                                <ul>
+                                    <li data-i18n="mcSite.tech6p1">情境 × 目標 × 限制</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 開發架構圖 -->
-                <div class="architecture-section">
-                    <h3 data-i18n="frontendDesign.architectureTitle">開發架構圖</h3>
-                    <div class="architecture-diagram">
-                        <div class="arch-layer frontend">
-                            <div class="arch-box" data-i18n="frontendDesign.frontendLayer">前端介面層</div>
-                            <div class="arch-components">
-                                <div class="component" data-i18n="frontendDesign.html5">HTML5</div>
-                                <div class="component" data-i18n="frontendDesign.css3">CSS3</div>
-                                <div class="component" data-i18n="frontendDesign.javascript">JavaScript</div>
-                            </div>
+                    <div class="intro-section">
+                        <h3 data-i18n="mcSite.uxTitle">UX 設計</h3>
+                        <div class="intro-content">
+                            <p data-i18n="mcSite.uxContent">採用 Minecraft 像素風格結合現代 glassmorphism 元素，介面活潑且支援分頁切換。</p>
                         </div>
-                        <div class="arch-arrow">↓</div>
-                        <div class="arch-layer interaction">
-                            <div class="arch-box" data-i18n="frontendDesign.interactionLayer">互動邏輯層</div>
-                            <div class="arch-components">
-                                <div class="component" data-i18n="frontendDesign.eventHandling">事件處理</div>
-                                <div class="component" data-i18n="frontendDesign.formValidation">表單驗證</div>
-                                <div class="component" data-i18n="frontendDesign.animation">動畫效果</div>
+                    </div>
+
+                    <div class="architecture-section">
+                        <h3 data-i18n="mcSite.architectureTitle">開發架構圖</h3>
+                        <div class="arch-flow">
+                            <div class="arch-step">
+                                <div class="arch-label" data-i18n="mcSite.archLayer1">SPA 前端介面層</div>
+                                <div class="arch-tags">
+                                    <span class="tag">HTML5 / CSS3</span>
+                                    <span class="tag" data-i18n="mcSite.archComp1">像素風 UI</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="arch-arrow">↓</div>
-                        <div class="arch-layer data">
-                            <div class="arch-box" data-i18n="frontendDesign.dataLayer">資料處理層</div>
-                            <div class="arch-components">
-                                <div class="component" data-i18n="frontendDesign.cartLogic">購物車邏輯</div>
-                                <div class="component" data-i18n="frontendDesign.productInfo">商品資訊</div>
-                                <div class="component" data-i18n="frontendDesign.userData">使用者資料</div>
+                            <div class="arch-connector"></div>
+                            <div class="arch-step">
+                                <div class="arch-label" data-i18n="mcSite.archLayer2">互動功能層</div>
+                                <div class="arch-tags">
+                                    <span class="tag">Canvas API</span>
+                                    <span class="tag">SweetAlert2</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+
+                    <div class="intro-section">
+                        <h3 data-i18n="mcSite.resultTitle">成果</h3>
+                        <div class="intro-content">
+                            <p data-i18n="mcSite.resultContent">協助學生完成五日學習旅程，並收集學員作品。</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
         </div>
         
     </main>
