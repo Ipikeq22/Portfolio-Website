@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gary — 自我介紹</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="i18n-fix.css">
         <script src="i18n.js"></script>
 </head>
 <body>
@@ -209,6 +210,65 @@
         <p>© 2025 Gary's Portfolio<br>Email : ipike388@gmail.com</p>
     </footer>
 
+    <!-- Header 手機版強制修復 -->
+    <style>
+    @media (max-width: 480px) {
+      .header {
+        padding: 8px 12px !important;
+        min-height: 48px !important;
+        flex-wrap: nowrap !important;
+        overflow: hidden !important;
+      }
+      .logo {
+        font-size: 0.85rem !important;
+        flex-shrink: 1 !important;
+        min-width: 0 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        max-width: 110px !important;
+        margin-right: 6px !important;
+      }
+      .nav-controls {
+        gap: 6px !important;
+        flex-shrink: 0 !important;
+      }
+      /* 手機版「聯絡我」按鈕縮小 */
+      .contact-btn {
+        padding: 5px 8px !important;
+        font-size: 0.7rem !important;
+        border-radius: 12px !important;
+        white-space: nowrap !important;
+      }
+      .lang-select {
+        min-width: 68px !important;
+        font-size: 0.7rem !important;
+        padding: 4px 18px 4px 7px !important;
+      }
+      .hamburger {
+        width: 32px !important;
+        height: 32px !important;
+        padding: 3px !important;
+        flex-shrink: 0 !important;
+      }
+      .hamburger span {
+        width: 18px !important;
+        height: 2px !important;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .logo {
+        max-width: 85px !important;
+        font-size: 0.78rem !important;
+      }
+      .lang-select {
+        min-width: 60px !important;
+        font-size: 0.65rem !important;
+        padding: 3px 15px 3px 6px !important;
+      }
+    }
+    </style>
     <script src="script.js"></script>
 </body>
 </html>

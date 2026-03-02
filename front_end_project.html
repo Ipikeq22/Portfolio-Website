@@ -107,29 +107,35 @@
                         <h3 data-i18n="frontendDesign.architectureTitle">開發架構圖</h3>
                         <div class="architecture-diagram">
                             <div class="arch-layer frontend">
-                                <div class="arch-box" data-i18n="frontendDesign.frontendLayer">前端介面層</div>
-                                <div class="arch-components">
-                                    <div class="component" data-i18n="frontendDesign.html5">HTML5</div>
-                                    <div class="component" data-i18n="frontendDesign.css3">CSS3</div>
-                                    <div class="component" data-i18n="frontendDesign.javascript">JavaScript</div>
+                                <div class="arch-layer-inner">
+                                    <div class="arch-box" data-i18n="frontendDesign.frontendLayer">前端介面層</div>
+                                    <div class="arch-components">
+                                        <div class="component" data-i18n="frontendDesign.html5">HTML5</div>
+                                        <div class="component" data-i18n="frontendDesign.css3">CSS3</div>
+                                        <div class="component" data-i18n="frontendDesign.javascript">JavaScript</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="arch-arrow">↓</div>
                             <div class="arch-layer interaction">
-                                <div class="arch-box" data-i18n="frontendDesign.interactionLayer">互動邏輯層</div>
-                                <div class="arch-components">
-                                    <div class="component" data-i18n="frontendDesign.eventHandling">事件處理</div>
-                                    <div class="component" data-i18n="frontendDesign.formValidation">表單驗證</div>
-                                    <div class="component" data-i18n="frontendDesign.animation">動畫效果</div>
+                                <div class="arch-layer-inner">
+                                    <div class="arch-box" data-i18n="frontendDesign.interactionLayer">互動邏輯層</div>
+                                    <div class="arch-components">
+                                        <div class="component" data-i18n="frontendDesign.eventHandling">事件處理</div>
+                                        <div class="component" data-i18n="frontendDesign.formValidation">表單驗證</div>
+                                        <div class="component" data-i18n="frontendDesign.animation">動畫效果</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="arch-arrow">↓</div>
                             <div class="arch-layer data">
-                                <div class="arch-box" data-i18n="frontendDesign.dataLayer">資料處理層</div>
-                                <div class="arch-components">
-                                    <div class="component" data-i18n="frontendDesign.cartLogic">購物車邏輯</div>
-                                    <div class="component" data-i18n="frontendDesign.productInfo">商品資訊</div>
-                                    <div class="component" data-i18n="frontendDesign.userData">使用者資料</div>
+                                <div class="arch-layer-inner">
+                                    <div class="arch-box" data-i18n="frontendDesign.dataLayer">資料處理層</div>
+                                    <div class="arch-components">
+                                        <div class="component" data-i18n="frontendDesign.cartLogic">購物車邏輯</div>
+                                        <div class="component" data-i18n="frontendDesign.productInfo">商品資訊</div>
+                                        <div class="component" data-i18n="frontendDesign.userData">使用者資料</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -289,6 +295,228 @@
     <footer class="footer">
         <p>© 2025 Gary's Portfolio<br>Email : ipike388@gmail.com</p>
     </footer>
+    <!-- RWD 手機強制修復 -->
+    <style>
+    /* ===== 通用防護：所有卡片內元素不得超出寬度 ===== */
+    .project-card,
+    .project-showcase,
+    .project-details,
+    .project-info,
+    .intro-section,
+    .intro-content,
+    .architecture-section,
+    .project-highlights,
+    .highlight-item,
+    .curriculum-table-wrapper,
+    .arch-flow,
+    .arch-step {
+      box-sizing: border-box !important;
+      max-width: 100% !important;
+    }
+
+    /* ===== 手機版 (768px 以下) ===== */
+    @media (max-width: 768px) {
+
+      /* 卡片寬度鎖死在視口內，不截字也不讓內容橫溢 */
+      .project-card {
+        width: 100% !important;
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+        overflow-y: visible !important;
+        padding: 24px 16px !important;
+        border-radius: 16px !important;
+        border-left: none !important;
+        border-right: none !important;
+        box-sizing: border-box !important;
+      }
+
+      /* 卡片裝飾球隱藏，防止觸發橫向捲軸 */
+      .project-card::before {
+        display: none !important;
+      }
+
+      /* project-showcase 單欄 */
+      .project-showcase {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+      }
+
+      /* 圖片不超出 */
+      .project-image,
+      .project-image img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: 220px !important;
+        object-fit: cover !important;
+        border-radius: 14px !important;
+      }
+
+      /* project-info 文字全部允許換行 */
+      .project-info {
+        width: 100% !important;
+        overflow-wrap: anywhere !important;
+        word-break: break-word !important;
+      }
+      .project-info h2 {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+      }
+      .project-info h4 {
+        font-size: 1rem !important;
+      }
+
+      /* 按鈕換行 */
+      .project-buttons {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+        width: 100% !important;
+      }
+      .project-buttons .btn-primary,
+      .project-buttons .btn-secondary {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 12px 20px !important;
+        box-sizing: border-box !important;
+        font-size: 0.95rem !important;
+      }
+
+      /* project-details 文字防溢出 */
+      .project-details {
+        width: 100% !important;
+        overflow-wrap: anywhere !important;
+        word-break: break-word !important;
+      }
+      .project-details p,
+      .project-details li,
+      .project-details h3,
+      .project-details h4 {
+        overflow-wrap: anywhere !important;
+        word-break: break-word !important;
+        max-width: 100% !important;
+      }
+      .project-details h3 {
+        font-size: 1.25rem !important;
+        display: block !important;
+      }
+      .project-details h3::after {
+        display: none !important;
+      }
+
+      /* highlight-items 強制單欄 block */
+      .project-highlights {
+        display: block !important;
+      }
+      .highlight-item {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 14px !important;
+        padding: 14px !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+      }
+      .highlight-item h4 {
+        font-size: 1rem !important;
+        flex-wrap: wrap !important;
+        line-height: 1.4 !important;
+        overflow-wrap: break-word !important;
+      }
+      .highlight-item li {
+        font-size: 0.88rem !important;
+        overflow-wrap: anywhere !important;
+        word-break: break-word !important;
+        line-height: 1.5 !important;
+      }
+
+      /* 課程架構表格容器 */
+      .curriculum-table-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        box-sizing: border-box !important;
+      }
+      .curriculum-table {
+        min-width: 320px !important;
+      }
+      .curriculum-table th,
+      .curriculum-table td {
+        padding: 10px 8px !important;
+        font-size: 0.82rem !important;
+        word-break: break-word !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      /* arch-flow 完全填滿 */
+      .arch-flow {
+        width: 100% !important;
+        padding: 18px 12px !important;
+        box-sizing: border-box !important;
+      }
+      .arch-step {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .arch-label {
+        font-size: 0.95rem !important;
+        padding: 10px 12px !important;
+        word-break: break-word !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      .arch-tags {
+        width: 100% !important;
+      }
+      .tag {
+        font-size: 0.78rem !important;
+        padding: 4px 10px !important;
+        word-break: break-word !important;
+      }
+
+      /* arch-layer (第一個專案架構圖) */
+      .architecture-diagram {
+        width: 100% !important;
+        padding: 16px 12px !important;
+        box-sizing: border-box !important;
+      }
+      .arch-layer {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      .arch-layer-inner {
+        width: 100% !important;
+        overflow: hidden !important;
+      }
+      .arch-box {
+        font-size: 0.88rem !important;
+        padding: 8px 12px !important;
+      }
+      .arch-components {
+        padding: 10px 12px !important;
+        gap: 6px !important;
+      }
+      .component {
+        font-size: 0.78rem !important;
+        padding: 4px 10px !important;
+      }
+    }
+
+    /* ===== 極小手機 (480px 以下) ===== */
+    @media (max-width: 480px) {
+      .project-card {
+        padding: 18px 12px !important;
+      }
+      .project-info h2 {
+        font-size: 1.3rem !important;
+      }
+      .curriculum-table {
+        min-width: 290px !important;
+      }
+    }
+    </style>
     <script src="script.js"></script>
     
 </body>

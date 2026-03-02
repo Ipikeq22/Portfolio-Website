@@ -123,11 +123,9 @@ li {
   text-align: center;
 }
 
-/* 所有連結和按鈕的通用設置 */
-a[class*="btn"],
+/* 所有連結和按鈕的通用設置（不包含前端設計頁目的特定按鈕） */
+a[class*="btn"]:not(.project-buttons .btn-primary):not(.project-buttons .btn-secondary),
 button[class*="btn"],
-.btn-primary,
-.btn-secondary,
 .btn-green,
 .btn-orange,
 .btn-purple,
@@ -146,7 +144,7 @@ button[class*="btn"],
 }
 
 /* 確保 span 在按鈕內正確顯示 */
-a[class*="btn"] span,
+a[class*="btn"]:not(.project-buttons .btn-primary):not(.project-buttons .btn-secondary) span,
 button[class*="btn"] span {
   word-break: break-word;
   white-space: normal;
