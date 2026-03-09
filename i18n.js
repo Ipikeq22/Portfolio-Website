@@ -23,7 +23,7 @@ const translations = {
       graphic: "平面設計",
       frontend: "前端設計",
       teaching: "教學設計",
-      business: "商品設計",
+      business: "遊戲設計",
       graduation: "畢業專題 Tasksnap",
       contact: "聯絡我",
       videoEdit: "影音剪輯",
@@ -36,7 +36,7 @@ const translations = {
       graphicDesign: "平面設計",
       frontendDesign: "前端設計",
       teachingDesign: "教學設計",
-      productDesign: "商品設計",
+      productDesign: "遊戲設計",
       graduationProject: "畢業專題",
       videoEditing: "影音剪輯",
     },
@@ -176,6 +176,14 @@ const translations = {
       college3: {
         title: "大四畢業專題 - 成果展覽活動邀請單",
         desc: "結果那天只有系上老師來看😥😥😥，我設計這張時花很多心思ㄟ😭",
+      },
+      college4: {
+        title: "鴻宇文教 - 升國中銜接招生宣傳文宣",
+        desc: "運用可愛的海洋風格主題來吸引國小學生",
+      },
+      college5: {
+        title: "鴻宇文教 - 學科能力檢測宣傳文宣",
+        desc: "學科能力測驗的資訊和活動細節",
       },
     },
 
@@ -330,9 +338,9 @@ const translations = {
       classSlides: "上課簡報",
     },
 
-    // 商品設計頁面
+    // 遊戲設計頁面
     businessDesign: {
-      title: "商品設計作品",
+      title: "遊戲設計作品",
       project1Title: "創意創新通識課期末作業",
       project1Time: "大二下",
       project1Desc:
@@ -349,6 +357,11 @@ const translations = {
       project3Time: "大四上",
       project3Desc:
         "本遊戲由核果老闆邀請我設計，融合 Minecraft 遊戲元素與科學探索精神，打造「紫水晶冒險之路」現場闖關體驗。玩家將在操控鍵盤和滑鼠中通過岩漿跑酷、怪物走廊、水池等任務，並於最後啟動機關獲得紫水晶獎勵。以遊戲化方式讓孩子在玩樂之中培養觀察力、邏輯判斷與反應能力。",
+      project4Title:
+        "2026 年國際女性科學嘉年華會活動 - 核果資訊學苑攤位\n現場Minecraft體驗遊戲設計",
+      project4Time: "大四下",
+      project4Desc:
+        "作為我的第二款麥塊體驗遊戲，本作在技術與氛圍營造上進行了大幅突破。遊戲深度結合了進階的指令方塊與客製化特效，創造出極具壓迫感的生存考驗。玩家不僅需要應對伏守者潛伏在暗處的聲學威脅，還要隨時防備旋風使者強大的突擊。展現你的極限生存技巧，突破重重難關，尋找最終的寶藏！",
       gameIntro: "遊戲介紹",
       gameVideo: "遊戲影片",
     },
@@ -446,7 +459,7 @@ const translations = {
       graphic: "Graphic Design",
       frontend: "Frontend Development",
       teaching: "Teaching Design",
-      business: "Product Design",
+      business: "Game Design",
       graduation: "Graduation Project Tasksnap",
       contact: "Contact Me",
       videoEdit: "Video Editing",
@@ -459,7 +472,7 @@ const translations = {
       graphicDesign: "Graphic Design",
       frontendDesign: "Frontend Development",
       teachingDesign: "Teaching Design",
-      productDesign: "Product Design",
+      productDesign: "Game Design",
       graduationProject: "Graduation Project",
       videoEditing: "Video Editing",
     },
@@ -604,6 +617,15 @@ const translations = {
         title: "Senior Year Graduation Project - Exhibition Event Invitation",
         desc: "In the end, only department professors came to see it 😥😥😥, I put a lot of thought into designing this 😭",
       },
+      college4: {
+        title:
+          "Hongyu Education - Junior High School Transition Enrollment Flyer",
+        desc: "Using a cute ocean theme to attract elementary school students",
+      },
+      college5: {
+        title: "Hongyu Education - Academic Ability Test Promotional Flyer",
+        desc: "Information and event details for the academic ability assessment",
+      },
     },
 
     // Frontend Design Page
@@ -649,9 +671,11 @@ const translations = {
       projectTime: "Senior Winter Break",
       projectSubtitle: "5-Day Maker Camp | For Ages 10–14",
       introTitle: "Project Background",
-      introContent: "This project is a complete 5-day Minecraft maker camp teaching website for youth aged 10–14. The core design replaces traditional slide-based instruction with 'gamified learning,' allowing students to naturally build aesthetic, logical, programming, and planning skills through hands-on interaction.",
+      introContent:
+        "This project is a complete 5-day Minecraft maker camp teaching website for youth aged 10–14. The core design replaces traditional slide-based instruction with 'gamified learning,' allowing students to naturally build aesthetic, logical, programming, and planning skills through hands-on interaction.",
       curriculumTitle: "Curriculum Structure",
-      curriculumDesc: "The website uses a Single Page Application (SPA) architecture to organize five themed days:",
+      curriculumDesc:
+        "The website uses a Single Page Application (SPA) architecture to organize five themed days:",
       tableDay: "Day",
       tableTheme: "Theme",
       tableSkill: "Core Skills",
@@ -667,23 +691,28 @@ const translations = {
       day5Skill: "Video Editing, Final Presentation",
       techTitle: "Technical Highlights",
       tech1Title: "6 Original Interactive Mini-Games",
-      tech1p1: "Color recognition game (timer, scoring, real-time audio feedback)",
+      tech1p1:
+        "Color recognition game (timer, scoring, real-time audio feedback)",
       tech1p2: "Free geometric canvas (drag-and-drop interface)",
       tech1p3: "Color theory whack-a-mole",
       tech2Title: "Three-View Drawing Tool",
-      tech2p1: "Canvas API: front / top / side view with synchronized multi-canvas drawing",
+      tech2p1:
+        "Canvas API: front / top / side view with synchronized multi-canvas drawing",
       tech2p2: "Supports JPG export",
       tech3Title: "Web Audio API Sound System",
-      tech3p1: "Programmatically synthesized correct, wrong, and victory sounds — no audio files needed",
+      tech3p1:
+        "Programmatically synthesized correct, wrong, and victory sounds — no audio files needed",
       tech4Title: "AI Prompt Teaching Module",
       tech4p1: "Built-in one-click copy GitHub Copilot Prompts",
       tech4p2: "Guides students to complete Python tasks using AI",
       tech5Title: "Minecraft Command Quick Reference",
       tech5p1: "Interactive copy buttons to reduce classroom friction",
       tech6Title: "Game Concept Slot Machine",
-      tech6p1: "Randomly generates scenario × objective × constraint to spark student creativity",
+      tech6p1:
+        "Randomly generates scenario × objective × constraint to spark student creativity",
       uxTitle: "UX Design",
-      uxContent: "Combines Minecraft pixel art style with modern glassmorphism elements, paired with Fredoka / Varela Round rounded fonts, SweetAlert2 modals, and Confetti particle celebration effects for a lively and intuitive interface. The navigation bar supports tab switching and automatically initializes the Canvas environment when switching to Day 2.",
+      uxContent:
+        "Combines Minecraft pixel art style with modern glassmorphism elements, paired with Fredoka / Varela Round rounded fonts, SweetAlert2 modals, and Confetti particle celebration effects for a lively and intuitive interface. The navigation bar supports tab switching and automatically initializes the Canvas environment when switching to Day 2.",
       architectureTitle: "Development Architecture",
       archLayer1: "SPA Frontend Layer",
       archLayer2: "Interactive Feature Layer",
@@ -693,7 +722,8 @@ const translations = {
       archComp3: "Minecraft Quick Ref",
       archComp4: "Student Work Collection",
       resultTitle: "Results",
-      resultContent: "The course website has been deployed and used in actual camp sessions, helping students complete a full 5-day learning journey from aesthetics training to game concept design, with student works collected via Google Drive.",
+      resultContent:
+        "The course website has been deployed and used in actual camp sessions, helping students complete a full 5-day learning journey from aesthetics training to game concept design, with student works collected via Google Drive.",
     },
 
     // Teaching Design Page
@@ -761,9 +791,9 @@ const translations = {
       classSlides: "Class Slides",
     },
 
-    // Business Design Page
+    // Game Design Page
     businessDesign: {
-      title: "Product Design Works",
+      title: "Game Design Works",
       project1Title: "Creative Innovation General Education Final Project",
       project1Time: "Sophomore 2nd Semester",
       project1Desc:
@@ -780,6 +810,11 @@ const translations = {
       project3Time: "Senior 1st Semester",
       project3Desc:
         "This game was designed at the invitation of the Nuts Institute boss, integrating Minecraft game elements with the spirit of scientific exploration to create the 'Amethyst Adventure Path' on-site challenge experience. Players will navigate through lava parkour, monster corridors, water pools, and other tasks using keyboard and mouse controls, and finally activate mechanisms to obtain amethyst rewards. This gamified approach cultivates children's observation, logical judgment, and reaction abilities while playing.",
+      project4Title:
+        "2026 International Women's Science Carnival - Nuts Institute Booth\nOnsite Minecraft Experience Game Design",
+      project4Time: "Senior 2nd Semester",
+      project4Desc:
+        "As my second Minecraft experience game, this entry marks a major technical and atmospheric breakthrough. The game deeply integrates advanced command blocks and custom effects, creating an intensely oppressive survival challenge. Players must contend not only with the acoustic threat of the Warden lurking in the shadows, but also guard against the Breeze's powerful ambushes at any moment. Push your survival skills to the limit, overcome every obstacle, and find the ultimate treasure!",
       gameIntro: "Game Introduction",
       gameVideo: "Game Video",
     },

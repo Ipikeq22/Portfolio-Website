@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gary — 商品設計</title>
+    <title>Gary — 遊戲設計</title>
     <link rel="stylesheet" href="style.css">
     <!-- i18n 多語言排版修復 -->
     <link rel="stylesheet" href="i18n-fix.css">
@@ -42,7 +42,7 @@
             <li><a href="graphic_design_page.html" data-i18n="nav.graphic">平面設計</a></li>
             <li><a href="front_end_project.html" data-i18n="nav.frontend">前端設計</a></li>
             <li><a href="teach_project.html" data-i18n="nav.teaching">教學設計</a></li>
-            <li><a href="business_design.html" data-i18n="nav.business">商品設計</a></li>
+            <li><a href="business_design.html" data-i18n="nav.business">遊戲設計</a></li>
             <li><a href="graduated_project.html" data-i18n="nav.graduation">畢業專題 Tasksnap</a></li>
             <li><a href="mp4_edit.html" data-i18n="nav.videoEdit">影音剪輯</a></li>
             <li><a href="contact_me.html" data-i18n="nav.contact">聯絡我</a></li>
@@ -50,7 +50,7 @@
     </nav>
 
     <main class="main-content intro-page">
-        <h1 data-i18n="businessDesign.title">商品設計作品</h1>
+        <h1 data-i18n="businessDesign.title">遊戲設計作品</h1>
         <div class="project-container">
             <!-- 專案展示區域 -->
             <section class="project-showcase">
@@ -121,6 +121,27 @@
                     </div>
                 </div>
             </section>
+
+            <section class="project-showcase">
+                <div class="project-image">
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1772995652081-970b8764-df4f-47f6-aa3e-d7b1e04f5e0b_1.png" alt="Minecraft遊戲預覽圖">
+                </div>
+                <div class="project-info">
+                    <h2 data-i18n="businessDesign.project4Title">2026 年國際女性科學嘉年華會活動 - 核果資訊學苑攤位<br>現場Minecraft體驗遊戲設計</h2>
+                    <h4 data-i18n="businessDesign.project4Time">大四下</h4>
+                    <p data-i18n="businessDesign.project4Desc">作為我的第二款麥塊體驗遊戲，本作在技術與氛圍營造上進行了大幅突破。遊戲深度結合了進階的指令方塊與客製化特效，創造出極具壓迫感的生存考驗。玩家不僅需要應對伏守者潛伏在暗處的聲學威脅，還要隨時防備旋風使者強大的突擊。展現你的極限生存技巧，突破重重難關，尋找最終的寶藏！</p>
+                    <div class="project-buttons">
+                        <button class="btn-green" onclick="showGameIntro2()">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4854/4854246.png" alt="遊戲介紹圖示" class="btn-icon">
+                            <span data-i18n="businessDesign.gameIntro">遊戲介紹</span>
+                        </button>
+                        <a href="https://drive.google.com/file/d/1VoboqeeSznU_7K60o9VmE-O1E17I8lZT/view?usp=sharing" class="btn-green">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2780/2780137.png" alt="影片圖示" class="btn-icon">
+                            <span data-i18n="businessDesign.gameVideo">遊戲影片</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>    
 
     </main>
@@ -172,6 +193,48 @@
                                 <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/bc8.png?updatedAt=1763807488189" alt="現場體驗照片5" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                                 <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/bc7.png?updatedAt=1763807488269" alt="現場體驗照片6" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                                 <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/bc5.png?updatedAt=1763807488355" alt="現場體驗照片7" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            </div>
+                        </div>
+                    </div>
+                `,
+                width: '700px',
+                confirmButtonText: '關閉',
+                confirmButtonColor: '#28a745',
+                buttonsStyling: false,
+                customClass: {
+                    confirmButton: 'btn-green'
+                }
+            });
+        }
+
+        function showGameIntro2() {
+            Swal.fire({
+                title: 'Minecraft 闇影寶藏獵人',
+                html: `
+                    <div style="text-align: center; max-height: 500px; overflow-y: auto; padding: 0 20px;">
+                        <div style="margin-bottom: 25px;">
+                            <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 18px;">🎮 遊戲介紹</h3>
+                            <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1772995652081-970b8764-df4f-47f6-aa3e-d7b1e04f5e0b_2.png?updatedAt=1773039441110" alt="遊戲介紹" style="width: 100%; max-width: 450px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        </div>
+
+                        <div style="margin-bottom: 25px;">
+                            <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 18px;">🗺️ 關卡截圖</h3>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; max-width: 520px; margin: 0 auto;">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/Rectangle%20232.png?updatedAt=1773037871300" alt="關卡截圖1" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/Rectangle%20230.png?updatedAt=1773037871405" alt="關卡截圖2" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/Rectangle%20233.png?updatedAt=1773037871838" alt="關卡截圖3" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/Rectangle%20231.png?updatedAt=1773037871767" alt="關卡截圖4" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 18px;">📸 現場體驗照片</h3>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; max-width: 520px; margin: 0 auto;">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/20260307_151309.jpg?updatedAt=1773038623764" alt="現場體驗照片1" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/20260307_151736.jpg?updatedAt=1773038625559" alt="現場體驗照片2" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/20260307_150036.jpg?updatedAt=1773038627214" alt="現場體驗照片3" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/20260307_153514.jpg?updatedAt=1773038629369" alt="現場體驗照片4" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/20260307_150507.jpg?updatedAt=1773038629470" alt="現場體驗照片5" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                             </div>
                         </div>
                     </div>
