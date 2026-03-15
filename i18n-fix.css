@@ -141,6 +141,7 @@ button[class*="btn"],
   justify-content: center;
   text-align: center;
   word-break: break-word;
+  width: auto; /* 修復被強制擠滿的問題 */
 }
 
 /* 確保 span 在按鈕內正確顯示 */

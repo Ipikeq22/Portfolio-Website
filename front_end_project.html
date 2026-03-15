@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <!-- i18n 多語言排版修復 -->
     <link rel="stylesheet" href="i18n-fix.css">
     <script src="i18n.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header class="header">
@@ -71,11 +71,15 @@
                                 <img src="https://cdn-icons-png.flaticon.com/128/10817/10817310.png" alt="代碼圖示" class="btn-icon">
                                 <span data-i18n="frontendDesign.sourceCode">原始代碼</span>
                             </a>
+                            <a href="javascript:void(0)" class="btn-intro" onclick="showP55UDetails()">
+                                <img src="https://cdn-icons-png.flaticon.com/128/5956/5956592.png" alt="介紹圖示" class="btn-icon">
+                                <span data-i18n="frontendDesign.introButton">專案介紹</span>
+                            </a>
                         </div>
                     </div>
                 </section>
 
-                <section class="project-details">
+                <section class="project-details" id="p55u-details-content" style="display: none;">
                     <div class="intro-section">
                         <h3 data-i18n="frontendDesign.introTitle">專案介紹</h3>
                         <div class="intro-content">
@@ -163,11 +167,15 @@
                                 <img src="https://cdn-icons-png.flaticon.com/128/10817/10817310.png" alt="代碼圖示" class="btn-icon">
                                 <span data-i18n="frontendDesign.sourceCode">原始代碼</span>
                             </a>
+                            <a href="javascript:void(0)" class="btn-intro" onclick="showMinecraftDetails()">
+                                <img src="https://cdn-icons-png.flaticon.com/128/5956/5956592.png" alt="介紹圖示" class="btn-icon">
+                                <span data-i18n="frontendDesign.introButton">專案介紹</span>
+                            </a>
                         </div>
                     </div>
                 </section>
 
-                <section class="project-details">
+                <section class="project-details" id="mc-details-content" style="display: none;">
                     <div class="intro-section">
                         <h3 data-i18n="mcSite.introTitle">專案背景</h3>
                         <div class="intro-content">
@@ -342,14 +350,14 @@
         gap: 20px !important;
       }
 
-      /* 圖片不超出 */
+      /* 圖片不超出並保持比例不裁切 */
       .project-image,
       .project-image img {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
-        max-height: 220px !important;
-        object-fit: cover !important;
+        max-height: 350px !important;
+        object-fit: contain !important;
         border-radius: 14px !important;
       }
 
@@ -367,16 +375,20 @@
         font-size: 1rem !important;
       }
 
-      /* 按鈕換行 */
+      /* 按鈕換行且置中 */
       .project-buttons {
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
         gap: 10px !important;
         width: 100% !important;
+        justify-content: center !important;
       }
       .project-buttons .btn-primary,
       .project-buttons .btn-secondary {
         width: 100% !important;
+        flex: 1 1 calc(50% - 10px) !important;
+        max-width: calc(50% - 5px) !important;
         justify-content: center !important;
         padding: 12px 20px !important;
         box-sizing: border-box !important;

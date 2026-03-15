@@ -103,6 +103,10 @@ const translations = {
         job4Company: "個人",
         job4Detail:
           "提供設計諮詢、個人案件(專長領域所寫的內容)、教學或專案式合作。",
+        job5Title: "遊戲設計師",
+        job5Time: "高二上 ~ 現今",
+        job5Company: "個人 + 工作室",
+        job5Detail: "開發各類遊戲，以及創辦遊戲工作室努力開發出要上架平台的遊戲",
       },
       contactSection: {
         title: "聯絡方式",
@@ -195,6 +199,7 @@ const translations = {
       projectSubtitle: "股票代號: 2405 | 前端設計練習專案",
       viewWebsite: "查看網站",
       sourceCode: "原始代碼",
+      introButton: "專案介紹",
       introTitle: "專案介紹",
       introContent:
         "本專案為 Shuttle 輔信公司 P55U 產品的購物頁面設計練習，專注於提供優質的使用者體驗和現代化的介面設計。",
@@ -541,6 +546,10 @@ const translations = {
         job4Company: "Self-employed",
         job4Detail:
           "Provide design consulting, personal projects (areas listed in expertise), teaching, or project-based collaboration.",
+        job5Title: "Game Designer",
+        job5Time: "High School Junior ~ Present",
+        job5Company: "Personal + Studio",
+        job5Detail: "Developing various games and founding a game studio striving to develop games to be published on platforms.",
       },
       contactSection: {
         title: "Contact Information",
@@ -636,6 +645,7 @@ const translations = {
       projectSubtitle: "TW Stock Code: 2405 | Frontend Design Practice Project",
       viewWebsite: "View Website",
       sourceCode: "Source Code",
+      introButton: "Project Intro",
       introTitle: "Project Introduction",
       introContent:
         "This project is a shopping page design practice for Shuttle's P55U product, focusing on providing excellent user experience and modern interface design.",

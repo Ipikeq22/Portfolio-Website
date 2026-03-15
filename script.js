@@ -136,6 +136,39 @@ function showTab(tabName) {
   // 添加按鈕的 active 狀態
   event.target.classList.add('active');
 }
+
+// 平面設計分頁過濾功能
+function filterCategory(categoryId) {
+  // 隱藏所有專案分類
+  const categories = document.querySelectorAll('.portfolio-category');
+  categories.forEach(category => {
+    category.style.display = 'none';
+    category.classList.remove('active');
+  });
+
+  // 顯示選中的專案分類
+  const targetCategory = document.getElementById(categoryId);
+  if (targetCategory) {
+    targetCategory.style.display = 'block';
+    // 延遲一點點時間添加 active 以觸發 fade-in 動畫
+    setTimeout(() => {
+      targetCategory.classList.add('active');
+    }, 10);
+  }
+
+  // 更新按鈕 active 狀態
+  const buttons = document.querySelectorAll('.category-btn');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  
+  // 這裡使用 currentTarget 或 target 來添加 active
+  if (event && event.currentTarget) {
+    event.currentTarget.classList.add('active');
+  } else {
+    // 備用防錯：透過 data-target 尋找對應的按鈕
+    const targetBtn = document.querySelector(`.category-btn[data-target="${categoryId}"]`);
+    if(targetBtn) targetBtn.classList.add('active');
+  }
+}
 // 初始化圓圈圖
 function initCircleCharts() {
   const charts = document.querySelectorAll('.circle-chart');
@@ -225,11 +258,44 @@ function showMinecraftCourseContent() {
       </div>
     `,
     width: '85%',
-    maxWidth: '900px',
     showCloseButton: true,
     showConfirmButton: false,
     background: '#ffffff',
     color: '#2c3e50'
+  });
+}
+
+// 顯示 P55U 專案介紹
+function showP55UDetails() {
+  const content = document.getElementById('p55u-details-content').innerHTML;
+  Swal.fire({
+    title: 'Shuttle 輔信 P55U',
+    html: `<div style="text-align: left; max-height: 70vh; overflow-y: auto; padding: 10px;">${content}</div>`,
+    width: '85%',
+    showCloseButton: true,
+    showConfirmButton: false,
+    background: '#ffffff',
+    color: '#2c3e50',
+    customClass: {
+      popup: 'project-detail-popup'
+    }
+  });
+}
+
+// 顯示 Minecraft 專案介紹
+function showMinecraftDetails() {
+  const content = document.getElementById('mc-details-content').innerHTML;
+  Swal.fire({
+    title: 'Minecraft 營隊互動教學網站',
+    html: `<div style="text-align: left; max-height: 70vh; overflow-y: auto; padding: 10px;">${content}</div>`,
+    width: '85%',
+    showCloseButton: true,
+    showConfirmButton: false,
+    background: '#ffffff',
+    color: '#2c3e50',
+    customClass: {
+      popup: 'project-detail-popup'
+    }
   });
 }
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- 宣告為 HTML5 文件 -->
 <html lang="zh-Hant">
 <!-- 網頁主語言設定為繁體中文 -->
@@ -65,7 +65,29 @@
     <main class="main-content intro-page">
         <h1 data-i18n="graphicDesign.title">平面設計作品</h1>
         <!-- 頁面主標題 -->
-        <h3 class="section-title" data-i18n="graphicDesign.company1">單位 : 核果資訊學苑 - 新竹校</h3>
+        
+        <!-- 分類頁籤導覽列 -->
+        <div class="category-tabs">
+            <button class="category-btn active" onclick="filterCategory('category-nuts')" data-target="category-nuts">
+                <img src="nuts logo.png" alt="核果資訊學苑 Logo" class="category-icon">
+                <span data-i18n="graphicDesign.company1">單位 : 核果資訊學苑</span>
+            </button>
+            <button class="category-btn" onclick="filterCategory('category-ricky')" data-target="category-ricky">
+                <img src="李奇logo.jpg" alt="李奇英文 Logo" class="category-icon">
+                <span data-i18n="graphicDesign.company2">單位 : 李奇英文</span>
+            </button>
+            <button class="category-btn" onclick="filterCategory('category-highschool')" data-target="category-highschool">
+                <img src="https://cdn-icons-png.flaticon.com/128/3373/3373410.png" alt="高中作品 Icon" class="category-icon">
+                <span data-i18n="graphicDesign.highSchoolWorks">高中作品</span>
+            </button>
+            <button class="category-btn" onclick="filterCategory('category-university')" data-target="category-university">
+                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135810.png" alt="大學接案作品 Icon" class="category-icon">
+                <span data-i18n="graphicDesign.collegeWorks">大學接案作品</span>
+            </button>
+        </div>
+
+        <!-- 區塊1: 核果資訊學苑 -->
+        <div id="category-nuts" class="portfolio-category active">
         <!-- 作品集分類標題 -->
         
         <!-- 作品集畫廊 -->
@@ -131,25 +153,25 @@
             <div class="portfolio-item">
                 <p class="portfolio-desc" data-i18n="graphicDesign.project5.title">核果資訊學苑 -2026冬季全日課程 : Minecraft：創客設計大挑戰 招生海報</p>
                 <div class="portfolio-images">
-                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1210.png" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
-                   
-                </div>
-                
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1210.png" alt="Minecraft招生海報" class="portfolio-img large-img" onclick="openModal(this.src)">
+                </div>   
             </div>
 
 
             <div class="portfolio-item">
                 <p class="portfolio-desc" data-i18n="graphicDesign.project6.title">核果資訊學苑 -2026農曆過年祝賀圖文</p>
                 <div class="portfolio-images">
-                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/2026%E6%96%B0%E5%B9%B4%E8%B3%80%E5%9C%96.png" alt="寒令營招生圖文" class="portfolio-img" onclick="openModal(this.src)">
-                   
+                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/2026%E6%96%B0%E5%B9%B4%E8%B3%80%E5%9C%96.png" alt="2026新年賀圖" class="portfolio-img large-img" onclick="openModal(this.src)">
                 </div>
                 <p class="portfolio-detail" data-i18n="graphicDesign.project6.desc">除了"碼"到"程"功 這樣的有趣諧音吉祥話，也公告了重要的公休日期</p>
             </div>
 
 
-            <h3 class="section-title" data-i18n="graphicDesign.company2">單位: 李奇英文-新竹分校</h3>
-            <!-- 作品集分類標題 -->
+            </div>
+        </div>
+
+        <!-- 區塊2: 李奇英文 -->
+        <div id="category-ricky" class="portfolio-category" style="display: none;">
             
             <!-- 下一個作品項目 -->
             <div class="portfolio-item">
@@ -167,8 +189,10 @@
                     <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/8+9.png" alt="招生DM" class="portfolio-img" onclick="openModal(this.src)">
                 </div>
             </div>
+        </div>
             
-            <h3 class="section-title" data-i18n="graphicDesign.highSchoolWorks">高中作品</h3>
+        <!-- 區塊3: 高中作品 -->
+        <div id="category-highschool" class="portfolio-category" style="display: none;">
             
             <div class="highschool-portfolio">
                 <div class="highschool-item">
@@ -210,8 +234,10 @@
                 </div>
                 
             </div>
+        </div>
             
-            <h3 class="section-title" data-i18n="graphicDesign.collegeWorks">大學接案作品</h3>
+        <!-- 區塊4: 大學接案作品 -->
+        <div id="category-university" class="portfolio-category" style="display: none;">
             <div class="highschool-portfolio">
                 <div class="highschool-item">
                     <div class="image-container">
@@ -253,8 +279,11 @@
                     <p class="work-description" data-i18n="graphicDesign.college5.desc">學科能力測驗的資訊和活動細節</p>
                 </div>
 
+                </div>
+
                 
             </div>
+        </div>
         
         <!-- 圖片燈箱/彈出視窗 -->
         <div id="imageModal" class="modal" onclick="closeModal()">
