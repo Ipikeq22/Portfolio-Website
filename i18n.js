@@ -33,6 +33,7 @@ const translations = {
     homepage: {
       greeting: "Hello, I am Gary",
       description: "一位快爆肝的跨領域設計師😂",
+      aboutMe: "關於我",
       graphicDesign: "平面設計",
       frontendDesign: "前端設計",
       teachingDesign: "教學設計",
@@ -474,6 +475,7 @@ const translations = {
     homepage: {
       greeting: "Hello, I am Gary",
       description: "A cross-disciplinary designer working overtime😂",
+      aboutMe: "About Me",
       graphicDesign: "Graphic Design",
       frontendDesign: "Frontend Development",
       teachingDesign: "Teaching Design",
