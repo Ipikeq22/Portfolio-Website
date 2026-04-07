@@ -86,11 +86,17 @@ const translations = {
       },
       workSection: {
         title: "工作經驗",
+
+        jobStudioTitle: "LonelySub Games 遊戲工作室 執行長 (CEO)",
+        jobStudioTime: "2026 1 月 ~ 現今",
+        jobStudioCompany: "LonelySub Games 遊戲工作室",
+        jobStudioDetail: "創辦並經營獨立遊戲工作室，負責工作室整體發展方向、產品企劃與品牌推廣。<br><br>目前是一人工作室，努力發展中",
         job1Title: "營隊講師 / 兼職行政美編",
         job1Time: "大三上 ~ 現今",
         job1Company: "核果資訊學苑 - 新竹校",
         job1Detail:
-          "兼職行政美編 : 負責官方FB，Line圖文行銷的設計，並接待來電或現場的客人\n營隊講師 : 自行研發教案和設計教具並提案",
+          "<div class='sub-role'><strong>🎨 兼職行政美編：</strong>負責官方 FB、Line 圖文行銷設計，並接待來電或現場訪客。</div>" +
+          "<div class='sub-role'><strong>🎓 營隊講師：</strong>自行研發教案、設計教具並進行教學提案。</div>",
         job2Title: "兼職美編",
         job2Time: "大二下 ~ 現今",
         job2Company: "李奇英文 - 新竹分校(原:華興補習班)",
@@ -109,6 +115,7 @@ const translations = {
         job5Company: "個人 + 工作室",
         job5Detail: "開發各類遊戲，以及創辦遊戲工作室努力開發出要上架平台的遊戲",
       },
+
       contactSection: {
         title: "聯絡方式",
         email: "✉️ ipike388@gmail.com",
@@ -347,6 +354,30 @@ const translations = {
     // 遊戲設計頁面
     businessDesign: {
       title: "遊戲設計作品",
+      lonelySub: "LonelySub Games",
+      otherProjects: "其他遊戲專案",
+      brandStoryTitle: "工作室介紹: LonelySub Games",
+      lonelyTitle: "✨ 為什麼名字有「Lonely」？",
+      lonelyDesc: "遊戲，在我的成長過程中扮演了非常重要的角色。每當覺得無聊、孤單的時候，玩遊戲總能讓我舒緩壓力，並獲得滿滿的成就感。<br><br>這就是我會踏上獨立開發這條路的初衷：如果我做的遊戲，能讓同樣感到孤單的人，在遊玩的那段時間裡獲得短暫的快樂與成就感，那對我來說就是最大的成就。",
+      subTitle: "✨ 為什麼 Logo 是一艘潛水艇「Sub」？",
+      subDesc: "不知道大家有沒有玩過《戰艦世界》(WoWs)？在遊戲裡，潛水艇大部分的時間都在深海中默默探測、潛行，只有在最關鍵的時機才會浮出水面發揮作用。<br><br>這代表了我們團隊的期許：也許平常的我們看起來平平無奇、默默在深海裡開發，但在關鍵時刻，我們一定能浮出水面，帶給大家驚豔的作品！這艘黃色小潛水艇，未來會載著更多遊戲與大家見面。",
+      igFollow: "追蹤我們的 Instagram",
+      publishedGamesTitle: "🚀 已上架遊戲",
+      eggCatcher: {
+        title: "Egg Cather 接蛋樂 (暫定)",
+        platform: "Github Pages",
+        tools: "HTML5, Pixi.js",
+        desc: "大四上時，因為閒閒無聊而嘗試 Pixi.js 去開發遊戲。遊戲初衷是最簡單的接雞蛋，經過創意設計後加入了豐富的趣味性。目前正式版開發中，此為放在 Github 上的最初版本，以紀念開發第一步的堅持。",
+        playBtn: "點擊遊玩"
+      },
+      bobaSmash: {
+        title: "Boba Smash 珍珠大作戰",
+        platform: "Itch.io",
+        tools: "HTML5, Pixi.js",
+        desc: "起源於 GameJam 的創意提案，後續花 10 天與多種 AI 工具協作完成。幾乎徹夜未眠，只因對遊戲上架的好奇與熱情。過程中推翻玩法多次，目前為初始版本，未來將持續更新。",
+        playBtn: "點擊遊玩"
+      },
+
       project1Title: "創意創新通識課期末作業",
       project1Time: "大二下",
       project1Desc:
@@ -533,7 +564,32 @@ const translations = {
         job1Time: "Junior Year ~ Present",
         job1Company: "Nuts Institute - Hsinchu Campus",
         job1Detail:
-          "Part-time Admin Designer: Responsible for official Facebook and LINE graphic marketing design, and reception of phone calls and walk-in customers\nCamp Instructor: Independently develop lesson plans and design teaching materials",
+          "<div class='sub-role'><strong>🎨 Part-time Admin Designer:</strong> Responsible for official FB and LINE graphic marketing design, and customer reception.</div>" +
+          "<div class='sub-role'><strong>🎓 Camp Instructor:</strong> Independently develop lesson plans, design teaching materials, and submit proposals.</div>",
+        job2Title: "Part-time Graphic Designer",
+        job2Time: "Sophomore ~ Present",
+        job2Company: "Richie English - Hsinchu Branch",
+        job2Detail: "Traditional print media A4 enrollment DM design",
+        job3Title: "3D Printing Club - Instructor",
+        job3Time: "Sophomore ~ Junior Year",
+        job3Company: "Private Yimin Senior High School",
+        job3Detail:
+          "Design lesson plans and teach at regular club sessions each semester",
+        job4Title: "Freelancer",
+        job4Time: "2021 ~ Present",
+        job4Company: "Self-employed",
+        job4Detail:
+          "Provide design consulting, personal projects (areas listed in expertise), teaching, or project-based collaboration.",
+        jobStudioTitle: "LonelySub Games Studio CEO",
+        jobStudioTime: "Jan 2026 ~ Present",
+        jobStudioCompany: "LonelySub Games Studio",
+        jobStudioDetail: "Founded and managing an independent game studio, responsible for overall development direction, product planning, and brand promotion.<br><br>Currently a solo studio, under active development.",
+        job1Title: "Camp Instructor / Part-time Admin Designer",
+        job1Time: "Junior Year ~ Present",
+        job1Company: "Nuts Institute - Hsinchu Campus",
+        job1Detail:
+          "<div class='sub-role'><strong>🎨 Part-time Admin Designer:</strong> Responsible for official FB and LINE graphic marketing design, and customer reception.</div>" +
+          "<div class='sub-role'><strong>🎓 Camp Instructor:</strong> Independently develop lesson plans, design teaching materials, and submit proposals.</div>",
         job2Title: "Part-time Graphic Designer",
         job2Time: "Sophomore ~ Present",
         job2Company: "Richie English - Hsinchu Branch",
@@ -553,6 +609,7 @@ const translations = {
         job5Company: "Personal + Studio",
         job5Detail: "Developing various games and founding a game studio striving to develop games to be published on platforms.",
       },
+
       contactSection: {
         title: "Contact Information",
         email: "✉️ ipike388@gmail.com",
@@ -806,6 +863,30 @@ const translations = {
     // Game Design Page
     businessDesign: {
       title: "Game Design Works",
+      lonelySub: "LonelySub Games",
+      otherProjects: "Other Game Projects",
+      brandStoryTitle: "Studio Introduction: LonelySub Games",
+      lonelyTitle: "✨ Why \"Lonely\"?",
+      lonelyDesc: "Games have played a very important role in my growth. Whenever I felt bored or lonely, playing games always helped me relieve stress and gave me a full sense of achievement.<br><br>This is my original intention for embarking on the path of independent development: if the games I make can give people who feel equally lonely short-lived happiness and a sense of achievement during the time they play, that would be the greatest achievement for me.",
+      subTitle: "✨ Why the \"Sub\"marine Logo?",
+      subDesc: "Has anyone ever played World of Warships (WoWs)? In the game, submarines spend most of their time silently detecting and lurking in the deep sea, surfacing only at the most critical moments to make an impact.<br><br>This represents our team's expectations: perhaps we usually look ordinary, silently developing in the deep sea, but at critical moments, we will surely surface and bring everyone amazing works! This little yellow submarine will meet you all with more games in the future.",
+      igFollow: "Follow our Instagram",
+      publishedGamesTitle: "🚀 Published Games",
+      eggCatcher: {
+        title: "Egg Cather (WIP)",
+        platform: "Github Pages",
+        tools: "HTML5, Pixi.js",
+        desc: "Started in my senior year out of curiosity for Pixi.js. What began as a simple egg-catching concept evolved with added complexity and fun. The final version is in development; this is the initial version on Github, commemorating the first steps of my gamedev journey.",
+        playBtn: "Play Now"
+      },
+      bobaSmash: {
+        title: "Boba Smash",
+        platform: "Itch.io",
+        tools: "HTML5, Pixi.js",
+        desc: "Originated from a GameJam pitch. Developed over 10 days in collaboration with AI tools. Fueled by curiosity about publishing, I pushed through many bugs and gameplay iterations. This is the initial version on Itch.io, with more updates planned.",
+        playBtn: "Play Now"
+      },
+
       project1Title: "Creative Innovation General Education Final Project",
       project1Time: "Sophomore 2nd Semester",
       project1Desc:
@@ -958,9 +1039,9 @@ function updatePageContent() {
         // 只更新指定的屬性，不要更動元素內容
         element.setAttribute(attr, translation);
       } else {
-        // 只有在沒有 data-i18n-attr 時才更新 textContent
-        // 這樣可以避免清空有子元素的元素（如漢堡按鈕）
-        element.textContent = translation;
+        // 只有在沒有 data-i18n-attr 時才更新 innerHTML
+        // 這樣可以讓標籤（如 <br>, <b>）被正確渲染
+        element.innerHTML = translation;
       }
     } else {
       console.warn(`Translation not found for key: ${key}`);

@@ -462,7 +462,6 @@ body {
   padding: 40px 20px 40px;
   width: 100%;
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 .avatar {
@@ -4706,4 +4705,364 @@ button {
   .arch-connector {
     height: 24px;
   }
+}
+
+/* LonelySub Games 專屬橘白色調款式 */
+.studio-card {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: linear-gradient(135deg, #ffffff 0%, #fff5e6 100%);
+  padding: 60px 0;
+  box-shadow: 0 10px 30px rgba(255, 159, 67, 0.1);
+  border-top: 6px solid #ff9f43;
+  text-align: left;
+  display: block;
+}
+
+
+.studio-inner {
+  max-width: 1100px; /* 這裡原先是 1000px，改回 1100px 以對齊其他區塊 */
+  margin: 0 auto;
+  padding: 0 40px; /* 適度留白 */
+}
+
+
+.studio-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.studio-logo-large {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+}
+
+.studio-title {
+  font-size: 2.5rem !important;
+  font-weight: 800 !important;
+  color: #0066cc !important; /* 修改為藍色 */
+  margin: 0;
+  text-shadow: none !important;
+}
+
+
+.brand-section {
+  margin-bottom: 35px;
+}
+
+.brand-subtitle {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #e67e22 !important; /* 深橘色 */
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-text {
+  font-size: 1.2rem !important;
+  line-height: 1.8 !important;
+  color: #2c3e50 !important; /* 深色文字 */
+  margin: 0;
+  font-weight: 400 !important;
+}
+
+.ig-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white !important;
+  padding: 18px 45px;
+  border-radius: 60px;
+  text-decoration: none !important;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin: 50px auto 0 !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 25px rgba(204, 35, 102, 0.3);
+  width: fit-content !important;
+}
+
+
+.ig-btn:hover {
+  transform: translateY(-5px) scale(1.08);
+  box-shadow: 0 15px 35px rgba(204, 35, 102, 0.5);
+  color: white !important;
+}
+
+.ig-icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+  .studio-card {
+    padding: 40px 0;
+  }
+  .studio-inner {
+    padding: 0 25px;
+  }
+  .studio-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .studio-title {
+    font-size: 1.8rem !important;
+  }
+  .studio-logo-large {
+    width: 80px;
+    height: 80px;
+  }
+  .brand-subtitle {
+    font-size: 1.3rem !important;
+  }
+  .brand-text {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* 已上架遊戲區塊樣式 */
+.published-games-section {
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 2px dashed rgba(255, 159, 67, 0.3); /* 分隔線讓結構更清晰 */
+}
+
+.section-title-studio {
+  font-size: 2.2rem;
+  color: #0066cc !important;
+  margin: 80px 0 40px;
+  text-align: center;
+  font-weight: 800;
+  position: relative;
+}
+
+.section-title-studio::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ff9f43;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.published-games-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px; /* 稍微縮小間距以符合容器 */
+  margin-bottom: 60px;
+}
+
+
+.game-card-studio {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card-studio:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(255, 159, 67, 0.15);
+}
+
+.game-image-studio {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.game-image-studio img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important; /* 修正：確保比例不跑掉 */
+  background: #f9f9f9; /* 避免留白處太突兀 */
+  transition: transform 0.6s ease;
+}
+
+
+.game-card-studio:hover .game-image-studio img {
+  transform: scale(1.1);
+}
+
+.game-overlay-studio {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.platform-tag {
+  background: rgba(0, 0, 0, 0.75);
+  color: white !important;
+  padding: 8px 18px;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.game-info-studio {
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-title-studio {
+  font-size: 1.6rem !important;
+  color: #2c3e50 !important;
+  margin-bottom: 15px !important;
+  font-weight: 800 !important;
+}
+
+.game-tags-studio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.game-tags-studio span {
+  background: #f8f9fa;
+  color: #7f8c8d !important;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1px solid #eee;
+}
+
+.game-desc-studio {
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+  color: #444 !important;
+  margin-bottom: 30px !important;
+  flex-grow: 1;
+}
+
+.play-btn-studio {
+  background: linear-gradient(135deg, #0052d4 0%, #4364f7 100%);
+  color: white !important;
+  text-align: center;
+  padding: 16px 25px;
+  border-radius: 16px;
+  text-decoration: none !important;
+  font-weight: 800;
+  font-size: 1.1rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 20px rgba(0, 82, 212, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.play-btn-studio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: 0.6s;
+}
+
+.play-btn-studio:hover::before {
+  left: 100%;
+}
+
+.play-btn-studio:hover {
+  background: linear-gradient(135deg, #003973 0%, #0052d4 100%);
+  box-shadow: 0 12px 30px rgba(0, 82, 212, 0.4);
+  transform: translateY(-5px) scale(1.03);
+}
+
+.btn-arrow {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+
+.play-btn-studio:hover .btn-arrow {
+  transform: translateX(8px);
+}
+
+
+
+/* 響應式優化 */
+@media (max-width: 992px) {
+  .published-games-grid {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+    margin: 0 auto 80px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title-studio {
+    font-size: 1.8rem;
+    margin: 60px 0 30px;
+  }
+  .game-info-studio {
+    padding: 20px;
+  }
+}
+
+/* =========================================
+   工作經驗 - 子職位小設計
+   ========================================= */
+.sub-role {
+  margin-top: 15px;
+  padding: 12px 18px;
+  background: #fdfcfb;
+  border-left: 4px solid #ff9f43;
+  border-radius: 4px 10px 10px 4px;
+  box-shadow: 0 4px 12px rgba(255, 159, 67, 0.08);
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  line-height: 1.8;
+  color: #444;
+}
+
+.sub-role:hover {
+  transform: translateX(6px);
+  background: #ffffff;
+  box-shadow: 0 6px 16px rgba(255, 159, 67, 0.12);
+}
+
+.sub-role strong {
+  color: #d35400;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1.05rem;
+  font-weight: 800;
 }

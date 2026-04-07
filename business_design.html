@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
@@ -51,97 +51,184 @@
 
     <main class="main-content intro-page">
         <h1 data-i18n="businessDesign.title">遊戲設計作品</h1>
-        <div class="project-container">
-            <!-- 專案展示區域 -->
-            <section class="project-showcase">
-                <div class="project-image">
-                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202026-02-01%20155046.png" alt="創意創新通識課期末作業預覽圖">
-                </div>
-                <div class="project-info">
-                    <h2 data-i18n="businessDesign.project1Title">創意創新通識課期末作業</h2>
-                    <h4 data-i18n="businessDesign.project1Time">大二下</h4>
-                    <p data-i18n="businessDesign.project1Desc">這個作品是大二時通識課的期末作業，作業目標是要設計出一項產品並製作它的創業計畫簡報，這個作業從商品設計到簡報製作幾乎都是我一手包辦<br>我用Sketchup 建出了產品的模型，用Ai生城市工具的輔助去寫出這個產品的企劃案</p>
-                    <div class="project-buttons">
-                        <a href="" class="btn-green">
-                            <img src="https://cdn-icons-png.flaticon.com/128/4946/4946342.png" alt="PDF圖示" class="btn-icon">
-                            <span data-i18n="businessDesign.proposalPpt">企劃案簡報</span>
-                        </a>
-                        
-                    </div>
-                </div>
-            </section>
-        </div>    
+        
+        <!-- 分類頁籤導覽列 -->
+        <div class="category-tabs">
+            <button class="category-btn" onclick="filterCategory('category-lonelysub')" data-target="category-lonelysub">
+                <img src="商標透明.png" alt="LonelySub Logo" class="category-icon">
+                <span data-i18n="businessDesign.lonelySub">LonelySub Games</span>
+            </button>
+            <button class="category-btn active" onclick="filterCategory('category-other')" data-target="category-other">
+                <img src="https://cdn-icons-png.flaticon.com/128/681/681392.png" alt="其他遊戲專案 Icon" class="category-icon">
+                <span data-i18n="businessDesign.otherProjects">其他遊戲專案</span>
+            </button>
+        </div>
 
-        <div class="project-container">
-            <!-- 專案展示區域 -->
-            <section class="project-showcase">
-                <div class="project-image">
-                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/output.png?updatedAt=1761150785974" alt="教學預覽圖">
-                </div>
-                <div class="project-info">
-                    <h2 data-i18n="businessDesign.project2Title">遊戲專案:Protect farm 農場保衛戰</h2>
-                    <h4 data-i18n="businessDesign.project2Time">高二下</h4>
-                    <p data-i18n="businessDesign.project2Desc">高中的時候和線上網友們組成團隊一起開發的網頁遊戲，主題是關於農場裡的蔬菜反抗要侵害他們的種族的塔防遊戲，我在這項專案裡面主要負責的工作是,<mark>美術</mark>和<mark>企劃</mark>，而最後因為某些因素，團隊解散，算是未完成的半成品</p>
-                    <div class="project-buttons">
-                        <button class="btn-primary" onclick="showGameObjects()">
-                            <img src="https://cdn-icons-png.flaticon.com/128/705/705890.png" alt="PDF圖示" class="btn-icon">
-                            <span data-i18n="businessDesign.viewGameObjects">查看遊戲物件</span>
-                        </button>
-                        <a href="https://drive.google.com/file/d/1JECwIV359l6upthWDl6BpAseB41wW44s/view?usp=drive_link" class="btn-orange">
-                            <img src="https://cdn-icons-png.flaticon.com/128/1179/1179069.png" alt="PDF圖示" class="btn-icon">
-                            <span data-i18n="businessDesign.watchGameplay">觀看遊戲遊玩影片</span>
-                        </a>
-                        
+        <!-- 區塊1: LonelySub Games -->
+        <div id="category-lonelysub" class="portfolio-category" style="display: none;">
+            <div class="studio-card">
+                <div class="studio-inner">
+                    <div class="studio-header">
+                        <img src="商標透明.png" alt="LonelySub Logo" class="studio-logo-large">
+                        <h2 class="studio-title" data-i18n="businessDesign.brandStoryTitle">工作室介紹: LonelySub Games</h2>
                     </div>
-                </div>
-            </section>
-        </div>    
-        <div class="project-container">
-            <!-- 專案展示區域 -->
-            <section class="project-showcase">
-                <div class="project-image">
-                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/mc%E5%B0%81%E9%9D%A2%E5%9C%96.jpg?updatedAt=1763804126879" alt="Minecraft遊戲預覽圖">
-                </div>
-                <div class="project-info">
-                    <h2 data-i18n="businessDesign.project3Title">第六屆台灣科學節 - 核果資訊學苑攤位<br>現場Minecraft體驗遊戲設計</h2>
-                    <h4 data-i18n="businessDesign.project3Time">大四上</h4>
-                    <p data-i18n="businessDesign.project3Desc">本遊戲由核果老闆邀請我設計，融合 Minecraft 遊戲元素與科學探索精神，
-                        打造「紫水晶冒險之路」現場闖關體驗。玩家將在操控鍵盤和滑鼠中通過岩漿跑酷、
-                        怪物走廊、水池等任務，並於最後啟動機關獲得紫水晶獎勵。
-                        以遊戲化方式讓孩子在玩樂之中培養觀察力、邏輯判斷與反應能力。</p>
-                    <div class="project-buttons">
-                        <button class="btn-green" onclick="showGameIntro()">
-                            <img src="https://cdn-icons-png.flaticon.com/128/4854/4854246.png" alt="遊戲介紹圖示" class="btn-icon">
-                            <span data-i18n="businessDesign.gameIntro">遊戲介紹</span>
-                        </button>
-                        <a href="https://drive.google.com/file/d/10A8kqoyqAKWG3_4bKTK9vF28mas-EklE/view?usp=sharing" class="btn-green">
-                            <img src="https://cdn-icons-png.flaticon.com/128/2780/2780137.png" alt="影片圖示" class="btn-icon">
-                            <span data-i18n="businessDesign.gameVideo">遊戲影片</span>
-                        </a>
+                    
+                    <div class="brand-section">
+                        <h3 class="brand-subtitle" data-i18n="businessDesign.lonelyTitle">✨ 為什麼名字有「Lonely」？</h3>
+                        <p class="brand-text" data-i18n="businessDesign.lonelyDesc">遊戲，在我的成長過程中扮演了非常重要的角色。每當覺得無聊、孤單的時候，玩遊戲總能讓我舒緩壓力，並獲得滿滿的成就感。<br><br>這就是我會踏上獨立開發這條路的初衷：如果我做的遊戲，能讓同樣感到孤單的人，在遊玩的那段時間裡獲得短暫的快樂與成就感，那對我來說就是最大的成就。</p>
                     </div>
-                </div>
-            </section>
 
-            <section class="project-showcase">
-                <div class="project-image">
-                    <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1772995652081-970b8764-df4f-47f6-aa3e-d7b1e04f5e0b_1.png" alt="Minecraft遊戲預覽圖">
-                </div>
-                <div class="project-info">
-                    <h2 data-i18n="businessDesign.project4Title">2026 年國際女性科學嘉年華會活動 - 核果資訊學苑攤位<br>現場Minecraft體驗遊戲設計</h2>
-                    <h4 data-i18n="businessDesign.project4Time">大四下</h4>
-                    <p data-i18n="businessDesign.project4Desc">作為我的第二款麥塊體驗遊戲，本作在技術與氛圍營造上進行了大幅突破。遊戲深度結合了進階的指令方塊與客製化特效，創造出極具壓迫感的生存考驗。玩家不僅需要應對伏守者潛伏在暗處的聲學威脅，還要隨時防備旋風使者強大的突擊。展現你的極限生存技巧，突破重重難關，尋找最終的寶藏！</p>
-                    <div class="project-buttons">
-                        <button class="btn-green" onclick="showGameIntro2()">
-                            <img src="https://cdn-icons-png.flaticon.com/128/4854/4854246.png" alt="遊戲介紹圖示" class="btn-icon">
-                            <span data-i18n="businessDesign.gameIntro">遊戲介紹</span>
-                        </button>
-                        <a href="https://drive.google.com/file/d/1VoboqeeSznU_7K60o9VmE-O1E17I8lZT/view?usp=sharing" class="btn-green">
-                            <img src="https://cdn-icons-png.flaticon.com/128/2780/2780137.png" alt="影片圖示" class="btn-icon">
-                            <span data-i18n="businessDesign.gameVideo">遊戲影片</span>
-                        </a>
+                    <div class="brand-section">
+                        <h3 class="brand-subtitle" data-i18n="businessDesign.subTitle">✨ 為什麼 Logo 是一艘潛水艇「Sub」？</h3>
+                        <p class="brand-text" data-i18n="businessDesign.subDesc">不知道大家有沒有玩過《戰艦世界》(WoWs)？在遊戲裡，潛水艇大部分的時間都在深海中默默探測、潛行，只有在最關鍵的時機才會浮出水面發揮作用。<br><br>這代表了我們團隊的期許：也許平常的我們看起來平平無奇、默默在深海裡開發，但在關鍵時刻，我們一定能浮出水面，帶給大家驚豔的作品！這艘黃色小潛水艇，未來會載著更多遊戲與大家見面。</p>
+                    </div>
+
+                    <a href="https://www.instagram.com/lonelysub_game/" target="_blank" class="ig-btn">
+                        <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="Instagram Icon" class="ig-icon">
+                        <span data-i18n="businessDesign.igFollow">追蹤我們的 Instagram</span>
+                    </a>
+
+                    <!-- 已上架遊戲區塊 (共享背景) -->
+                    <div class="published-games-section">
+                        <h2 class="section-title-studio" data-i18n="businessDesign.publishedGamesTitle">🚀 已上架遊戲</h2>
+                        <div class="published-games-grid">
+                            <!-- Game 1: Egg Cather -->
+                            <div class="game-card-studio">
+                                <div class="game-image-studio">
+                                    <img src="egg.png" alt="Egg Cather Thumbnail">
+                                    <div class="game-overlay-studio">
+                                        <span class="platform-tag" data-i18n="businessDesign.eggCatcher.platform">Github Pages</span>
+                                    </div>
+                                </div>
+                                <div class="game-info-studio">
+                                    <h3 class="game-title-studio" data-i18n="businessDesign.eggCatcher.title">Egg Cather 接蛋樂</h3>
+                                    <div class="game-tags-studio">
+                                        <span data-i18n="businessDesign.eggCatcher.tools">HTML5, Pixi.js</span>
+                                    </div>
+                                    <p class="game-desc-studio" data-i18n="businessDesign.eggCatcher.desc">...</p>
+                                    <a href="https://ipikeq22.github.io/egg_catcher_web/" target="_blank" class="play-btn-studio">
+                                        <span data-i18n="businessDesign.eggCatcher.playBtn">點擊遊玩</span>
+                                        <span class="btn-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Game 2: Boba Smash -->
+                            <div class="game-card-studio">
+                                <div class="game-image-studio">
+                                    <img src="縮圖.png" alt="Boba Smash Thumbnail">
+                                    <div class="game-overlay-studio">
+                                        <span class="platform-tag" data-i18n="businessDesign.bobaSmash.platform">Itch.io</span>
+                                    </div>
+                                </div>
+                                <div class="game-info-studio">
+                                    <h3 class="game-title-studio" data-i18n="businessDesign.bobaSmash.title">Boba Smash 珍珠大作戰</h3>
+                                    <div class="game-tags-studio">
+                                        <span data-i18n="businessDesign.bobaSmash.tools">HTML5, Pixi.js</span>
+                                    </div>
+                                    <p class="game-desc-studio" data-i18n="businessDesign.bobaSmash.desc">...</p>
+                                    <a href="https://ipokia866.itch.io/boba-smash" target="_blank" class="play-btn-studio">
+                                        <span data-i18n="businessDesign.bobaSmash.playBtn">點擊遊玩</span>
+                                        <span class="btn-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+
+        <!-- 區塊2: 其他遊戲專案 -->
+        <div id="category-other" class="portfolio-category active">
+            <div class="project-container">
+                <!-- 專案展示區域 -->
+                <section class="project-showcase">
+                    <div class="project-image">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202026-02-01%20155046.png" alt="創意創新通識課期末作業預覽圖">
+                    </div>
+                    <div class="project-info">
+                        <h2 data-i18n="businessDesign.project1Title">創意創新通識課期末作業</h2>
+                        <h4 data-i18n="businessDesign.project1Time">大二下</h4>
+                        <p data-i18n="businessDesign.project1Desc">這個作品是大二時通識課的期末作業，作業目標是要設計出一項產品並製作它的創業計畫簡報，這個作業從商品設計到簡報製作幾乎都是我一手包辦<br>我用Sketchup 建出了產品的模型，用Ai生城市工具的輔助去寫出這個產品的企劃案</p>
+                        <div class="project-buttons">
+                            <a href="" class="btn-green">
+                                <img src="https://cdn-icons-png.flaticon.com/128/4946/4946342.png" alt="PDF圖示" class="btn-icon">
+                                <span data-i18n="businessDesign.proposalPpt">企劃案簡報</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>    
+
+            <div class="project-container">
+                <!-- 專案展示區域 -->
+                <section class="project-showcase">
+                    <div class="project-image">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/output.png?updatedAt=1761150785974" alt="教學預覽圖">
+                    </div>
+                    <div class="project-info">
+                        <h2 data-i18n="businessDesign.project2Title">遊戲專案:Protect farm 農場保衛戰</h2>
+                        <h4 data-i18n="businessDesign.project2Time">高二下</h4>
+                        <p data-i18n="businessDesign.project2Desc">高中的時候和線上網友們組成團隊一起開發的網頁遊戲，主題是關於農場裡的蔬菜反抗要侵害他們的種族的塔防遊戲，我在這項專案裡面主要負責的工作是,<mark>美術</mark>和<mark>企劃</mark>，而最後因為某些因素，團隊解散，算是未完成的半成品</p>
+                        <div class="project-buttons">
+                            <button class="btn-primary" onclick="showGameObjects()">
+                                <img src="https://cdn-icons-png.flaticon.com/128/705/705890.png" alt="PDF圖示" class="btn-icon">
+                                <span data-i18n="businessDesign.viewGameObjects">查看遊戲物件</span>
+                            </button>
+                            <a href="https://drive.google.com/file/d/1JECwIV359l6upthWDl6BpAseB41wW44s/view?usp=drive_link" class="btn-orange">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1179/1179069.png" alt="PDF圖示" class="btn-icon">
+                                <span data-i18n="businessDesign.watchGameplay">觀看遊戲遊玩影片</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>    
+
+            <div class="project-container">
+                <!-- 專案展示區域 -->
+                <section class="project-showcase">
+                    <div class="project-image">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/mc%E5%B0%81%E9%9D%A2%E5%9C%96.jpg?updatedAt=1763804126879" alt="Minecraft遊戲預覽圖">
+                    </div>
+                    <div class="project-info">
+                        <h2 data-i18n="businessDesign.project3Title">第六屆台灣科學節 - 核果資訊學苑攤位<br>現場Minecraft體驗遊戲設計</h2>
+                        <h4 data-i18n="businessDesign.project3Time">大四上</h4>
+                        <p data-i18n="businessDesign.project3Desc">本遊戲由核果老闆邀請我設計，融合 Minecraft 遊戲元素與科學探索精神，打造「紫水晶冒險之路」現場闖關體驗。玩家將在操控鍵盤和滑鼠中通過岩漿跑酷、怪物走廊、水池等任務，並於最後啟動機關獲得紫水晶獎勵。以遊戲化方式讓孩子在玩樂之中培養觀察力、邏輯判斷與反應能力。</p>
+                        <div class="project-buttons">
+                            <button class="btn-green" onclick="showGameIntro()">
+                                <img src="https://cdn-icons-png.flaticon.com/128/4854/4854246.png" alt="遊戲介紹圖示" class="btn-icon">
+                                <span data-i18n="businessDesign.gameIntro">遊戲介紹</span>
+                            </button>
+                            <a href="https://drive.google.com/file/d/10A8kqoyqAKWG3_4bKTK9vF28mas-EklE/view?usp=sharing" class="btn-green">
+                                <img src="https://cdn-icons-png.flaticon.com/128/2780/2780137.png" alt="影片圖示" class="btn-icon">
+                                <span data-i18n="businessDesign.gameVideo">遊戲影片</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-showcase">
+                    <div class="project-image">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/1772995652081-970b8764-df4f-47f6-aa3e-d7b1e04f5e0b_1.png" alt="Minecraft遊戲預覽圖">
+                    </div>
+                    <div class="project-info">
+                        <h2 data-i18n="businessDesign.project4Title">2026 年國際女性科學嘉年華會活動 - 核果資訊學苑攤位<br>現場Minecraft體驗遊戲設計</h2>
+                        <h4 data-i18n="businessDesign.project4Time">大四下</h4>
+                        <p data-i18n="businessDesign.project4Desc">作為我的第二款麥塊體驗遊戲，本作在技術與氛圍營造上進行了大幅突破。遊戲深度結合了進階的指令方塊與客製化特效，創造出極具壓迫感的生存考驗。玩家不僅需要應對伏守者潛伏在暗處的聲學威脅，還要隨時防備旋風使者強大的突擊。展現你的極限生存技巧，突破重重難關，尋找最終的寶藏！</p>
+                        <div class="project-buttons">
+                            <button class="btn-green" onclick="showGameIntro2()">
+                                <img src="https://cdn-icons-png.flaticon.com/128/4854/4854246.png" alt="遊戲介紹圖示" class="btn-icon">
+                                <span data-i18n="businessDesign.gameIntro">遊戲介紹</span>
+                            </button>
+                            <a href="https://drive.google.com/file/d/1VoboqeeSznU_7K60o9VmE-O1E17I8lZT/view?usp=sharing" class="btn-green">
+                                <img src="https://cdn-icons-png.flaticon.com/128/2780/2780137.png" alt="影片圖示" class="btn-icon">
+                                <span data-i18n="businessDesign.gameVideo">遊戲影片</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>    
 
     </main>
