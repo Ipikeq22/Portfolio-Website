@@ -197,6 +197,10 @@ const translations = {
         title: "鴻宇文教 - 學科能力檢測宣傳文宣",
         desc: "學科能力測驗的資訊和活動細節",
       },
+      college6: {
+        title: "和星開發 - 傳單設計提案",
+        desc: "做這張傳單時順便了解土地開發是什麼",
+      },
     },
 
     // 前端設計頁面
@@ -560,26 +564,6 @@ const translations = {
       },
       workSection: {
         title: "Work Experience",
-        job1Title: "Camp Instructor / Part-time Admin Designer",
-        job1Time: "Junior Year ~ Present",
-        job1Company: "Nuts Institute - Hsinchu Campus",
-        job1Detail:
-          "<div class='sub-role'><strong>🎨 Part-time Admin Designer:</strong> Responsible for official FB and LINE graphic marketing design, and customer reception.</div>" +
-          "<div class='sub-role'><strong>🎓 Camp Instructor:</strong> Independently develop lesson plans, design teaching materials, and submit proposals.</div>",
-        job2Title: "Part-time Graphic Designer",
-        job2Time: "Sophomore ~ Present",
-        job2Company: "Richie English - Hsinchu Branch",
-        job2Detail: "Traditional print media A4 enrollment DM design",
-        job3Title: "3D Printing Club - Instructor",
-        job3Time: "Sophomore ~ Junior Year",
-        job3Company: "Private Yimin Senior High School",
-        job3Detail:
-          "Design lesson plans and teach at regular club sessions each semester",
-        job4Title: "Freelancer",
-        job4Time: "2021 ~ Present",
-        job4Company: "Self-employed",
-        job4Detail:
-          "Provide design consulting, personal projects (areas listed in expertise), teaching, or project-based collaboration.",
         jobStudioTitle: "LonelySub Games Studio CEO",
         jobStudioTime: "Jan 2026 ~ Present",
         jobStudioCompany: "LonelySub Games Studio",
@@ -609,6 +593,7 @@ const translations = {
         job5Company: "Personal + Studio",
         job5Detail: "Developing various games and founding a game studio striving to develop games to be published on platforms.",
       },
+
 
       contactSection: {
         title: "Contact Information",
@@ -693,6 +678,10 @@ const translations = {
       college5: {
         title: "Hongyu Education - Academic Ability Test Promotional Flyer",
         desc: "Information and event details for the academic ability assessment",
+      },
+      college6: {
+        title: "Hexing Development - Flyer Design Proposal",
+        desc: "Learned about land development while designing this flyer.",
       },
     },
 
