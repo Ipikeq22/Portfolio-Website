@@ -205,6 +205,10 @@ const translations = {
         title: "和星開發 - 傳單設計提案",
         desc: "做這張傳單時順便了解土地開發是什麼",
       },
+      college7: {
+        title: "核果資訊學苑 - 卓老師與Wyn老師課程招生DM設計",
+        desc: "感謝核果的Wyn老師願意信任我壤我設計他和卓老師的課程招生DM",
+      },
     },
 
     // 前端設計頁面
@@ -690,6 +694,10 @@ const translations = {
       college6: {
         title: "Hexing Development - Flyer Design Proposal",
         desc: "Learned about land development while designing this flyer.",
+      },
+      college7: {
+        title: "Nuts Institute - Course Enrollment DM Design for Ms. Zhuo & Mr. Wyn",
+        desc: "Thanks to Mr. Wyn from Nuts Institute for trusting me to design the course enrollment DM for him and Ms. Zhuo.",
       },
     },
 
