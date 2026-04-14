@@ -157,6 +157,10 @@ const translations = {
       project7: {
         title: "招生DM設計",
       },
+      project8: {
+        title: "核果資訊學苑 - 2026暑期夏令營招生dm設計",
+        desc: "針對 2026 暑假營隊設計的系列招生 DM，包含多樣化的主題課程宣傳，以活潑生動的視覺設計吸引家長與學員目光。",
+      },
       highSchool1: {
         title: "歷史課課堂作業海報設計-無核家園",
         desc: "高中時期為學校課堂作業設計的宣傳海報，運用鮮明的色彩和活潑的版面設計吸引學生目光。",
@@ -637,6 +641,10 @@ const translations = {
       },
       project7: {
         title: "Richie English DM Design",
+      },
+      project8: {
+        title: "Nuts Institute - 2026 Summer Camp Enrollment DM Design",
+        desc: "A series of enrollment DM designs for the 2026 summer camp, featuring various themed course promotions with vibrant and engaging visual designs.",
       },
       highSchool1: {
         title: "History Class Assignment Poster Design - Nuclear-Free Homeland",
