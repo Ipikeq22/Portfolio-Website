@@ -206,8 +206,8 @@ const translations = {
         desc: "做這張傳單時順便了解土地開發是什麼",
       },
       college7: {
-        title: "核果資訊學苑 - 卓老師與Wyn老師課程招生DM設計",
-        desc: "感謝核果的Wyn老師願意信任我壤我設計他和卓老師的課程招生DM",
+        title: "數位達文西：JavaScript 視覺藝術程式工作坊 課程招生雙面DM",
+        desc: "感謝核果的 Wyn 老師邀請我為這場 JavaScript 視覺藝術程式工作坊設計雙面招商 DM。",
       },
     },
 
@@ -696,8 +696,8 @@ const translations = {
         desc: "Learned about land development while designing this flyer.",
       },
       college7: {
-        title: "Nuts Institute - Course Enrollment DM Design for Ms. Zhuo & Mr. Wyn",
-        desc: "Thanks to Mr. Wyn from Nuts Institute for trusting me to design the course enrollment DM for him and Ms. Zhuo.",
+        title: "Digital Da Vinci: JavaScript Visual Arts Programming Workshop Course Enrollment DM (Double-sided)",
+        desc: "Design for the 'Digital Da Vinci' JavaScript visual arts workshop enrollment flyer, commissioned by Mr. Wyn from Nuts Institute.",
       },
     },
 
