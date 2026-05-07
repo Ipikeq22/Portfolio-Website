@@ -305,6 +305,29 @@ const translations = {
         "課程網站已部署並應用於實際夏令營場次，協助學生完成從美學訓練到遊戲企劃的五日完整學習旅程，並透過 Google Drive 收集學員作品。",
     },
 
+    // 5分鐘快速做遊戲：打地鼠篇
+    fiveMinGame: {
+      projectTitle: "5分鐘快速做遊戲：打地鼠篇",
+      projectTime: "大四下",
+      projectSubtitle: "AI 程式開發教學網站 | 面向國小小朋友",
+      introTitle: "專案簡介",
+      introContent: "這是一個專為國小小朋友設計的 AI 程式開發教學網站。透過這個網站，孩子們可以學習如何利用 GitHub Copilot 與 HTML5/CSS3 技術，在短短 5 分鐘內從零開始打造出一個具備現代感、充滿互動特效的 6x6 打地鼠遊戲。",
+      featuresTitle: "項目特色",
+      feature1: "AI 驅動教學：利用精確的 AI 提示詞 (Prompt Engineering)，引導 GitHub Copilot 撰寫高品質程式碼。",
+      feature2: "現代感視覺：採用毛玻璃風格 (Glassmorphism)、全螢幕 6x6 網格與流暢的 CSS 動畫。",
+      feature3: "低門檻開發：不需要深厚的語法基礎，專注於邏輯思維與素材整合。",
+      feature4: "互動式體驗：包含角色下載、AI 去背引導、音效整合以及一鍵複製指令功能。",
+      techTitle: "技術棧",
+      techFrontend: "Frontend: HTML5, CSS3 (Grid & Flexbox), Vanilla JavaScript",
+      techAI: "AI Tools: GitHub Copilot, Gemini, Suno",
+      techDeploy: "Deployment: GitHub Pages",
+      architectureTitle: "開發架構圖",
+      archLayer1: "教學介面層",
+      archComp1: "毛玻璃 UI",
+      archLayer2: "引導邏輯層",
+      archComp2: "AI Prompt 引導",
+    },
+
     // 教學設計頁面
     teachingDesign: {
       title: "教學設計作品",
@@ -798,6 +821,29 @@ const translations = {
       resultTitle: "Results",
       resultContent:
         "The course website has been deployed and used in actual camp sessions, helping students complete a full 5-day learning journey from aesthetics training to game concept design, with student works collected via Google Drive.",
+    },
+
+    // 5-Min Game Maker: Whack-a-Mole Edition
+    fiveMinGame: {
+      projectTitle: "5-Min Game Maker: Whack-a-Mole Edition",
+      projectTime: "Senior Spring",
+      projectSubtitle: "AI Programming Teaching Website | For Elementary Students",
+      introTitle: "Project Introduction",
+      introContent: "This is an AI programming teaching website designed for elementary school students. Through this website, children can learn how to use GitHub Copilot and HTML5/CSS3 technology to build a modern, interactive 6x6 whack-a-mole game from scratch in just 5 minutes.",
+      featuresTitle: "Features",
+      feature1: "AI-Driven Teaching: Uses precise AI Prompt Engineering to guide GitHub Copilot in writing high-quality code.",
+      feature2: "Modern Visuals: Features Glassmorphism style, full-screen 6x6 grid, and smooth CSS animations.",
+      feature3: "Low Entry Barrier: No deep syntax knowledge required; focuses on logical thinking and asset integration.",
+      feature4: "Interactive Experience: Includes character downloads, AI background removal guidance, sound effect integration, and one-click copy command functionality.",
+      techTitle: "Tech Stack",
+      techFrontend: "Frontend: HTML5, CSS3 (Grid & Flexbox), Vanilla JavaScript",
+      techAI: "AI Tools: GitHub Copilot, Gemini, Suno",
+      techDeploy: "Deployment: GitHub Pages",
+      architectureTitle: "Development Architecture",
+      archLayer1: "Teaching Interface",
+      archComp1: "Glassmorphism UI",
+      archLayer2: "Guidance Logic",
+      archComp2: "AI Prompt Guidance",
     },
 
     // Teaching Design Page

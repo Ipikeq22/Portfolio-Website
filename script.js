@@ -299,6 +299,23 @@ function showMinecraftDetails() {
   });
 }
 
+// 顯示 5分鐘快速做遊戲 專案介紹
+function showFiveMinGameDetails() {
+  const content = document.getElementById('five-min-game-details-content').innerHTML;
+  Swal.fire({
+    title: '5分鐘快速做遊戲！教學體驗網站',
+    html: `<div style="text-align: left; max-height: 70vh; overflow-y: auto; padding: 10px;">${content}</div>`,
+    width: '85%',
+    showCloseButton: true,
+    showConfirmButton: false,
+    background: '#ffffff',
+    color: '#2c3e50',
+    customClass: {
+      popup: 'project-detail-popup'
+    }
+  });
+}
+
 // 顯示遊戲物件圖片
 function showGameObjects() {
   Swal.fire({
