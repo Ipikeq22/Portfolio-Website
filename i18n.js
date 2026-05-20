@@ -399,10 +399,10 @@ const translations = {
       igFollow: "追蹤我們的 Instagram",
       publishedGamesTitle: "🚀 已上架遊戲",
       eggCatcher: {
-        title: "Egg Cather 接蛋樂 (暫定)",
-        platform: "Github Pages",
+        title: "Egg Blitz 接蛋急俠",
+        platform: "Itch.io",
         tools: "HTML5, Pixi.js",
-        desc: "大四上時，因為閒閒無聊而嘗試 Pixi.js 去開發遊戲。遊戲初衷是最簡單的接雞蛋，經過創意設計後加入了豐富的趣味性。目前正式版開發中，此為放在 Github 上的最初版本，以紀念開發第一步的堅持。",
+        desc: "大四上時，因為閒閒無聊而嘗試 Pixi.js 去開發遊戲。遊戲初衷是最簡單的接雞蛋，經過創意設計後加入了豐富的趣味性。目前正式版開發中，此為放在 itch.io 上的最初版本，以紀念開發第一步的堅持。",
         playBtn: "點擊遊玩"
       },
       bobaSmash: {
@@ -924,10 +924,10 @@ const translations = {
       igFollow: "Follow our Instagram",
       publishedGamesTitle: "🚀 Published Games",
       eggCatcher: {
-        title: "Egg Cather (WIP)",
-        platform: "Github Pages",
+        title: "Egg Blitz",
+        platform: "Itch.io",
         tools: "HTML5, Pixi.js",
-        desc: "Started in my senior year out of curiosity for Pixi.js. What began as a simple egg-catching concept evolved with added complexity and fun. The final version is in development; this is the initial version on Github, commemorating the first steps of my gamedev journey.",
+        desc: "Started in my senior year out of curiosity for Pixi.js. What began as a simple egg-catching concept evolved with added complexity and fun. The final version is in development; this is the initial version on Itch.io, commemorating the first steps of my gamedev journey.",
         playBtn: "Play Now"
       },
       bobaSmash: {
