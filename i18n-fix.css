@@ -352,3 +352,71 @@ body .club-item .club-btn:hover {
     color: #000 !important;
 }
 
+
+
+/* =========================================
+   MOBILE LAYOUT FIXES
+   ========================================= */
+@media (max-width: 768px) {
+    body .project-buttons {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+    
+    body .project-buttons a[class], 
+    body .project-buttons button[class] {
+        width: 100px !important; /* Slightly smaller on mobile to fit 3 if possible, or wrap cleanly */
+        height: 100px !important;
+        padding: 10px 5px !important;
+    }
+    
+    body .club-gallery {
+        grid-template-columns: 1fr !important; /* Force single column on mobile */
+        gap: 20px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 0 10px !important;
+    }
+    
+    body .club-item {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    html, body {
+        overflow-x: hidden !important; /* Prevent horizontal scrolling */
+        max-width: 100vw !important;
+    }
+}
+
+
+
+/* =========================================
+   PROJECT THUMBNAIL SIZING FIX
+   ========================================= */
+body .project-showcase .project-image {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+body .project-showcase .project-image img {
+    width: auto !important;
+    max-width: 100% !important;
+    max-height: 380px !important; /* Constrain tall portrait images like Stun */
+    object-fit: contain !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3) !important;
+    margin: 0 auto !important;
+}
+
+@media (max-width: 768px) {
+    body .project-showcase .project-image img {
+        max-height: 280px !important; /* Smaller on mobile */
+    }
+}
+
