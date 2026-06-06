@@ -92,13 +92,13 @@ const translations = {
         jobStudioCompany: "LonelySub Games 遊戲工作室",
         jobStudioDetail: "創辦並經營獨立遊戲工作室，負責工作室整體發展方向、產品企劃與品牌推廣。<br><br>目前是一人工作室，努力發展中",
         job1Title: "營隊講師 / 兼職行政美編",
-        job1Time: "大三上 ~ 現今",
+        job1Time: "大三上 ~ 2026年6月",
         job1Company: "核果資訊學苑 - 新竹校",
         job1Detail:
           "<div class='sub-role'><strong>🎨 兼職行政美編：</strong>負責官方 FB、Line 圖文行銷設計，並接待來電或現場訪客。</div>" +
           "<div class='sub-role'><strong>🎓 營隊講師：</strong>自行研發教案、設計教具並進行教學提案。</div>",
         job2Title: "兼職美編",
-        job2Time: "大二下 ~ 現今",
+        job2Time: "大二下 ~ 2026年6月",
         job2Company: "李奇英文 - 新竹分校(原:華興補習班)",
         job2Detail: "傳統印刷媒體的A4招生DM設計",
         job3Title: "3D列印社 - 社團老師",
@@ -600,13 +600,13 @@ const translations = {
         jobStudioCompany: "LonelySub Games Studio",
         jobStudioDetail: "Founded and managing an independent game studio, responsible for overall development direction, product planning, and brand promotion.<br><br>Currently a solo studio, under active development.",
         job1Title: "Camp Instructor / Part-time Admin Designer",
-        job1Time: "Junior Year ~ Present",
+        job1Time: "Junior Year ~ June 2026",
         job1Company: "Nuts Institute - Hsinchu Campus",
         job1Detail:
           "<div class='sub-role'><strong>🎨 Part-time Admin Designer:</strong> Responsible for official FB and LINE graphic marketing design, and customer reception.</div>" +
           "<div class='sub-role'><strong>🎓 Camp Instructor:</strong> Independently develop lesson plans, design teaching materials, and submit proposals.</div>",
         job2Title: "Part-time Graphic Designer",
-        job2Time: "Sophomore ~ Present",
+        job2Time: "Sophomore ~ June 2026",
         job2Company: "Richie English - Hsinchu Branch",
         job2Detail: "Traditional print media A4 enrollment DM design",
         job3Title: "3D Printing Club - Instructor",
