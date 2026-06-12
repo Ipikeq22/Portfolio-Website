@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 /* Reset */
 * {
   margin: 0;
@@ -11,9 +12,9 @@ html {
 }
 
 body {
-  font-family: "Poppins", "Noto Sans TC", sans-serif;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  color: #f5f5f5;
+  font-family: "Inter", "Noto Sans TC", sans-serif;
+  background: #0a0a0a;
+  color: #e5e5e5;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -27,10 +28,15 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 14px 24px;
-  background: linear-gradient(90deg, #1a1a1a 0%, #2d2d2d 100%);
-  color: #ffd700;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #fff;
   width: 100%;
   min-height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -51,31 +57,23 @@ body {
 /* 聯絡我按鈕基礎樣式 */
 .contact-btn {
   padding: 9px 20px;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 215, 0, 0.15) 0%,
-    rgba(255, 153, 0, 0.1) 100%
-  );
-  border: 2px solid rgba(255, 215, 0, 0.3);
-  border-radius: 20px;
-  color: #ffd700;
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.95rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .contact-btn:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 215, 0, 0.25) 0%,
-    rgba(255, 153, 0, 0.15) 100%
-  );
-  border-color: rgba(255, 215, 0, 0.6);
+  background: #2a2a2a;
+  border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* ========================================
@@ -473,42 +471,24 @@ body {
 }
 
 .main-content h1 {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   margin-bottom: 15px;
-  color: #ffd700;
-  font-weight: 700;
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 /* 首頁描述文字樣式（不影響其他頁面） */
 .main-content > p:not(.intro-page *) {
-  font-family: "Poppins", "Noto Sans TC", sans-serif;
-  font-style: italic;
+  font-family: "Inter", "Noto Sans TC", sans-serif;
   font-size: 1.25rem;
-  /* 使用金色實體文字而非透明漸層，這樣emoji就能顯示 */
-  color: #ffd700;
+  color: #a1a1aa;
   margin-bottom: 40px;
-  font-weight: 600;
-  letter-spacing: 0.8px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
   line-height: 1.6;
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 15px;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 215, 0, 0.12) 0%,
-    rgba(255, 153, 0, 0.08) 100%
-  );
-  box-shadow:
-    0 4px 20px rgba(255, 215, 0, 0.25),
-    inset 0 1px 1px rgba(255, 255, 255, 0.1);
-  /* 文字發光效果 */
-  text-shadow:
-    0 0 20px rgba(255, 215, 0, 0.6),
-    0 0 40px rgba(255, 215, 0, 0.4),
-    0 2px 4px rgba(0, 0, 0, 0.3);
-  animation: subtleGlow 3s ease-in-out infinite;
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s both;
 }
 
 /* 為 emoji 加強顯示效果 */
@@ -552,23 +532,22 @@ body {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 28px;
-  background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
-  color: #1a1a1a !important; /* 蓋過父層 p 的文字顏色 */
+  background: #ffffff;
+  color: #0a0a0a !important;
   text-decoration: none;
-  border-radius: 30px;
-  font-weight: 700;
-  font-style: normal; /* 蓋過父層的斜體 */
+  border-radius: 8px;
+  font-weight: 600;
+  font-style: normal;
   font-size: 1.1rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
-  text-shadow: none; /* 取消發光文字，使其清晰 */
-  letter-spacing: 1px;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
 }
 
 .about-me-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
-  color: #1a1a1a !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+  background: #f0f0f0;
 }
 
 .about-me-btn:active {
@@ -610,39 +589,31 @@ body {
   align-items: center;
   justify-content: center;
   padding: 30px 25px;
-  color: #1a1a1a;
+  color: #e5e5e5;
   text-decoration: none;
   border-radius: 20px;
-  transition: all 0.3s ease;
+  background: linear-gradient(135deg, rgba(45, 45, 45, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   font-weight: 600;
-  border: 2px solid transparent;
   min-height: 150px;
   text-align: center;
 }
 
-.portfolio-btn:nth-child(1) {
-  background: linear-gradient(45deg, #ff6b6b 0%, #ff8e8e 100%);
-}
 
-.portfolio-btn:nth-child(2) {
-  background: linear-gradient(45deg, #4ecdc4 0%, #6ee5dd 100%);
-}
 
-.portfolio-btn:nth-child(3) {
-  background: linear-gradient(45deg, #49ff0de7 0%, #52f40d 100%);
-}
 
-.portfolio-btn:nth-child(4) {
-  background: linear-gradient(45deg, #96ceb4 0%, #b3dac7 100%);
-}
 
-.portfolio-btn:nth-child(5) {
-  background: linear-gradient(45deg, #feca57 0%, #fed976 100%);
-}
 
-.portfolio-btn:nth-child(6) {
-  background: linear-gradient(45deg, #a29bfe 0%, #b8b3ff 100%);
-}
+
+
+
+
+
+
 
 .btn-icon {
   width: 50px;
@@ -660,35 +631,17 @@ body {
   hyphens: auto;
 }
 
-.portfolio-btn:nth-child(1):hover {
-  background: linear-gradient(45deg, #ff8e8e 0%, #ffb3b3 100%);
-  transform: translateY(-3px);
-}
 
-.portfolio-btn:nth-child(2):hover {
-  background: linear-gradient(45deg, #6ee5dd 0%, #8eeae4 100%);
-  transform: translateY(-3px);
-}
 
-.portfolio-btn:nth-child(3):hover {
-  background: linear-gradient(45deg, #6cc5e0 0%, #8dd1e6 100%);
-  transform: translateY(-3px);
-}
 
-.portfolio-btn:nth-child(4):hover {
-  background: linear-gradient(45deg, #b3dac7 0%, #c7e2d4 100%);
-  transform: translateY(-3px);
-}
 
-.portfolio-btn:nth-child(5):hover {
-  background: linear-gradient(45deg, #fed976 0%, #fee195 100%);
-  transform: translateY(-3px);
-}
 
-.portfolio-btn:nth-child(6):hover {
-  background: linear-gradient(45deg, #b8b3ff 0%, #c7c3ff 100%);
-  transform: translateY(-3px);
-}
+
+
+
+
+
+
 
 /* Footer */
 .footer {
@@ -3031,10 +2984,10 @@ mark {
 }
 /* Tasksnap 頁面樣式 */
 .tasksnap-page {
-  background: #ffffff;
-  color: #2c3e50;
+  background: transparent; /* Inherits from body #0a0a0a */
+  color: #e5e5e5;
   min-height: 100vh;
-  padding: 40px 0;
+  padding: 60px 0;
   display: flex;
   justify-content: center;
 }
@@ -3046,19 +2999,39 @@ mark {
   padding: 0 20px;
 }
 
+.tasksnap-container img[alt="專題logo"] {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
 .tasksnap-page h1 {
   text-align: center;
-  font-size: 3rem;
-  color: #2c3e50;
-  margin-bottom: 50px;
-  font-weight: 700;
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 800;
+  letter-spacing: -1px;
 }
 
 .tasksnap-page h2 {
-  color: #2c3e50;
-  font-size: 1.8rem;
+  color: #ffffff;
+  font-size: 2rem;
   margin-bottom: 30px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.tasksnap-page p {
+  color: #a1a1aa;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 專題成果區域 */
@@ -3072,130 +3045,146 @@ mark {
   justify-content: center;
   gap: 30px;
   width: 100%;
+  margin-top: 40px;
 }
 
 .result-item {
   text-align: center;
-  background: #f8f9fa;
+  background: rgba(20, 20, 20, 0.8);
   padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 }
 
 .result-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+  background: rgba(30, 30, 30, 0.9);
 }
 
 .result-item img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .result-item h3 {
-  color: #2c3e50;
+  color: #ffffff;
   margin-bottom: 15px;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .result-btn {
-  background: #3498db;
-  color: white;
+  background: #ffffff;
+  color: #000000;
   border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 12px 24px;
+  border-radius: 10px;
   cursor: pointer;
   font-weight: 600;
-  transition: background 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  margin-top: auto;
+  text-decoration: none;
 }
 
 .result-btn:hover {
-  background: #2980b9;
+  background: #e0e0e0;
+  transform: scale(1.05);
 }
 
 /* 開發占比區域 */
 .development-ratio {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   width: 100%;
 }
 
 .ratio-container {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 60px;
   width: 100%;
+  margin-top: 40px;
 }
 
 .ratio-item {
   text-align: center;
+  background: rgba(20, 20, 20, 0.5);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .circle-chart {
   position: relative;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 20px;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 25px;
   border-radius: 50%;
   background: conic-gradient(
-    #3498db 0deg,
-    #3498db var(--percent),
-    #ecf0f1 var(--percent),
-    #ecf0f1 360deg
+    #ffffff 0deg,
+    #ffffff var(--percent),
+    rgba(255, 255, 255, 0.1) var(--percent),
+    rgba(255, 255, 255, 0.1) 360deg
   );
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.2);
-  border: 8px solid #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .circle-chart::before {
   content: "";
   position: absolute;
-  width: 100px;
-  height: 100px;
-  background: #ffffff;
+  width: 140px;
+  height: 140px;
+  background: #0a0a0a;
   border-radius: 50%;
-  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .circle-text {
   position: relative;
   z-index: 2;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
 }
 
 .ratio-item h4 {
-  color: #2c3e50;
+  color: #ffffff;
   margin-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .ratio-item p {
-  color: #e74c3c;
-  font-size: 0.9rem;
-  font-weight: 600;
+  color: #a1a1aa !important;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* 選項卡樣式 */
 .project-tabs {
-  margin-top: 60px;
+  margin-top: 80px;
   width: 100%;
 }
 
 .tab-buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
-  border-bottom: 2px solid #ecf0f1;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 10px;
 }
 
 .tab-btn {
@@ -3204,19 +3193,19 @@ mark {
   padding: 15px 30px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #7f8c8d;
+  color: #888888;
   cursor: pointer;
   transition: all 0.3s ease;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .tab-btn.active {
-  color: #3498db;
-  border-bottom-color: #3498db;
+  color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 .tab-btn:hover {
-  color: #2980b9;
+  color: #cccccc;
 }
 
 .tab-content {
@@ -3230,16 +3219,21 @@ mark {
 
 .tab-panel.active {
   display: block;
+  animation: fadeInUp 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .panel-layout {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
+  background: rgba(20, 20, 20, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 40px;
 }
 
 .panel-text {
@@ -3248,15 +3242,28 @@ mark {
 }
 
 .panel-text h3 {
-  color: #2c3e50;
-  font-size: 1.5rem;
+  color: #ffffff;
+  font-size: 1.6rem;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .panel-text p {
-  color: #34495e;
+  color: #a1a1aa;
   line-height: 1.8;
   font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.panel-text ul {
+  color: #a1a1aa;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding-left: 20px;
+}
+
+.panel-text li {
+  margin-bottom: 10px;
 }
 
 .panel-image {
@@ -3266,8 +3273,8 @@ mark {
 .panel-image img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* 響應式設計 */
@@ -3381,22 +3388,10 @@ mark {
   }
 }
 
-.project_rsults p {
-  color: #000;
-}
-/* Tasksnap 頁面段落樣式 */
-.tasksnap-page p {
-  color: #2c3e50;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 25px;
-}
 
-/* 圓圈圖占比文字紅色 */
-.tasksnap-page .ratio-item p {
-  color: #e74c3c !important;
-  font-weight: 600;
-}
+
+
+
 /* 選項卡內容樣式優化 */
 .panel-text {
   flex: 1;
@@ -5421,4 +5416,269 @@ button {
 .project-buttons a .btn-icon, .project-buttons button .btn-icon {
     display: block !important;
     margin: 0 auto 12px auto !important;
+}
+
+/* --- Award Banner --- */
+.award-banner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 153, 0, 0.05) 100%);
+  border: 1px solid rgba(255, 215, 0, 0.6);
+  border-radius: 50px;
+  padding: 14px 32px;
+  margin: 15px auto 30px auto;
+  box-shadow: 0 8px 32px rgba(255, 215, 0, 0.15), inset 0 0 15px rgba(255, 215, 0, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* 讓它維持置中並佔據獨立一行 */
+  clear: both;
+}
+
+.award-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: skewX(-20deg);
+  animation: shine 4s infinite;
+}
+
+.award-banner:hover {
+  transform: translateY(-3px) scale(1.02);
+  border-color: rgba(255, 215, 0, 0.9);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.25), inset 0 0 20px rgba(255, 215, 0, 0.15);
+}
+
+.award-banner .award-icon {
+  font-size: 1.8rem;
+  filter: drop-shadow(0 2px 10px rgba(255, 215, 0, 0.6));
+  animation: bounceTrophy 2.5s infinite ease-in-out;
+}
+
+.award-banner .award-text {
+  font-size: 1.25rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #ffd700, #ffaa00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  20% { left: 200%; }
+  100% { left: 200%; }
+}
+
+@keyframes bounceTrophy {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-4px) rotate(-5deg); }
+  50% { transform: translateY(0) rotate(0deg); }
+  75% { transform: translateY(-4px) rotate(5deg); }
+}
+
+/* 響應式 */
+@media (max-width: 768px) {
+  .award-banner {
+    padding: 12px 24px;
+    margin: 12px auto 25px auto;
+  }
+  .award-banner .award-icon {
+    font-size: 1.5rem;
+  }
+  .award-banner .award-text {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .award-banner {
+    padding: 10px 18px;
+    border-radius: 30px;
+    gap: 8px;
+    margin: 10px auto 20px auto;
+  }
+  .award-banner .award-icon {
+    font-size: 1.3rem;
+  }
+  .award-banner .award-text {
+    font-size: 0.95rem;
+  }
+}
+
+.portfolio-btn:hover {
+  background: linear-gradient(135deg, rgba(60, 60, 60, 0.9) 0%, rgba(30, 30, 30, 0.95) 100%);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 255, 255, 0.05), inset 0 1px 2px rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* =======================================
+   Sleek Minimalist Dark Overrides 
+   ======================================= */
+.tasksnap-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(15, 15, 15, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+}
+
+.award-banner {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 30px auto;
+  max-width: fit-content;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.award-banner .award-text {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.project-results .result-item {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.4s ease;
+}
+.project-results .result-item:hover {
+  background: rgba(30, 30, 30, 0.9);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+.project-results .result-item h3 {
+  color: #fff;
+  font-weight: 600;
+}
+.result-btn {
+  background: #ffffff;
+  color: #000;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
+}
+.result-btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.02);
+}
+
+.tab-btn {
+  background: transparent;
+  color: #888;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.tab-btn:hover {
+  color: #fff;
+}
+.tab-btn.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.tab-panel {
+  background: rgba(20, 20, 20, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.footer {
+  background: #0a0a0a;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  color: #888;
+}
+
+.circle-chart {
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+.circle-text {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* =========================================================
+   SLEEK MINIMALIST DARK OVERRIDES (FORCED) 
+   ========================================================= */
+.tasksnap-page .panel-text h3 {
+  color: #ffffff !important;
+  border-left: 3px solid #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.tasksnap-page .panel-text p,
+.tasksnap-page .panel-text ul,
+.tasksnap-page .panel-text li {
+  color: #e5e5e5 !important;
+  font-weight: 400 !important;
+  text-shadow: none !important;
+}
+
+.tasksnap-page .panel-text li::marker {
+  color: #ffffff !important;
+}
+
+.tasksnap-page .tab-buttons {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.tasksnap-page .tab-btn {
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
+  color: #888888 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+.tasksnap-page .tab-btn.active {
+  color: #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+}
+
+.tasksnap-page .tab-btn:hover {
+  color: #cccccc !important;
+  transform: none !important;
+  background: transparent !important;
+}
+
+/* Fix any remaining dark text in tasksnap-page */
+.tasksnap-page h1,
+.tasksnap-page h2 {
+  color: #ffffff !important;
+}
+
+.tasksnap-page .ratio-item p {
+  color: #a1a1aa !important;
 }

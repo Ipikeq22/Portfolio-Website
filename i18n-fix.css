@@ -224,19 +224,19 @@ body .project-buttons button[class] {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
     
     /* Bright Glassmorphism */
-    background: rgba(255, 255, 255, 0.85) !important;
+    background: rgba(25, 25, 25, 0.8) !important;
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border: 1px solid rgba(255, 255, 255, 1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
 }
 
 body .project-buttons a[class]:hover, 
 body .project-buttons button[class]:hover {
     transform: translateY(-8px) scale(1.03) !important;
-    background: rgba(255, 255, 255, 1) !important;
-    border-color: #ffd700 !important;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2), 0 0 20px rgba(255, 215, 0, 0.4) !important;
+    background: rgba(40, 40, 40, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5), 0 0 15px rgba(255, 255, 255, 0.1) !important;
     z-index: 10;
 }
 
@@ -248,7 +248,7 @@ body .project-buttons button[class] span {
     margin: 0 auto !important;
     font-size: 0.95rem !important;
     font-weight: 700 !important;
-    color: #1a1a1a !important; /* Dark text for bright background */
+    color: #e5e5e5 !important;
     line-height: 1.2 !important;
     white-space: normal !important;
     word-break: keep-all !important;
@@ -330,8 +330,8 @@ body .club-item .club-btn {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%) !important;
-    color: #1a1a1a !important;
+    background: #fff !important;
+    color: #000 !important;
     padding: 12px 28px !important;
     border-radius: 30px !important;
     font-weight: 800 !important;
@@ -340,15 +340,15 @@ body .club-item .club-btn {
     border: none !important;
     width: auto !important;
     margin: auto auto 0 auto !important; /* Center horizontally, push to bottom */
-    box-shadow: 0 6px 15px rgba(255, 165, 0, 0.3) !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
     letter-spacing: 0.5px !important;
 }
 
 body .club-item .club-btn:hover {
     transform: translateY(-4px) scale(1.05) !important;
-    box-shadow: 0 10px 25px rgba(255, 165, 0, 0.5) !important;
-    background: linear-gradient(135deg, #ffe033 0%, #ffb732 100%) !important;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1) !important;
+    background: #e0e0e0 !important;
     color: #000 !important;
 }
 
