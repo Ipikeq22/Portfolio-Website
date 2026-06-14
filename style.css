@@ -3016,6 +3016,44 @@ mark {
   letter-spacing: -1px;
 }
 
+/* 獲獎看板樣式 */
+.award-banner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 153, 0, 0.05) 100%);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  padding: 12px 24px;
+  border-radius: 50px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.15), inset 0 0 10px rgba(255, 215, 0, 0.05);
+  backdrop-filter: blur(5px);
+  animation: floatBanner 3s ease-in-out infinite;
+}
+
+.award-icon {
+  font-size: 1.5rem;
+  animation: pulseTrophy 2s infinite;
+}
+
+.award-text {
+  color: #ffd700;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+@keyframes floatBanner {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes pulseTrophy {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.5)); }
+  50% { transform: scale(1.15); filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8)); }
+}
+
 .tasksnap-page h2 {
   color: #ffffff;
   font-size: 2rem;
@@ -3050,12 +3088,13 @@ mark {
 
 .result-item {
   text-align: center;
-  background: rgba(20, 20, 20, 0.8);
+  background: rgba(20, 20, 20, 0.6);
   padding: 25px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
   display: flex;
   flex-direction: column;
@@ -3064,10 +3103,10 @@ mark {
 }
 
 .result-item:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
   border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
-  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  background: rgba(30, 30, 30, 0.8);
 }
 
 .result-item img {
@@ -3185,6 +3224,11 @@ mark {
   margin-bottom: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.tab-buttons::-webkit-scrollbar {
+  display: none;
 }
 
 .tab-btn {
@@ -3193,7 +3237,7 @@ mark {
   padding: 15px 30px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #888888;
+  color: #a1a1aa;
   cursor: pointer;
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
@@ -3314,19 +3358,25 @@ mark {
   }
 
   .tab-buttons {
-    flex-direction: column;
-    gap: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    padding-bottom: 5px;
+    -webkit-overflow-scrolling: touch;
   }
 
   .tab-btn {
-    padding: 12px 15px;
-    font-size: 0.9rem;
-    border-radius: 0;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px 8px 0 0;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .panel-layout {
     flex-direction: column;
     gap: 20px;
+    padding: 25px 20px;
   }
 
   .panel-image {
@@ -3374,8 +3424,14 @@ mark {
   }
 
   .tab-btn {
-    padding: 10px 12px;
-    font-size: 0.8rem;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .panel-layout {
+    padding: 20px 15px;
   }
 
   .panel-text h3 {
@@ -3400,13 +3456,14 @@ mark {
 }
 
 .panel-text h3 {
-  color: #2c3e50;
+  color: #ffffff;
   font-size: 1.4rem;
   margin-bottom: 15px;
   margin-top: 25px;
   font-weight: 700;
   border-left: 4px solid #3498db;
   padding-left: 15px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .panel-text h3:first-child {
@@ -3414,31 +3471,32 @@ mark {
 }
 
 .panel-text p {
-  color: #34495e;
+  color: #e5e5e5;
   line-height: 1.8;
   font-size: 1rem;
   margin-bottom: 20px;
-  text-align: justify;
-  font-weight: 700;
+  text-align: left;
+  font-weight: 400;
 }
 
 .panel-text ul {
-  color: #34495e;
+  color: #e5e5e5;
   line-height: 1.8;
   font-size: 1rem;
   margin-bottom: 20px;
   padding-left: 20px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .panel-text li {
   margin-bottom: 8px;
   position: relative;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .panel-text li::marker {
   color: #3498db;
+  text-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
 }
 /* 成果按鈕不同顏色樣式 */
 .btn-video {
