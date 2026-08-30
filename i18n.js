@@ -97,10 +97,6 @@ const translations = {
         job1Detail:
           "<div class='sub-role'><strong>🎨 兼職行政美編：</strong>負責官方 FB、Line 圖文行銷設計，並接待來電或現場訪客。</div>" +
           "<div class='sub-role'><strong>🎓 營隊講師：</strong>自行研發教案、設計教具並進行教學提案。</div>",
-        job2Title: "兼職美編",
-        job2Time: "大二下 ~ 2026年6月",
-        job2Company: "李奇英文 - 新竹分校(原:華興補習班)",
-        job2Detail: "傳統印刷媒體的A4招生DM設計",
         job3Title: "3D列印社 - 社團老師",
         job3Time: "大二下 ~ 大三下",
         job3Company: "私立義民高級中學",
@@ -605,10 +601,6 @@ const translations = {
         job1Detail:
           "<div class='sub-role'><strong>🎨 Part-time Admin Designer:</strong> Responsible for official FB and LINE graphic marketing design, and customer reception.</div>" +
           "<div class='sub-role'><strong>🎓 Camp Instructor:</strong> Independently develop lesson plans, design teaching materials, and submit proposals.</div>",
-        job2Title: "Part-time Graphic Designer",
-        job2Time: "Sophomore ~ June 2026",
-        job2Company: "Richie English - Hsinchu Branch",
-        job2Detail: "Traditional print media A4 enrollment DM design",
         job3Title: "3D Printing Club - Instructor",
         job3Time: "Sophomore ~ Junior Year",
         job3Company: "Private Yimin Senior High School",
