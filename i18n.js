@@ -189,10 +189,6 @@ const translations = {
         title: "大四畢業專題 - 成果展覽活動邀請單",
         desc: "結果那天只有系上老師來看😥😥😥，我設計這張時花很多心思ㄟ😭",
       },
-      college4: {
-        title: "鴻宇文教 - 升國中銜接招生宣傳文宣",
-        desc: "運用可愛的海洋風格主題來吸引國小學生",
-      },
       college5: {
         title: "鴻宇文教 - 學科能力檢測宣傳文宣",
         desc: "學科能力測驗的資訊和活動細節",
@@ -696,11 +692,6 @@ const translations = {
       college3: {
         title: "Senior Year Graduation Project - Exhibition Event Invitation",
         desc: "In the end, only department professors came to see it 😥😥😥, I put a lot of thought into designing this 😭",
-      },
-      college4: {
-        title:
-          "Hongyu Education - Junior High School Transition Enrollment Flyer",
-        desc: "Using a cute ocean theme to attract elementary school students",
       },
       college5: {
         title: "Hongyu Education - Academic Ability Test Promotional Flyer",
