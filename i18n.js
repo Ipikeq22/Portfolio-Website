@@ -91,37 +91,37 @@ const translations = {
       },
       workSection: {
         title: "工作經驗",
-        jobTransitTitle: "第一線客服專員・內部作業系統自主研發",
-        jobTransitTime: "2026.07 – 2026.11（等待服役期間・自主研發專案）",
+        jobTransitTitle: "客服專員 / 內部工具開發",
+        jobTransitTime: "2026.07 – 2026.11",
         jobTransitCompany: "某大眾共享運輸公司",
         jobTransitNda:
-          "🛡️ 離職因智慧財產權與商業保密條款（NDA），所有企業名稱、內部業務規則及真實語料完全去識別化，故稱「某大眾共享運輸公司」。",
+          "※ 相關業務細節與數據已依保密原則去識別化處理。",
         jobTransitDetail:
-          "<p style='margin-bottom: 8px;'>• <strong>痛點洞察</strong>：任職第一線客服期間，直面現場高壓多工環境下「10+ 視窗頻繁切換（Alt-Tab）」與「認知負荷過載」之作業瓶頸。</p><p style='margin-bottom: 8px;'>• <strong>自主架構</strong>：利用工餘時間自主研發「純前端單頁式（SPA）快捷作業輔助工作台」，採 3-Tier 解耦與 Local-First 零後端資安策略，從源頭確保企業資料不落地。</p><p style='margin-bottom: 0;'>• <strong>量化成效</strong>：結合人機互動（HCI）理論、認知心理學與全鍵盤流導航；經 GOMS/KLM 模型量化驗證，<strong>成功將核心 SOP 流程由 14 次點擊（28 秒）壓縮至 2 次點擊（5 秒），作業效率大幅提升 82%</strong>。</p>",
+          "<p style='margin-bottom: 8px;'>• 負責第一線客戶諮詢與即時通報，處理日常用戶問題與異常案件。</p><p style='margin-bottom: 8px;'>• 針對多系統頻繁切換之痛點，自主開發單頁式前端輔助工具（SPA），整合常用查詢模板與快捷鍵操作。</p><p style='margin-bottom: 0;'>• 簡化日常作業繁瑣步驟，縮短常見查詢與回覆耗時，有效提升處理效率。</p>",
 
-        jobStudioTitle: "獨立遊戲工作室・創辦人兼核心製作人",
+        jobStudioTitle: "獨立遊戲開發者 / 遊戲設計",
         jobStudioTime: "2026.01 – 現今",
-        jobStudioCompany: "LonelySub Games 獨立遊戲工作室",
+        jobStudioCompany: "LonelySub Games（獨立遊戲專案）",
         jobStudioDetail:
-          "<p style='margin-bottom: 8px;'>• 創辦獨立遊戲工作室，統籌產品全生命週期管理：核心玩法機制企劃、關卡動線配置與原型（Prototype）建構。</p><p style='margin-bottom: 0;'>• 主導美術視覺風格定位、音效資源整合與跨平台（Steam / 行動裝置）相容性測試與發行時程推進。</p>",
+          "<p style='margin-bottom: 8px;'>• 負責獨立遊戲之核心玩法設計、關卡規劃與互動原型（Prototype）製作。</p><p style='margin-bottom: 0;'>• 統籌視覺風格設定、音效素材整合與跨平台（Steam / 移動端）測試與發行規劃。</p>",
 
-        job1Title: "科技教育講師 / 品牌行銷視覺設計",
+        job1Title: "程式教育講師 / 視覺設計",
         job1Time: "2024.09 – 2026.06",
         job1Company: "核果資訊學苑 - 新竹校",
         job1Detail:
-          "<p style='margin-bottom: 8px;'>• <strong>科技教育與教案研發</strong>：自主研發 5 日 Minecraft 創客營隊 SPA 互動教學網站、AI 提示詞工程模組與 6 款互動式教學小遊戲，累計指導逾百位青少年學員。</p><p style='margin-bottom: 0;'>• <strong>全通路品牌視覺行銷</strong>：負責官方社群（FB、LINE@）圖文行銷規劃、課程宣傳海報及實體展覽視覺設計，提升品牌專業度與招生轉換率。</p>",
+          "<p style='margin-bottom: 8px;'>• 規劃並講授兒少程式設計與創客營隊，開發輔助教學網頁與互動教材，累計指導逾百位學員。</p><p style='margin-bottom: 0;'>• 負責社群媒體（FB、LINE）圖文視覺、課程宣傳海報及實體展覽文宣設計，協助課程推廣。</p>",
 
-        job3Title: "3D 數位設計社團・指導老師",
+        job3Title: "社團指導老師（3D 數位設計）",
         job3Time: "2024.02 – 2025.06",
         job3Company: "新竹縣私立義民高級中學",
         job3Detail:
-          "<p style='margin-bottom: 8px;'>• 規劃高中部 3D 空間建模與設計思考系列課綱，引導學生掌握 SketchUp 空間形構建構與數位實體打樣概念。</p><p style='margin-bottom: 0;'>• 啟發學員空間想像與立體美學思維，期末達成 100% 學生具備獨立構思並產出 3D 數位模型作品發表能力。</p>",
+          "<p style='margin-bottom: 8px;'>• 規劃高中部 3D 空間建模社團課程，指導學生使用 SketchUp 進行空間造型設計。</p><p style='margin-bottom: 0;'>• 輔導學生完成期末作品創作與發表，建立 3D 空間建模與數位設計基礎。</p>",
 
-        job4Title: "自由接案設計師 / 數位內容顧問",
+        job4Title: "接案設計師 / 前端網頁設計",
         job4Time: "2021 – 現今",
         job4Company: "個人接案 / 專案合作",
         job4Detail:
-          "<p style='margin-bottom: 8px;'>• 面向中小企業、教育機構與個人委託方，承接 UI/UX 介面設計、前端網站建置、企業識別系統（CIS）與商業動態影片剪輯。</p><p style='margin-bottom: 0;'>• 具備端到端獨立交付能力：涵蓋前置需求訪談、規格定義、排程報價到最終設計開發與驗收交付。</p>",
+          "<p style='margin-bottom: 8px;'>• 承接 UI/UX 介面設計、前端網頁切版建置、CIS 品牌識別與商業影音剪輯。</p><p style='margin-bottom: 0;'>• 獨立負責客戶需求溝通、專案時程排定與設計開發成果交付。</p>",
       },
 
       contactSection: {
@@ -623,37 +623,37 @@ const translations = {
       },
       workSection: {
         title: "Work Experience",
-        jobTransitTitle: "Frontline CS Specialist & Internal Tool R&D",
-        jobTransitTime: "2026.07 – 2026.11 (Pre-Service Period · Independent Project)",
+        jobTransitTitle: "Customer Support Specialist & Frontend Tool Developer",
+        jobTransitTime: "2026.07 – 2026.11",
         jobTransitCompany: "A Shared Mobility Enterprise",
         jobTransitNda:
-          "🛡️ Due to strict post-employment non-disclosure and intellectual property compliance (NDA), all company identifiers and business rules are fully de-identified and referenced as 'A Shared Mobility Enterprise'.",
+          "※ Business details and data have been anonymized in accordance with non-disclosure agreements.",
         jobTransitDetail:
-          "<p style='margin-bottom: 8px;'>• <strong>Bottleneck Discovery</strong>: Addressed frontline operational bottlenecks involving constant switching across 10+ windows (Alt-Tab) and high cognitive overload during peak support hours.</p><p style='margin-bottom: 8px;'>• <strong>Independent Architecture</strong>: Engineered a zero-backend Single-Page Application (SPA) fast-track workbench during off-hours, using a 3-tier decoupled and Local-First strategy to guarantee corporate data privacy.</p><p style='margin-bottom: 0;'>• <strong>Quantified Impact</strong>: Applied HCI cognitive ergonomics, Miller's Law chunking, and keyboard-first hotkeys; validated via GOMS/KLM models, <strong>compressing standard SOP duration from 28s (14 clicks) down to 5s (2 clicks) — an 82% efficiency leap</strong>.</p>",
+          "<p style='margin-bottom: 8px;'>• Handled frontline customer inquiries, real-time issue reporting, and day-to-day service operations.</p><p style='margin-bottom: 8px;'>• Independently developed a single-page frontend assistant (SPA) with keyboard shortcuts to streamline frequent queries and response templates.</p><p style='margin-bottom: 0;'>• Simplified repetitive operational steps, noticeably reducing handling time and improving response efficiency.</p>",
 
-        jobStudioTitle: "Studio Founder & Lead Producer",
+        jobStudioTitle: "Indie Game Developer / Game Designer",
         jobStudioTime: "2026.01 – Present",
-        jobStudioCompany: "LonelySub Games Indie Studio",
+        jobStudioCompany: "LonelySub Games (Indie Project)",
         jobStudioDetail:
-          "<p style='margin-bottom: 8px;'>• Founded an indie game studio, directing the complete product lifecycle: core gameplay mechanics planning, level design flow, and interactive prototyping.</p><p style='margin-bottom: 0;'>• Overseeing visual art direction, audio asset pipeline integration, and cross-platform (Steam / Mobile) compatibility testing and release milestones.</p>",
+          "<p style='margin-bottom: 8px;'>• Designed core gameplay mechanics, level structure, and interactive prototypes for indie game projects.</p><p style='margin-bottom: 0;'>• Coordinated visual art style, audio integration, and conducted cross-platform testing (Steam / Mobile).</p>",
 
-        job1Title: "EdTech Instructor / Brand Marketing Designer",
+        job1Title: "Programming Instructor / Visual Designer",
         job1Time: "2024.09 – 2026.06",
         job1Company: "Nuts Institute - Hsinchu Campus",
         job1Detail:
-          "<p style='margin-bottom: 8px;'>• <strong>EdTech & Curriculum R&D</strong>: Developed a 5-day Minecraft Maker Camp SPA interactive teaching platform, AI Prompt Engineering modules, and 6 gamified web exercises, guiding over 100 youth students.</p><p style='margin-bottom: 0;'>• <strong>Omnichannel Marketing Design</strong>: Directed official social media (FB, LINE@) graphic marketing, promotional posters, and physical exhibition visual systems to boost brand authority and enrollment conversion.</p>",
+          "<p style='margin-bottom: 8px;'>• Planned and taught youth programming and maker camps, creating interactive web-based teaching tools for 100+ students.</p><p style='margin-bottom: 0;'>• Designed social media visuals (FB, LINE), promotional posters, and event marketing materials.</p>",
 
         job3Title: "3D Digital Design Club Instructor",
         job3Time: "2024.02 – 2025.06",
         job3Company: "Private Yimin Senior High School",
         job3Detail:
-          "<p style='margin-bottom: 8px;'>• Structured a high school 3D modeling and design-thinking curriculum, guiding students through SketchUp spatial composition and digital prototyping concepts.</p><p style='margin-bottom: 0;'>• Fostered 3D aesthetic intuition, achieving a 100% completion rate for students independently conceptualizing and presenting final 3D model projects.</p>",
+          "<p style='margin-bottom: 8px;'>• Designed and taught a high school 3D modeling curriculum using SketchUp for spatial and object design.</p><p style='margin-bottom: 0;'>• Mentored students through final project exhibitions, building fundamental 3D design concepts.</p>",
 
-        job4Title: "Freelance Designer / Digital Content Consultant",
+        job4Title: "Freelance Designer & Frontend Developer",
         job4Time: "2021 – Present",
-        job4Company: "Independent Contractor / Client Projects",
+        job4Company: "Freelance / Client Projects",
         job4Detail:
-          "<p style='margin-bottom: 8px;'>• Delivered end-to-end UI/UX interface design, frontend web development, corporate identity systems (CIS), and commercial motion video editing for SMBs, educational institutions, and private clients.</p><p style='margin-bottom: 0;'>• Full-cycle project stewardship: client discovery, technical scoping, timeline budgeting, development, and quality assurance delivery.</p>",
+          "<p style='margin-bottom: 8px;'>• Delivered UI/UX design, responsive frontend web pages, brand identity (CIS), and video editing for diverse client projects.</p><p style='margin-bottom: 0;'>• Managed projects independently from client communication and timeline scheduling to final delivery.</p>",
       },
 
       contactSection: {
