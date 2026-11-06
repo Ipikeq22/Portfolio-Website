@@ -333,3 +333,20 @@ function showGameObjects() {
     color: '#2c3e50'
   });
 }
+
+// 顯示 客服快捷作業工作台 專案介紹
+function showWorkbenchDetails() {
+  const content = document.getElementById('workbench-details-content').innerHTML;
+  Swal.fire({
+    title: '高壓多工客服場域之快捷作業工作台',
+    html: `<div style="text-align: left; max-height: 70vh; overflow-y: auto; padding: 10px;">${content}</div>`,
+    width: '85%',
+    showCloseButton: true,
+    showConfirmButton: false,
+    background: '#ffffff',
+    color: '#2c3e50',
+    customClass: {
+      popup: 'project-detail-popup'
+    }
+  });
+}

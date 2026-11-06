@@ -32,7 +32,7 @@ const translations = {
     // 首頁
     homepage: {
       greeting: "Hello, I am Gary",
-      description: "一位快爆肝的跨領域設計師😂",
+      description: "兼具視覺美感與工程思維的跨領域設計師",
       aboutMe: "關於我",
       graphicDesign: "平面設計",
       frontendDesign: "前端設計",
@@ -48,18 +48,22 @@ const translations = {
       skillsTitle: "專長領域",
       softwareTitle: "擅長軟體",
       skills: {
-        graphic: "平面 / 數位設計",
-        uiux: "UI / UX 設計",
-        video: "影音剪輯",
-        product: "產品開發設計",
-        modeling: "3D建模渲染",
-        modelingSub: "(列印略懂)",
-        marketing: "數位行銷",
-        teaching: "電腦繪圖設計教學",
-        game: "遊戲開發",
-        gameSub: "(企劃 / 美術)",
-        frontend: "數位前端開發",
-        vibeCoding: "Vibe Coding",
+        frontend: "前端工程開發",
+        frontendSub: "HTML5・CSS3・JS・SPA架構",
+        uiux: "UI/UX 與認知工效",
+        uiuxSub: "HCI工效・資訊架構・GOMS模型",
+        graphic: "品牌與數位視覺",
+        graphicSub: "CIS識別・社群行銷・商業設計",
+        game: "遊戲企劃與機制",
+        gameSub: "玩法機制・關卡動線・獨立發行",
+        modeling: "3D 空間建模渲染",
+        modelingSub: "SketchUp・Twinmotion 渲染",
+        teaching: "科技教育與教案研發",
+        teachingSub: "創客程式・AI 提示詞・互動教學",
+        video: "動態影音與後製剪輯",
+        videoSub: "商業剪輯・動態字卡・音訊整合",
+        vibeCoding: "AI 輔助工程開發",
+        vibeCodingSub: "Copilot・提示詞工程・敏捷原型",
       },
       software: {
         photoshop: "Adobe Photoshop",
@@ -67,6 +71,7 @@ const translations = {
         powerDirector: "PowerDirector",
         python: "Python",
         web: "Web語言 (HTML + CSS + JavaScript)",
+        aiCoding: "Ai Coding",
         figma: "Figma",
         office: "Office 軟體",
         sketchup: "SketchUp",
@@ -75,7 +80,7 @@ const translations = {
       introSection: {
         title: "自我介紹",
         content:
-          "我是 Gary，一位跨領域設計師，我高中就讀的是廣告設計科，大學就讀的是資訊管理系，我會在這個作品集裡講述我從高中到現在的作品，參與過的專案以及工作經驗",
+          "我是 Gary，一位兼具視覺美學感知與軟體工程思維的跨領域設計師（Design Technologist）。<br><br>高中專攻廣告設計、大學深造資訊管理，使我同時具備 UI/UX 視覺敏銳度、前端工程實作力與 HCI（人機互動）認知工效分析能力。我不僅關注介面的視覺美感，更聚焦於資訊架構的合理性與操作動線的流暢度，致力於將真實業務痛點轉化為具備商業效益的數位解決方案。",
       },
       educationSection: {
         title: "學歷",
@@ -86,30 +91,37 @@ const translations = {
       },
       workSection: {
         title: "工作經驗",
+        jobTransitTitle: "第一線客服專員・內部作業系統自主研發",
+        jobTransitTime: "2026.07 – 2026.11（等待服役期間・自主研發專案）",
+        jobTransitCompany: "某大眾共享運輸公司",
+        jobTransitNda:
+          "🛡️ 離職因智慧財產權與商業保密條款（NDA），所有企業名稱、內部業務規則及真實語料完全去識別化，故稱「某大眾共享運輸公司」。",
+        jobTransitDetail:
+          "<p style='margin-bottom: 8px;'>• <strong>痛點洞察</strong>：任職第一線客服期間，直面現場高壓多工環境下「10+ 視窗頻繁切換（Alt-Tab）」與「認知負荷過載」之作業瓶頸。</p><p style='margin-bottom: 8px;'>• <strong>自主架構</strong>：利用工餘時間自主研發「純前端單頁式（SPA）快捷作業輔助工作台」，採 3-Tier 解耦與 Local-First 零後端資安策略，從源頭確保企業資料不落地。</p><p style='margin-bottom: 0;'>• <strong>量化成效</strong>：結合人機互動（HCI）理論、認知心理學與全鍵盤流導航；經 GOMS/KLM 模型量化驗證，<strong>成功將核心 SOP 流程由 14 次點擊（28 秒）壓縮至 2 次點擊（5 秒），作業效率大幅提升 82%</strong>。</p>",
 
-        jobStudioTitle: "LonelySub Games 遊戲工作室 執行長 (CEO)",
-        jobStudioTime: "2026 1 月 ~ 現今",
-        jobStudioCompany: "LonelySub Games 遊戲工作室",
-        jobStudioDetail: "創辦並經營獨立遊戲工作室，負責工作室整體發展方向、產品企劃與品牌推廣。<br><br>目前是一人工作室，努力發展中",
-        job1Title: "營隊講師 / 兼職行政美編",
-        job1Time: "大三上 ~ 2026年6月",
+        jobStudioTitle: "獨立遊戲工作室・創辦人兼核心製作人",
+        jobStudioTime: "2026.01 – 現今",
+        jobStudioCompany: "LonelySub Games 獨立遊戲工作室",
+        jobStudioDetail:
+          "<p style='margin-bottom: 8px;'>• 創辦獨立遊戲工作室，統籌產品全生命週期管理：核心玩法機制企劃、關卡動線配置與原型（Prototype）建構。</p><p style='margin-bottom: 0;'>• 主導美術視覺風格定位、音效資源整合與跨平台（Steam / 行動裝置）相容性測試與發行時程推進。</p>",
+
+        job1Title: "科技教育講師 / 品牌行銷視覺設計",
+        job1Time: "2024.09 – 2026.06",
         job1Company: "核果資訊學苑 - 新竹校",
         job1Detail:
-          "<div class='sub-role'><strong>🎨 兼職行政美編：</strong>負責官方 FB、Line 圖文行銷設計，並接待來電或現場訪客。</div>" +
-          "<div class='sub-role'><strong>🎓 營隊講師：</strong>自行研發教案、設計教具並進行教學提案。</div>",
-        job3Title: "3D列印社 - 社團老師",
-        job3Time: "大二下 ~ 大三下",
-        job3Company: "私立義民高級中學",
-        job3Detail: "自行設計教案，並於每學期固定社課時間教書",
-        job4Title: "自由接案",
-        job4Time: "2021年 ~ 現今",
-        job4Company: "個人",
+          "<p style='margin-bottom: 8px;'>• <strong>科技教育與教案研發</strong>：自主研發 5 日 Minecraft 創客營隊 SPA 互動教學網站、AI 提示詞工程模組與 6 款互動式教學小遊戲，累計指導逾百位青少年學員。</p><p style='margin-bottom: 0;'>• <strong>全通路品牌視覺行銷</strong>：負責官方社群（FB、LINE@）圖文行銷規劃、課程宣傳海報及實體展覽視覺設計，提升品牌專業度與招生轉換率。</p>",
+
+        job3Title: "3D 數位設計社團・指導老師",
+        job3Time: "2024.02 – 2025.06",
+        job3Company: "新竹縣私立義民高級中學",
+        job3Detail:
+          "<p style='margin-bottom: 8px;'>• 規劃高中部 3D 空間建模與設計思考系列課綱，引導學生掌握 SketchUp 空間形構建構與數位實體打樣概念。</p><p style='margin-bottom: 0;'>• 啟發學員空間想像與立體美學思維，期末達成 100% 學生具備獨立構思並產出 3D 數位模型作品發表能力。</p>",
+
+        job4Title: "自由接案設計師 / 數位內容顧問",
+        job4Time: "2021 – 現今",
+        job4Company: "個人接案 / 專案合作",
         job4Detail:
-          "提供設計諮詢、個人案件(專長領域所寫的內容)、教學或專案式合作。",
-        job5Title: "遊戲設計師",
-        job5Time: "高二上 ~ 現今",
-        job5Company: "個人 + 工作室",
-        job5Detail: "開發各類遊戲，以及創辦遊戲工作室努力開發出要上架平台的遊戲",
+          "<p style='margin-bottom: 8px;'>• 面向中小企業、教育機構與個人委託方，承接 UI/UX 介面設計、前端網站建置、企業識別系統（CIS）與商業動態影片剪輯。</p><p style='margin-bottom: 0;'>• 具備端到端獨立交付能力：涵蓋前置需求訪談、規格定義、排程報價到最終設計開發與驗收交付。</p>",
       },
 
       contactSection: {
@@ -201,6 +213,25 @@ const translations = {
         title: "數位達文西：JavaScript 視覺藝術程式工作坊 課程招生雙面DM",
         desc: "感謝核果的 Wyn 老師邀請我為這場 JavaScript 視覺藝術程式工作坊設計雙面招商 DM。",
       },
+    },
+
+    // 高壓多工客服快捷作業工作台 (置頂推薦專案)
+    workbench: {
+      featuredBadge: "置頂推薦・HCI 實踐專案",
+      projectTitle: "高壓多工客服場域之快捷作業工作台",
+      projectSubtitle: "基於 HCI 認知工效理論與 3-Tier 純前端架構之任務動線重構",
+      timeTag: "【時間】",
+      timeContent: "2026.07 – 2026.11（等待服役期間・自主研發專案）",
+      descTag: "【簡述】",
+      descContent: "於等待服役期間任職於某大眾共享運輸公司第一線客服時，針對現場高壓多工環境下「10+ 視窗頻繁切換」與「高認知負荷」之作業痛點，利用下班時間自主開發之純前端單頁式（SPA）作業輔助系統。結合人機互動（HCI）認知心理學與全鍵盤流導航設計，經 GOMS/KLM 模型量化評估，成功將標準操作流程由 14 次點擊（28 秒）壓縮至 2 次點擊（5 秒）。",
+      ipTitle: "智慧財產權與商業保密聲明 (IP & Confidentiality Notice)",
+      ipContent: "本專案源於本人在候役期間於某大眾共享運輸企業任職時，利用下班工餘時間獨立構思與撰寫之純前端輔助工具。為嚴格恪守職業道德、商業保密義務與智慧財產權規範，本作品集已將所有企業名稱、內部業務規則及真實語料完全去識別化，不公開任何涉密原始碼與真實業務畫面，僅以「抽象系統架構圖」、「HCI 認知工效設計規範」與「GOMS 量化評估模型」呈現個人之程式邏輯與設計思考。",
+      metric1Label: "常規作業時間縮減",
+      metric2Label: "標準操作步驟壓縮",
+      metric3Label: "零後端・資料不落地",
+      btnModalText: "查看架構設計與技術解析",
+      descShort: "針對客服現場「10+ 視窗頻繁切換」與「高認知負荷」之痛點，自主開發之純前端單頁式（SPA）作業輔助系統。結合 HCI 認知心理學與全鍵盤流導航，經 GOMS/KLM 模型評估，成功將標準操作流程由 14 次點擊（28 秒）壓縮至 2 次點擊（5 秒）。",
+      certText: "去識別化安全合規展示",
     },
 
     // 前端設計頁面
@@ -545,21 +576,25 @@ const translations = {
     // Introduction Page
     introduction: {
       title: "Gary",
-      skillsTitle: "Expertise",
-      softwareTitle: "Software Skills",
+      skillsTitle: "Core Competencies",
+      softwareTitle: "Software Proficiency",
       skills: {
-        graphic: "Graphic / Digital Design",
-        uiux: "UI / UX Design",
-        video: "Video Editing",
-        product: "Product Development Design",
+        frontend: "Frontend Engineering",
+        frontendSub: "HTML5 · CSS3 · JS · SPA Architecture",
+        uiux: "UI/UX & Cognitive Ergonomics",
+        uiuxSub: "HCI Ergonomics · Info Architecture · GOMS",
+        graphic: "Brand & Digital Visuals",
+        graphicSub: "CIS Identity · Social Marketing · Design",
+        game: "Game Mechanics & Planning",
+        gameSub: "Gameplay Systems · Level Flow · Indie Dev",
         modeling: "3D Modeling & Rendering",
-        modelingSub: "(3D Printing basics)",
-        marketing: "Digital Marketing",
-        teaching: "Computer Graphics Design Teaching",
-        game: "Game Development",
-        gameSub: "(Planning / Art)",
-        frontend: "Frontend Development",
-        vibeCoding: "Vibe Coding",
+        modelingSub: "SketchUp · Twinmotion Rendering",
+        teaching: "EdTech & Curriculum Dev",
+        teachingSub: "Maker Coding · AI Prompting · Edu UX",
+        video: "Video & Motion Editing",
+        videoSub: "Commercial Editing · Typography · Audio",
+        vibeCoding: "AI-Assisted Engineering",
+        vibeCodingSub: "GitHub Copilot · Prompt Eng · Prototyping",
       },
       software: {
         photoshop: "Adobe Photoshop",
@@ -567,6 +602,7 @@ const translations = {
         powerDirector: "PowerDirector",
         python: "Python",
         web: "Web Languages (HTML + CSS + JavaScript)",
+        aiCoding: "AI Coding",
         figma: "Figma",
         office: "Office Suite",
         sketchup: "SketchUp",
@@ -575,7 +611,7 @@ const translations = {
       introSection: {
         title: "About Me",
         content:
-          "I am Gary, a cross-disciplinary designer. I studied Advertising Design in high school and Information Management in university. In this portfolio, I will showcase my works, projects, and work experience from high school to the present.",
+          "I am Gary, a cross-disciplinary designer and technologist combining visual aesthetics with software engineering logic.<br><br>With foundational training in Advertising Design followed by Information Management, I bring together UI/UX visual craftsmanship, frontend implementation skills, and HCI (Human-Computer Interaction) cognitive ergonomics. I focus not only on interface aesthetics, but also on structured information architecture and streamlined operational flows, turning real-world business bottlenecks into impactful digital solutions.",
       },
       educationSection: {
         title: "Education",
@@ -587,32 +623,38 @@ const translations = {
       },
       workSection: {
         title: "Work Experience",
-        jobStudioTitle: "LonelySub Games Studio CEO",
-        jobStudioTime: "Jan 2026 ~ Present",
-        jobStudioCompany: "LonelySub Games Studio",
-        jobStudioDetail: "Founded and managing an independent game studio, responsible for overall development direction, product planning, and brand promotion.<br><br>Currently a solo studio, under active development.",
-        job1Title: "Camp Instructor / Part-time Admin Designer",
-        job1Time: "Junior Year ~ June 2026",
+        jobTransitTitle: "Frontline CS Specialist & Internal Tool R&D",
+        jobTransitTime: "2026.07 – 2026.11 (Pre-Service Period · Independent Project)",
+        jobTransitCompany: "A Shared Mobility Enterprise",
+        jobTransitNda:
+          "🛡️ Due to strict post-employment non-disclosure and intellectual property compliance (NDA), all company identifiers and business rules are fully de-identified and referenced as 'A Shared Mobility Enterprise'.",
+        jobTransitDetail:
+          "<p style='margin-bottom: 8px;'>• <strong>Bottleneck Discovery</strong>: Addressed frontline operational bottlenecks involving constant switching across 10+ windows (Alt-Tab) and high cognitive overload during peak support hours.</p><p style='margin-bottom: 8px;'>• <strong>Independent Architecture</strong>: Engineered a zero-backend Single-Page Application (SPA) fast-track workbench during off-hours, using a 3-tier decoupled and Local-First strategy to guarantee corporate data privacy.</p><p style='margin-bottom: 0;'>• <strong>Quantified Impact</strong>: Applied HCI cognitive ergonomics, Miller's Law chunking, and keyboard-first hotkeys; validated via GOMS/KLM models, <strong>compressing standard SOP duration from 28s (14 clicks) down to 5s (2 clicks) — an 82% efficiency leap</strong>.</p>",
+
+        jobStudioTitle: "Studio Founder & Lead Producer",
+        jobStudioTime: "2026.01 – Present",
+        jobStudioCompany: "LonelySub Games Indie Studio",
+        jobStudioDetail:
+          "<p style='margin-bottom: 8px;'>• Founded an indie game studio, directing the complete product lifecycle: core gameplay mechanics planning, level design flow, and interactive prototyping.</p><p style='margin-bottom: 0;'>• Overseeing visual art direction, audio asset pipeline integration, and cross-platform (Steam / Mobile) compatibility testing and release milestones.</p>",
+
+        job1Title: "EdTech Instructor / Brand Marketing Designer",
+        job1Time: "2024.09 – 2026.06",
         job1Company: "Nuts Institute - Hsinchu Campus",
         job1Detail:
-          "<div class='sub-role'><strong>🎨 Part-time Admin Designer:</strong> Responsible for official FB and LINE graphic marketing design, and customer reception.</div>" +
-          "<div class='sub-role'><strong>🎓 Camp Instructor:</strong> Independently develop lesson plans, design teaching materials, and submit proposals.</div>",
-        job3Title: "3D Printing Club - Instructor",
-        job3Time: "Sophomore ~ Junior Year",
+          "<p style='margin-bottom: 8px;'>• <strong>EdTech & Curriculum R&D</strong>: Developed a 5-day Minecraft Maker Camp SPA interactive teaching platform, AI Prompt Engineering modules, and 6 gamified web exercises, guiding over 100 youth students.</p><p style='margin-bottom: 0;'>• <strong>Omnichannel Marketing Design</strong>: Directed official social media (FB, LINE@) graphic marketing, promotional posters, and physical exhibition visual systems to boost brand authority and enrollment conversion.</p>",
+
+        job3Title: "3D Digital Design Club Instructor",
+        job3Time: "2024.02 – 2025.06",
         job3Company: "Private Yimin Senior High School",
         job3Detail:
-          "Design lesson plans and teach at regular club sessions each semester",
-        job4Title: "Freelancer",
-        job4Time: "2021 ~ Present",
-        job4Company: "Self-employed",
-        job4Detail:
-          "Provide design consulting, personal projects (areas listed in expertise), teaching, or project-based collaboration.",
-        job5Title: "Game Designer",
-        job5Time: "High School Junior ~ Present",
-        job5Company: "Personal + Studio",
-        job5Detail: "Developing various games and founding a game studio striving to develop games to be published on platforms.",
-      },
+          "<p style='margin-bottom: 8px;'>• Structured a high school 3D modeling and design-thinking curriculum, guiding students through SketchUp spatial composition and digital prototyping concepts.</p><p style='margin-bottom: 0;'>• Fostered 3D aesthetic intuition, achieving a 100% completion rate for students independently conceptualizing and presenting final 3D model projects.</p>",
 
+        job4Title: "Freelance Designer / Digital Content Consultant",
+        job4Time: "2021 – Present",
+        job4Company: "Independent Contractor / Client Projects",
+        job4Detail:
+          "<p style='margin-bottom: 8px;'>• Delivered end-to-end UI/UX interface design, frontend web development, corporate identity systems (CIS), and commercial motion video editing for SMBs, educational institutions, and private clients.</p><p style='margin-bottom: 0;'>• Full-cycle project stewardship: client discovery, technical scoping, timeline budgeting, development, and quality assurance delivery.</p>",
+      },
 
       contactSection: {
         title: "Contact Information",
@@ -705,6 +747,25 @@ const translations = {
         title: "Digital Da Vinci: JavaScript Visual Arts Programming Workshop Course Enrollment DM (Double-sided)",
         desc: "Design for the 'Digital Da Vinci' JavaScript visual arts workshop enrollment flyer, commissioned by Mr. Wyn from Nuts Institute.",
       },
+    },
+
+    // Fast-Track Customer Service Workbench (Featured Project)
+    workbench: {
+      featuredBadge: "Featured・HCI Engineering Project",
+      projectTitle: "Fast-Track CS Workbench for High-Stress Multitasking",
+      projectSubtitle: "Task Flow Re-engineering Based on HCI Ergonomics & 3-Tier Client Architecture",
+      timeTag: "[Duration]",
+      timeContent: "2026.07 – 2026.11 (Pre-Service Period · Independent R&D)",
+      descTag: "[Summary]",
+      descContent: "Developed independently during off-hours while serving as a frontline customer service specialist at a shared mobility enterprise. Targeted key operational bottlenecks—namely frequent switching across 10+ windows (Alt-Tab) and high cognitive overload. Engineered a zero-backend Single-Page Application (SPA) combining HCI cognitive psychology and keyboard-first navigation. Validated through GOMS/KLM models, compressing standard workflow from 14 clicks (28s) down to 2 clicks (5s).",
+      ipTitle: "Intellectual Property & Confidentiality Notice (IP Notice)",
+      ipContent: "Originated from an internal assistive tool designed and coded during off-hours while working at a shared mobility enterprise before military enlistment. To strictly uphold professional ethics, non-disclosure agreements, and IP rights, all company identities, business rules, and real-world copy have been completely de-identified. No proprietary source code or live operational UI is disclosed; this showcase highlights software architecture, HCI ergonomic standards, and GOMS quantitative modeling only.",
+      metric1Label: "Task Completion Time Reduction",
+      metric2Label: "Standard Workflow Steps Compressed",
+      metric3Label: "Zero-Backend / Local-First Privacy",
+      btnModalText: "View Architecture & Technical Analysis",
+      descShort: "Engineered a zero-backend Single-Page Application (SPA) combining HCI cognitive psychology and keyboard-first navigation to eliminate frequent switching across 10+ windows and high cognitive load. Validated via GOMS/KLM models, compressing standard workflow from 14 clicks (28s) to 2 clicks (5s).",
+      certText: "De-identified Compliance Showcase",
     },
 
     // Frontend Design Page

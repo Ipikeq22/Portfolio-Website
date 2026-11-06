@@ -53,7 +53,162 @@
         <h1 data-i18n="frontendDesign.title">前端設計作品</h1>
         
         <div class="project-container">
-            <!-- ===== 專案 1: Shuttle 輔信 P55U ===== -->
+                                    <!-- ===== 專案 1: 高壓多工客服場域之快捷作業工作台 (置頂) ===== -->
+            <article class="project-card">
+                <section class="project-showcase">
+                    <div class="project-image">
+                        <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/fd9f993f-1a7d-475b-b2b8-c70f9217d7b6.png" alt="高壓多工客服場域之快捷作業工作台預覽圖">
+                    </div>
+                    <div class="project-info">
+                        <h2 data-i18n="workbench.projectTitle">高壓多工客服場域之快捷作業工作台</h2>
+                        <h4 data-i18n="workbench.projectTime">2026.07 – 2026.11（等待服役期間・自主研發專案）</h4>
+                        <p class="project-subtitle" data-i18n="workbench.projectSubtitle">基於 HCI 認知工效理論與 3-Tier 純前端架構之任務動線重構</p>
+                        
+                        <div class="pc-only-notice" style="margin-bottom: 18px;">
+                            <span>🛡️ 商業保密與去識別化合規展示 (IP & Confidentiality Notice)</span>
+                        </div>
+
+                        <p class="project-subtitle" style="font-size: 0.95rem; line-height: 1.65; margin-bottom: 22px; color: #cbd5e1;" data-i18n="workbench.descShort">
+                            針對客服現場「10+ 視窗頻繁切換」與「高認知負荷」之痛點，自主開發之純前端單頁式（SPA）作業輔助系統。結合 HCI 認知心理學與全鍵盤流導航，經 GOMS/KLM 模型評估，成功將標準操作流程由 14 次點擊（28 秒）壓縮至 2 次點擊（5 秒）。
+                        </p>
+
+                        <div class="project-buttons">
+                            <a href="javascript:void(0)" class="btn-primary btn-workbench-modal" onclick="showWorkbenchDetails()">
+                                <img src="https://cdn-icons-png.flaticon.com/128/3002/3002827.png" alt="架構圖示" class="btn-icon">
+                                <span data-i18n="workbench.btnModalText">查看架構設計與技術解析</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-details" id="workbench-details-content" style="display: none;">
+                    <!-- 🛡️ 智慧財產權與商業保密聲明 -->
+                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #3182ce; padding: 14px 18px; border-radius: 8px; margin-bottom: 25px;">
+                        <h4 style="color: #2b6cb0; margin: 0 0 6px 0; font-size: 15px;">🛡️ 智慧財產權與商業保密聲明 (IP & Confidentiality Notice)</h4>
+                        <p style="margin: 0; font-size: 13.5px; color: #4a5568; line-height: 1.65;">
+                            本專案源於本人在候役期間於某大眾共享運輸企業任職時，利用下班工餘時間獨立構思與撰寫之純前端輔助工具。為嚴格恪守職業道德、商業保密義務與智慧財產權規範，本作品集已將所有企業名稱、內部業務規則及真實語料完全去識別化，不公開任何涉密原始碼與真實業務畫面，僅以「抽象系統架構圖」、「HCI 認知工效設計規範」與「GOMS 量化評估模型」呈現個人之程式邏輯與設計思考。
+                        </p>
+                    </div>
+
+                    <!-- 模組 1：設計背景與核心挑戰 (Problem Space) -->
+                    <div class="intro-section">
+                        <h3>模組 1：設計背景與核心挑戰 (Problem Space)</h3>
+                        <div class="intro-content">
+                            <h4 style="color: #2b6cb0; margin: 15px 0 10px 0;">從第一線實務觀察出發的痛點定義</h4>
+                            <p>在等待服役期間，我進入某大眾共享運輸公司的第一線客服部門工作。在即時接聽電話與處理突發狀況的高壓多工（High-Stress Multitasking）環境中，我發現傳統企業後台多以「資料庫存取」為中心，卻忽略了第一線操作人員的認知極限，導致三大作業瓶頸：</p>
+                            
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <h4>🔄 視窗碎片化 (Window Fragmentation)</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">單一案件需在工單系統、通訊軟體、費率表與小抄等 10+ 個分頁間反覆切換（Alt-Tab），嚴重打斷短期記憶與專注力。</p>
+                                </div>
+                                <div class="highlight-item">
+                                    <h4>🧠 認知負荷超載 (Cognitive Overload)</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">龐雜的 SOP 未經視覺分層，高壓通話下搜尋延遲極高，易引發新手操作焦慮。</p>
+                                </div>
+                                <div class="highlight-item">
+                                    <h4>⏳ 應變反應延遲 (Response Latency)</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">大量重複性的手動複製貼上、修改變數與跨區間時間試算缺乏防呆機制，容易產生人為失誤。</p>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 25px; text-align: center;">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/image.png" alt="設計背景與核心挑戰圖表" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                                <p style="font-size: 13px; color: #718096; margin-top: 8px;">📊 圖 1：高壓多工客服作業動線痛點剖析與問題空間 (Problem Space Analysis)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 模組 2：3-Tier 系統架構與資安設計 (System Architecture) -->
+                    <div class="intro-section" style="margin-top: 35px;">
+                        <h3>模組 2：3-Tier 系統架構與資安設計 (System Architecture)</h3>
+                        <div class="intro-content">
+                            <h4 style="color: #2b6cb0; margin: 15px 0 10px 0;">Privacy-by-Design：零後端、資料不落地的三層式解耦架構</h4>
+                            <p>考量企業內部環境對資訊安全與隱私保護的嚴格要求，本系統在架構設計初期即決定採用「純本機端運作（Zero-Backend / Local-First）」策略，分為三大層級：</p>
+                            
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <h4>第一層：介面展示層 (Top Tier - UI Layer)</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">整合快捷語料網格、毫秒級關鍵字篩選、分類標籤切換與側邊欄輔助小工具，將原本散落於多視窗的資訊收斂至單一工作視窗。</p>
+                                </div>
+                                <div class="highlight-item">
+                                    <h4>第二層：功能邏輯層 (Middle Tier - Logic Layer)</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">實作動態變數插值引擎（點擊後自動彈窗填空並合成完整文本寫入剪貼簿）、規則導向之時間與費用計算器、待辦檢核以及離線表單暫存邏輯。</p>
+                                </div>
+                                <div class="highlight-item">
+                                    <h4>第三層：資料儲存層 (Bottom Tier - Persistence Layer)</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">完全基於瀏覽器內建之 LocalStorage 與結構化 JSON 設定檔匯出入機制，所有操作皆在本地端記憶體與本機快取完成，不連接任何外部雲端資料庫，從架構源頭杜絕資料外洩風險。</p>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 25px; text-align: center;">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/118.png" alt="3-Tier 系統架構與資安設計圖表" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                                <p style="font-size: 13px; color: #718096; margin-top: 8px;">📊 圖 2：3-Tier 純前端架構與零後端 Privacy-by-Design 資安設計圖 (System Architecture)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 模組 3：設計產出與 HCI 認知工效實踐 (HCI & UX Artifacts) -->
+                    <div class="intro-section" style="margin-top: 35px;">
+                        <h3>模組 3：設計產出與 HCI 認知工效實踐 (HCI & UX Artifacts)</h3>
+                        <div class="intro-content">
+                            <h4 style="color: #2b6cb0; margin: 15px 0 10px 0;">將認知心理學轉化為前端介面規範</h4>
+                            <p>為了解決「眼、耳、手」同時多工的瓶頸，介面設計嚴格遵循人機互動（HCI）經典理論：</p>
+                            
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <h4>米勒定律 (Miller's Law)</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">將高複雜度的業務情境依顏色標籤與側邊欄模組進行分組（Chunking），將單一畫面資訊量控制在人類短期工作記憶最佳範圍內。</p>
+                                </div>
+                                <div class="highlight-item">
+                                    <h4>費茨法則 (Fitts's Law)</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">擴大高頻率動作（如單擊複製卡片、底部全域簽名列）的點擊熱區（Target Size），並縮短游標移動距離。</p>
+                                </div>
+                                <div class="highlight-item">
+                                    <h4>漸進式揭露 (Progressive Disclosure)</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">平時僅呈現關鍵標題，僅在觸發特定含變數卡片時才展開輸入視窗，維持視覺降噪。</p>
+                                </div>
+                                <div class="highlight-item">
+                                    <h4>全鍵盤流導航 (Keyboard-First Hotkeys)</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">實作全域鍵盤監聽引擎（如雙擊快速聚焦搜尋列、單鍵切換分類與關閉彈窗），大幅減少雙手在鍵盤與滑鼠間切換的移動成本（Homing Time）。</p>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 25px; text-align: center;">
+                                <img src="https://ik.imagekit.io/iiiiioopkpoo/protoflio%20website/119.png" alt="HCI 認知工效實踐圖表" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                                <p style="font-size: 13px; color: #718096; margin-top: 8px;">📊 圖 3：HCI 認知心理學導向之介面組件規範與熱區配置 (HCI & UX Artifacts)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 模組 4：GOMS / KLM 量化成效驗證 (Quantitative Evaluation) -->
+                    <div class="intro-section" style="margin-top: 35px;">
+                        <h3>模組 4：GOMS / KLM 量化成效驗證 (Quantitative Evaluation)</h3>
+                        <div class="intro-content">
+                            <h4 style="color: #2b6cb0; margin: 15px 0 10px 0;">以科學量化指標驗證重構成效</h4>
+                            <p>本專案導入人機互動領域之 GOMS 與 KLM（Keystroke-Level Model，按鍵層級模型）進行任務時間預測分析：</p>
+                            
+                            <div class="project-highlights">
+                                <div class="highlight-item" style="border-left: 4px solid #e53e3e;">
+                                    <h4 style="color: #c53030;">❌ 重構前（傳統多視窗作業）</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">需經歷視窗切換、滾動查找、選取複製、切換視窗貼上與手動修改變數等約 14 個操作步驟，平均耗時約 <strong>28 秒</strong>。</p>
+                                </div>
+                                <div class="highlight-item" style="border-left: 4px solid #38a169;">
+                                    <h4 style="color: #276749;">✅ 重構後（快捷工作台）</h4>
+                                    <p style="margin: 0; font-size: 14px; line-height: 1.6;">透過全域快捷鍵定位與單擊卡片自動合成複製，簡化至 <strong>2 次核心點擊</strong>，耗時縮減至約 <strong>5 秒</strong>。</p>
+                                </div>
+                            </div>
+
+                            <div style="background: #edf2f7; border-radius: 8px; padding: 16px 20px; margin-top: 20px; border-left: 4px solid #3182ce;">
+                                <h4 style="color: #2b6cb0; margin: 0 0 8px 0;">🏆 總體效益</h4>
+                                <p style="margin: 0; font-size: 14px; color: #2d3748; line-height: 1.7;">單次常規作業時間縮短約 <strong>82%</strong>，不僅顯著降低第一線人員的認知疲勞，更展現了將軟體工程與認知工效學結合以解決真實世界痛點的實務價值。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+<!-- ===== 專案 1: Shuttle 輔信 P55U ===== -->
             <article class="project-card">
                 <section class="project-showcase">
                     <div class="project-image">
@@ -389,6 +544,50 @@
     </footer>
     <!-- RWD 手機強制修復 -->
     <style>
+
+    /* 修飾客服工作台專案按鈕，修復垂直拉長與換行問題 */
+    .project-buttons .btn-workbench-modal {
+      height: auto !important;
+      min-height: 48px !important;
+      flex-direction: row !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px !important;
+      padding: 12px 26px !important;
+      width: auto !important;
+      min-width: unset !important;
+      border-radius: 12px !important;
+      text-decoration: none !important;
+      background: linear-gradient(135deg, #ffd700 0%, #ffbb00 100%) !important;
+      box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3) !important;
+    }
+    .project-buttons .btn-workbench-modal:hover {
+      background: #ffffff !important;
+      transform: translateY(-3px) !important;
+      box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4) !important;
+    }
+    .project-buttons .btn-workbench-modal .btn-icon {
+      width: 22px !important;
+      height: 22px !important;
+      margin: 0 !important;
+      display: inline-block !important;
+    }
+    .project-buttons .btn-workbench-modal span {
+      color: #1a1a1a !important;
+      font-size: 0.98rem !important;
+      font-weight: 700 !important;
+      white-space: nowrap !important;
+      line-height: 1 !important;
+    }
+    @media (max-width: 768px) {
+      .project-buttons .btn-workbench-modal {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    }
+
+
     /* ===== 通用防護：所有卡片內元素不得超出寬度 ===== */
     .project-card,
     .project-showcase,
